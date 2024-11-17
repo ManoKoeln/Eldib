@@ -106,6 +106,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="content/Favicon.ico"/>
     <link href="CSS/index.css" rel="stylesheet" type="text/css">
+    <link href="/dist/styles.css" rel="stylesheet">
     <link rel="stylesheet" media="screen and (max-aspect-ratio: 4/3)" href="CSS/indexSmal.css" />
     <script src="JScript/index.js"></script>
     <title>Login</title>
