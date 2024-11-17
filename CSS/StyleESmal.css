@@ -1,0 +1,426 @@
+html {
+	position: relative;
+	justify-content: center;
+	box-sizing: border-box;
+	height: 95%;
+	width: 100%;
+}
+body{
+	/* font-size: calc(16px + (28 - 16) * ((100vw - 320px) / (1600 - 320))); */
+	/* box-sizing: border-box; */
+	/* font-size: 1vw; */
+	/* box-sizing: border-box; */
+	/* height: 100%; */
+	/* height:max-content; */
+	/* width: 100%; */
+	margin: 0%;
+	font-size: calc(var(--FontSizeSmal)*4);
+	font-family: sans-serif;
+}
+
+.MainContent{
+	top: 30%;
+}
+/* nav ul li ul li a:hover{
+
+
+} */
+.UserChatButton{
+	position: absolute;
+	top: 30%;
+	left: 2%;
+	background: aqua;
+	color: yellow#000;
+	background-image: linear-gradient(aqua, blue);
+
+	border-radius: 0.4vw;
+	border-color: gray;
+}          
+.PostBoxButton{
+	position: absolute;
+	top: 30%;
+	left: 28%;
+	background: aqua;
+	color: yellow#000;
+	background-image: linear-gradient(aqua, blue);
+
+	border-radius: 0.4vw;
+	border-color: gray;
+}         
+
+
+
+
+.BereichHead{
+
+	box-sizing: border-box;
+	width: 10%;
+	position:relative; 
+	float:left; 
+	background: #84F58E; 
+	padding: 5px; 
+	border: 2px ;
+	border-color: red;
+	/* height: 3%; */
+}
+.BereichTab{
+
+	background: #84F58E; 
+
+}
+
+	.BereichText {
+		width: 100%;
+		/* height: 2em; */
+		background: #84F58E;
+		padding: 5px;
+		margin: 0em;
+		font-size: calc(var(--FontSizeSmal)*4);
+		height: 100%;
+		box-sizing: border-box;
+		text-align: center;
+		position: relative;
+		float: left;
+}
+#containerBereich{
+	width: 100%;
+}
+#containerFormulierungen{
+	width: 100%;
+}
+div{
+    box-sizing: border-box;
+    /* border: solid Black 1px; */
+    /* padding: 2%; */
+    overflow:auto;
+    float: left;
+    margin: 0%;
+    font-size: calc(var(--FontSizeSmal)*3);
+}
+.HeadTable{
+	position: relative;
+}
+.BereichHeadline{
+	padding-left: 5px;
+	box-sizing: border-box;
+	position:absolute;
+	float:left;
+	width: 10%;
+	margin: 0em;
+	height: 2vw;
+	background: #84F58E;
+	display: none;
+}
+.ZieleHeadline{
+	box-sizing: border-box;
+	position:absolute;
+	float:left;
+	width: 50%;
+	margin: 0em;
+	height: 2vw;
+	left: 10%;
+	display: none;
+}
+#Div3Head.FormulierungenHeadline{
+	/* padding-left: 5px; */
+	padding-left: 5px;
+	box-sizing: border-box;
+	position:absolute;
+	float:left;
+	width: 20%;
+	margin: 0em;
+	height: 2vw;
+	left: 60%;
+	background:#FADCEF;
+	/* vertical-align: middle; */
+	display: none;
+}
+#Div4Head.MassnahmenHeadline{
+	padding-left: 5px;
+	box-sizing: border-box;
+	position:absolute;
+	float:left;
+	width: 20%;
+	margin: 0em;
+	height: 2vw;
+	left: 80%;
+	background:#C4FF0E;
+	display: none;
+}
+#Div1{
+	box-sizing: border-box;
+	position: absolute;
+	float: left;
+	width: 95%;
+	margin: 0em;
+	height: 7%;
+	overflow: auto;
+	overflow-x: hidden;
+	top: 19%;
+	padding-left: 5%;
+	left: 0;
+}
+#Div2{
+	
+box-sizing: border-box;
+	
+position: absolute;
+	
+/* float:left; */
+	
+width: 95%;
+	
+margin: 0em;
+	
+height: 31%;
+	
+overflow: auto;
+	
+overflow-x: hidden;
+	
+top: 26%;
+	
+padding-left: 5%;
+	
+left: 0;
+}
+#Div3{
+	box-sizing: border-box;
+	position: absolute;
+	float:left;
+	width: 95%;
+	margin: 0em;
+	height: 16%;
+	overflow: auto;
+	overflow-x: hidden;
+	top: 57%;
+	padding-left: 5%;
+	left: 0;
+}
+#Div4{
+	box-sizing: border-box;
+	position: absolute;
+	float:left;
+	width: 95%;
+	margin: 0em;
+	height: 14%;
+	overflow: auto;
+	overflow-x: hidden;
+	top: 73%;
+	padding-left: 5%;
+	left: 0;
+}
+.ZielHead {
+	box-sizing: border-box;
+	width: 50%;
+	position: relative; 
+	float:left; 
+	background: #D6D8F3;
+	 padding: 5px;
+	 margin: 0em;
+}
+.ZielTab{
+	background: #D6D8F3;
+	/* width: 90%; */
+}
+.ZielZieleStufe{
+	box-sizing: content-box;
+	width: 5%;
+	height: 100%;
+	position:relative;
+	float:left;
+	text-align: center;
+	background: #D6D8F3;
+	padding: 5px;
+	font-size: calc(var(--FontSizeSmal)*3);
+}
+.ZielZieleNummer {
+	box-sizing: content-box;
+	width: 15%;
+	height: 100%;
+	position:relative;
+	float:left;
+	background: #D6D8F3;
+	padding: 5px;
+	font-size: calc(var(--FontSizeSmal)*3);
+}
+.ZielZieleStichwort {
+	box-sizing: content-box;
+	width: 70%;
+	height: 100%;
+	position: relative;
+	float:left;
+	background: #D6D8F3;
+	padding: 5px;
+	font-size: calc(var(--FontSizeSmal)*3);
+}
+.ZielZieleBeschreibung {
+	box-sizing: border-box;
+	/* width: 75%;  */
+	width: 70%;
+	height: 100%;
+	position:relative;
+	float:left;
+	background: #D6D8F3;
+	padding: 5px;
+	font-size: calc(var(--FontSizeSmal)*3);
+	overflow-wrap: break-word;
+}
+.FormulierungTab {
+	background: #FADCEF;
+}
+.FormulierungenHead{
+	box-sizing: border-box;
+	width: 20%;
+	position:relative; 
+	float:left; 
+	background: #FADCEF;
+	margin: 0em;
+	height: 2vw;
+	padding: 5px;
+}
+.FormulierungenText {
+	box-sizing: border-box;
+	width: 100%;
+	height: 50%;
+	position:relative;
+	float:left;
+	background:#FADCEF;
+	padding: 5px;
+	font-size: calc(var(--FontSizeSmal)*3);
+	overflow-wrap: break-word;
+}
+.MaßnahmenHead{
+	box-sizing: border-box;
+	position:relative; 
+	float:left; 
+	width: 20%; 
+	background:#C4FF0E;
+	margin: 0em;
+	padding: 5px;
+}
+.MaßnahmenTab{
+	background:#C4FF0E;
+}
+.MassnahmenText {
+	box-sizing: border-box;
+	width: 100%;
+	height: 50%;
+	position:relative; 
+	float:left; 
+	background:#C4FF0E;
+	padding: 5px;	
+	font-size: calc(var(--FontSizeSmal)*3);
+	overflow-wrap: break-word;
+}
+
+
+
+
+table {
+	background-color: white;
+	font-size: calc(var(--FontSizeSmal)*3);
+}
+
+img
+{
+	float: right;
+	/* clear: right; */
+	height: 5em;
+	background: hsl(180, 100%, 100%);
+	position: relative;
+	border: 0px;
+	border-color: black;
+	padding-right: 0vw;
+}
+button{
+	position: relative;
+	font-size: calc(var(--FontSizeSmal)*2);
+	border-radius: 0.5vw;
+	height: 11vw;
+	width: 25vw;
+	height: calc(2vw * var(--fontsizesmal));
+	width: calc(2vw * var(--fontsizesmal));
+	border-radius: 1vw;
+	margin: 0vw;
+	top: 42%;
+	left: 27%;
+}
+.ButtonDelete {
+	
+padding: 3px;
+	
+background: red;
+	
+color: white;
+	
+width: 12vw;
+	
+border-radius: 0.5em;
+	
+font-size: calc(var(--FontSizeSmal)*3);
+	
+text-align: center;
+float: unset;
+}
+.ButtonEdit {
+	
+padding: 3px;
+	
+background: blue;
+	
+color: white;
+	
+width: 12vw;
+	
+border-radius: 1.5em;
+	
+text-align: center;
+	
+font-size: calc(var(--FontSizeSmal)*3);
+float: unset;
+}
+.ButtonQuestion {
+	padding: 3px;
+	background: rgb(93, 182, 93);
+	color: white;
+	border-radius: 0.5em;
+	width: 12vw;
+	font-size: calc(var(--FontSizeSmal)*3);
+	text-align: center;
+	float: unset;
+}.ButtonNewQuestion {
+	padding: 3px;
+	background: rgb(137, 137, 138);
+	color: white;
+	border-radius: 0.5em;
+	width: 12vw;
+	font-size: calc(var(--FontSizeSmal)*3);
+	text-align: center;
+	float: unset;
+}
+
+footer
+{
+	box-sizing: border-box;
+	position: absolute;
+	/* bottom: 0%; */
+	width: 100%;
+	height: 9%;
+	background: #F1F3F4;
+	top: 96%;
+}
+.Footer1{
+	padding-left: 20px;
+	position:relative; 
+	float:left;
+	width: 80%;
+}
+.Footer2{
+	padding-right: 20px;
+	position:relative; 
+	float:left;
+	text-align: right;
+	width: 20%;
+
+}

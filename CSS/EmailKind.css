@@ -1,0 +1,44 @@
+#EmailKindcontent{
+    display: none;
+    z-index: 12;
+    box-sizing: border-box;
+    float: none;
+    position: absolute;
+    height: 96%;
+    background-color: #d3d3d366;
+    width: 100%;
+}
+
+.EmailKindcontentInside{position: relative;background-color: lightgray;border-radius: 1vw;margin: auto;width: 39%;height: 98%;}
+.EmailKindcontentInside h3{
+    text-align: center;
+    position: relative;
+    top: 2vw;
+}
+
+.EmailKindTextArea{
+position: relative;
+width: 90%;
+left: 5%;
+top: 7vw;
+}
+.EmailKindButtonClose{    
+position: relative;   
+left: 40%;
+top: 10vw;
+margin-top: 1vw;
+}
+.EmailKindButtonSend{
+position: relative;
+left: 40%;
+top: 10vw;
+/* margin-top: 1vw; */
+    }
+.EmailKindRestText{
+    
+position: relative;
+    
+top: 8vw;
+    
+text-align: center;
+}

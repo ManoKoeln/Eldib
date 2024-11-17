@@ -1,0 +1,39 @@
+/* #Name{padding: 1vw;border-radius: 0.4vw;position: absolute;} */
+/* #Vorname{
+    padding: 1vw;    
+}
+#Birthday{
+    padding: 1vw;    
+}
+#email{
+    padding: 1vw;  
+}
+#ParentName{
+    padding: 1vw; 
+}
+#ParentVorname{
+    padding: 1vw; 
+}
+#Parentemail{
+    padding: 1vw;
+} */
+.FormContent{
+    /* background-color: azure; */
+    padding: 1vw;
+    font-size: calc(var(--AllFont)*1);
+    height: 1vw;
+}
+input{
+    border-radius: 0.4vw;
+    /* padding-left: 10VW; */
+    left: 10vw;
+    position: absolute;
+    height: 1.5vw;
+    left: 30%;
+    width: 48%;
+}
+.FormContent {
+    /* border-radius: 0.8vw; */
+    font-size: calc(var(--AllFont)*1);
+}
+

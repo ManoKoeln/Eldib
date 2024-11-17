@@ -1,0 +1,440 @@
+.root{
+    /* --AllFont: 0.8;
+    --AllFontSmal: 0.8; */
+    --FontSize: 0.8;
+    --FontSizeSmal: 0.8;
+}
+#EContent{
+    display: none;
+    z-index: 14;
+    box-sizing: border-box;
+    float: none;
+    position: absolute;
+    height: 90%;
+    width: 100%;
+    background-color: white;
+}
+#MyChatFormulierungen{
+	display: none;
+	position: absolute;
+    top: 16%;
+    z-index: 15;
+}
+#MyChatMassnahmen{
+	display: none;
+	position: absolute;
+	z-index: 15;
+}
+#MyUserChatFormulierungen{
+	display: none;
+}
+#MyUserChatMassnahmen{
+	display: none;
+}
+#Messages{
+	display: none;	
+}
+#MyPostBoxReceive{
+	display: none;	
+}
+
+#MyPostBoxSend{
+	display: none;	
+}
+#MyPopUp{
+	display: none;
+	position: absolute;
+	top: 9vw;
+	z-index: 15;
+	height: 83%;
+}
+
+html {
+	position: relative;
+	justify-content: center;
+	box-sizing: border-box;
+	height: 95%;
+	width: 100%;
+}
+body{
+	/* font-size: calc(16px + (28 - 16) * ((100vw - 320px) / (1600 - 320))); */
+	/* box-sizing: border-box; */
+	/* font-size: 1vw; */
+	/* box-sizing: border-box; */
+	/* height: 100%; */
+	/* height:max-content; */
+	/* width: 100%; */
+	margin: 0%;
+	font-size: var(--FontSize);
+	font-family: sans-serif;
+	/* top: 20vw; */
+}
+
+.MainContent{
+    position: absolute;
+    /* display: flex; */
+    height: calc(var(--FontSize)*2);
+    width: 100%;
+    top: 25%;
+    font-size: var(--FontSize);
+}
+.column1{/* background-color: aqua; */height: 50%;display: flex;width: 25%;justify-items: center;}
+/* .column2{
+	/* background-color: rgb(0, 255, 115); */
+	/* } */ 
+
+tr.column2 {
+    /* background-color: red; */
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    width: 60%;
+    height: 50%;
+}
+/* nav ul li ul li a:hover{
+
+
+} */
+.UserChatButton{
+	position: absolute;
+	top: 30%;
+	left: 2%;
+	background: aqua;
+	color: yellow#000;
+	background-image: linear-gradient(aqua, blue);
+
+	border-radius: 0.4vw;
+	border-color: gray;
+}          
+.PostBoxButton{
+	position: absolute;
+	top: 30%;
+	left: 28%;
+	background: aqua;
+	color: yellow#000;
+	background-image: linear-gradient(aqua, blue);
+
+	border-radius: 0.4vw;
+	border-color: gray;
+}         
+
+
+
+
+.BereichHead{
+
+	box-sizing: border-box;
+	width: 10%;
+	position:relative; 
+	float:left; 
+	background: #84F58E; 
+	padding: 5px; 
+	border: 2px ;
+	border-color: red;
+	/* height: 3%; */
+}
+.BereichTab{
+
+	background: #84F58E; 
+
+}
+
+	.BereichText {
+		width: 100%;
+		/* height: 2em; */
+		background: #84F58E;
+		padding: 5px;
+		margin: 0em;
+		font-size: var(--FontSize);
+		height: 100%;
+		box-sizing: border-box;
+		position: relative;
+		float: left;
+}
+#containerBereich{
+	width: 10%;
+	width: 100%;
+}
+
+.HeadTable{
+	position: relative;
+}
+.BereichHeadline{
+	padding-left: 5px;
+	box-sizing: border-box;
+	position:absolute;
+	float:left;
+	width: 10%;
+	margin: 0em;
+	/* height: 2vw; */
+	background: #84F58E;
+}
+.ZieleHeadline{
+	box-sizing: border-box;
+	position:absolute;
+	float:left;
+	width: 50%;
+	margin: 0em;
+	/* height: 2vw; */
+	left: 10%;
+}
+#Div3Head.FormulierungenHeadline{
+	/* padding-left: 5px; */
+	padding-left: 5px;
+	box-sizing: border-box;
+	position:absolute;
+	float:left;
+	width: 20%;
+	margin: 0em;
+	/* height: 2vw; */
+	left: 60%;
+	background:#FADCEF;
+	/* vertical-align: middle; */
+}
+#Div4Head.MassnahmenHeadline{
+	padding-left: 5px;
+	box-sizing: border-box;
+	position:absolute; 
+	float:left; 
+	width: 20%; 
+	margin: 0em; 
+	/* height: 2vw; */
+	left: 80%;
+	background:#C4FF0E;
+
+}
+#Div1{
+	box-sizing: border-box;
+	position:absolute;
+	float:left;
+	width: 10%;
+	margin: 0em;
+	height: 62%;
+	overflow: auto;
+	overflow-x: hidden;
+	top: 29%;
+}
+#Div2{
+	
+	box-sizing: border-box;
+	position:absolute; 
+	float:left; 
+	width: 50%; 
+	margin: 0em; 
+	height: 62%;
+	overflow: auto;
+	overflow-x: hidden; 
+	top: 29%;
+	left: 10%;
+}
+#Div3{
+	box-sizing: border-box;
+	position:absolute; 
+	float:left; 
+	width: 20%; 
+	margin: 0em; 
+	height: 62%;
+	overflow: auto;
+	overflow-x: hidden; 
+	top: 29%;
+	left: 60%;
+}
+#Div4{
+	box-sizing: border-box;
+	position:absolute; 
+	float:left; 
+	width: 20%; 
+	margin: 0em; 
+	height: 62%;
+	overflow: auto;
+	overflow-x: hidden; 
+	top: 29%;
+	left: 80%;
+}
+.ZielHead {
+	box-sizing: border-box;
+	width: 50%;
+	position: relative; 
+	float:left; 
+	background: #D6D8F3;
+	 padding: 5px;
+	 margin: 0em;
+}
+.ZielTab{
+	background: #D6D8F3;
+}
+.ZielZieleStufe{
+	box-sizing: border-box;
+	width: 5%;
+	height: 100%;
+	position:relative; 
+	float:left; 
+	text-align: center;
+	background: #D6D8F3;
+	 padding: 5px;
+	 font-size: var(--FontSize);	
+}
+.ZielZieleNummer {
+	box-sizing: border-box;
+	width: 10%;
+	height: 100%;
+	position:relative;
+	float:left;
+	background: #D6D8F3;
+	padding: 5px;
+	font-size: var(--FontSize);
+}
+.ZielZieleStichwort {
+	box-sizing: border-box;
+	width: 15%;
+	height: 100%;
+	position:relative;
+	float:left;
+	background: #D6D8F3;
+	padding: 5px;
+	font-size: var(--FontSize);
+}
+.ZielZieleBeschreibung {
+	box-sizing: border-box;
+	width: 75%;
+	width: 70%;
+	height: 100%;
+	position:relative;
+	float:left;
+	background: #D6D8F3;
+	padding: 5px;
+	font-size: var(--FontSize);
+	overflow-wrap: break-word;
+}
+.FormulierungTab {
+	background: #FADCEF;
+}
+.FormulierungenHead{
+	box-sizing: border-box;
+	width: 20%;
+	position:relative; 
+	float:left; 
+	background: #FADCEF;
+	margin: 0em;
+	height: 2vw;
+	padding: 5px;
+}
+.FormulierungenText {
+	box-sizing: border-box;
+	width: 100%;
+	height: 50%;
+	position:relative; 
+	float:left; 
+	background:#FADCEF;
+	 padding: 5px;	
+	 font-size: var(--FontSize);
+	 overflow-wrap: break-word;
+}
+.MassnahmenHead{
+	box-sizing: border-box;
+	position:relative; 
+	float:left; 
+	width: 20%; 
+	background:#C4FF0E;
+	margin: 0em;
+	padding: 5px;
+}
+.MassnahmenTab{
+	background:#C4FF0E;
+}
+.MassnahmenText {
+	box-sizing: border-box;
+	width: 100%;
+	height: 50%;
+	position:relative; 
+	float:left; 
+	background:#C4FF0E;
+	padding: 5px;	
+	font-size: var(--FontSize);
+	overflow-wrap: break-word;
+}
+
+
+
+
+table {
+	background-color: white;
+	font-size: var(--FontSize);
+}
+
+img
+{
+		float: right;
+		/* clear: right; */
+		height: 5em;
+		background: hsl(180, 100%, 100%);
+		position: absolute;
+		border: 0px;
+		border-color: black;
+		padding-right: 0vw;
+		left: 94%;
+		top: 1%;
+}
+button{
+	/* position: relative; */
+	font-size: var(--FontSize);
+	border-radius: 0.5vw;
+}
+.ButtonDelete {
+	
+	padding: 3px;
+	background: red; 
+	color: white;
+	width: 5vw;
+	border-radius: 0.5em;
+	text-align: center;
+}
+.ButtonEdit {
+	
+	padding: 3px;
+	background: blue; 
+	color: white;
+	width: 5vw;
+	border-radius: 0.5em;
+	text-align: center;
+}
+.ButtonQuestion {
+	padding: 3px;
+	background: rgb(93, 182, 93); 
+	color: white;
+	border-radius: 0.5em;
+	width: 5vw;
+	text-align: center;
+}.ButtonNewQuestion {
+	padding: 3px;
+	background: rgb(137, 137, 138); 
+	color: white;
+	border-radius: 0.5em;
+	width: 5vw;
+	text-align: center;
+}
+
+footer
+{
+	box-sizing: border-box;
+	position: absolute;
+	/* bottom: 0%; */
+	width: 100%;
+	height: 10%;
+	background: #F1F3F4;
+	top: 90%;
+	overflow: hidden;
+}
+.Footer1{
+	padding: 0.5vw;
+    position: relative;
+    float: left;
+    width: 80%;
+}
+.Footer2{
+	padding: 0.5vw;
+    position: relative;
+    text-align: right;
+    width: 0%;
+
+}

@@ -1,0 +1,4 @@
+AuthName "Mano-MySQL1.php Login-Bereich"
+AuthType Basic
+AuthUserFile /xampp/htdocs/E/PW/.htpasswd
+require valid-user

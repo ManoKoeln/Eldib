@@ -1,0 +1,96 @@
+#ELDiBLehrercontent, #ELDiBElterncontent, #ELDiBKindcontent {
+    display: none;
+    z-index: 10;
+    box-sizing: border-box;
+    float: none;
+    position: absolute;
+    background-color: beige;
+    margin: 0;
+    height: 100%;
+}
+.Schuelerdaten{
+    width: 39%;
+    /* margin: 0.5%; */
+    position: absolute;
+    top: 10%;
+    font-size: 2.5vw;
+}
+.MBackButton{
+    float: left;
+    position: absolute;
+    top: 5%;
+}
+#ELDiBLehrer, #ELDiBEltern, #ELDiBKind{
+    /* display: none; */
+    /* z-index: 10; */
+    box-sizing: border-box;
+    float: none;
+    position: relative;
+    background-color: beige;
+    margin: 0;
+    height: 31%;
+}
+
+
+#ELDiBLehrerhead, #ELDiBElternhead, #ELDiBKindhead{
+height: 29%;
+width: 100%;
+
+}
+#ELDiBLehrercontainer table, #ELDiBElterncontainer table, #ELDiBKindcontainer table{
+    border-collapse: collapse; /* make the table borders collapse to each other */
+    width: 100%;
+    font-size: 1.5vw;
+  }
+  
+#ELDiBLehrercontainer, #ELDiBElterncontainer, #ELDiBKindcontainer{
+    height: 62%;
+    position: absolute;
+    /* width: 100%; */
+    /* left: 0; */
+    top: 29%;
+    /* margin: 0; */
+    /* padding: 0; */
+}
+#ELDiBLehrercontainerTableHead, #ELDiBElterncontainerTableHead, #ELDiBKindcontainerTableHead{
+    height: 2vw;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    overflow: auto;
+}
+.tableFixHead {
+    overflow-y: auto; /* make the table scrollable if height is more than 200 px  */
+    height: 200px; /* gives an initial height of 200px to the table */
+  }
+  /* .tableFixHead table{
+    font-size: 1vw;
+  } */
+  .tableFixHead thead th {
+    position: sticky; /* make the table heads sticky */
+    top: 0px; /* table head will be placed from the top of the table and sticks to it */
+  }
+.CreateNewTableELDiBKEL{
+    position: absolute;
+    left: 39%;
+    top: 20%;
+    visibility: hidden;
+}
+.DiagrammBox{
+    position: absolute;
+    left: 50%;
+    top: 8.5%;
+    border-style: groove;
+    /* visibility: hidden; */
+}
+.BeschreibungHead{
+    position: fixed;
+}
+.KELZielBeschreibungHead{
+width: 40%;
+}
+.KELZielNummerHead{
+width: 10%;
+}
+.KELZielBeschreibungHead{width: 40%;font-weight: bold;font-size: calc(var(--FontSize)*1.5);background-color: bisque;}
+.KELZielNummerHead{width: 10%;font-weight: bold;font-size: calc(var(--FontSize)*1.5);background-color: bisque;}

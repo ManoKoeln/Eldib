@@ -1,0 +1,46 @@
+.HeadData{
+    background-color: lightgray;
+}
+.ContentTable{
+    background-color: lightgray;
+}
+#SupportPlan{
+    display: none;
+    z-index: 10;
+    box-sizing: border-box;
+    float: none;
+    position: absolute;
+}
+.columnSupport1{
+    width: 25%;
+    /* position: relative; */
+    /* float: left; */
+    /* border-style: solid; */
+    box-sizing: border-box;
+    position: absolute;
+    float: left;
+}
+.columnSupport2{
+    width: 25%;
+    /* border-style: solid; */
+    box-sizing: border-box;
+    position: absolute;
+    float: left;
+    left: 25%;
+}
+.columnSupport3{
+    width: 25%;
+    /* border-style: solid; */
+    box-sizing: border-box;
+    position: absolute;
+    float: left;
+    left: 50%;
+}
+.columnSupport4{
+    width: 25%;
+    /* border-style: solid; */
+    box-sizing: border-box;
+    position: absolute;
+    float: left;
+    left: 75%;
+}

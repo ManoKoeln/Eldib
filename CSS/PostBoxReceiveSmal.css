@@ -1,0 +1,165 @@
+#MyPostBoxReceive{
+    display: none;
+    box-sizing: border-box;
+    float: none;
+    position: absolute; /*dafür muss das parent- element auf relativ stehen*/
+    top: 12%;
+    left: 0%;
+    z-index: 9;
+    background-color:white;
+    width: 100%;
+    height: 84%;
+
+}
+#MyPostBoxReceiveText {
+    box-sizing: border-box;
+    float: none;
+    width: 100%;
+    height: 85%;
+}         
+.PostBoxReceiveText{
+    width: 100%;
+    background-color: aquamarine;
+    font-size: calc(var(--FontSizeSmal)*4);
+}
+.MyPostBoxReceiveHead1{
+    width: 98%;
+    /* background-color: lightblue; */
+    margin-left: 1%;
+    background:#FADCEF;
+    border: 0px;
+    border-radius: 0.5vw;
+    border-style:groove;
+    border-color: gray;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: calc(var(--FontSizeSmal)*6);
+    text-align: center;
+    margin-bottom: 0.5vw;
+    font-weight: bold;
+}
+.MyPostBoxReceiveHead2{
+    width: 49%;
+    margin-left: 1%;
+    /* background-color: lightblue; */
+    background:#C4FF0E;
+    border: 0px;
+    border-radius: 0.5vw;
+    border-style:groove;
+    border-color: gray;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: calc(var(--FontSizeSmal)*4);
+    text-align: center;
+    margin-bottom: 0.5vw;
+}
+.MyPostBoxReceiveDiv1{
+    overflow: auto;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    margin-left: 1%;
+    width: 98%;
+    height: 93%;
+    /* border: solid 2px;
+    border-color: black; */
+}
+.MyPostBoxReceiveDiv2{
+    overflow: auto;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    margin-left: 1%;
+    width: 49%;
+    height: 93%;
+    /* border: solid 2px;
+    border-color: black; */
+}
+.MyPostBoxReceiveDiv3{
+    overflow-x: hidden;
+    box-sizing: border-box;
+    margin-left: 1%;
+    width: 98%;
+    height: 7%;
+    /* border: solid 2px;
+    border-color: black; */
+    position: absolute;
+}
+.PostBoxReceiveInfoDiv1{
+    text-decoration-line: underline;
+        width: 60%;
+    }
+    .PostBoxReceiveInfoDiv1:hover {
+        border: 4px;
+        border-style:outset;  
+        border-color: gray;
+    }    
+    .PostBoxReceiveInfoDiv2{
+        text-align: right;
+        width: 40%;
+    }
+    .PostBoxReceiveInfoDiv:hover {
+        border: 4px;
+        border-style:outset;  
+        border-color: gray;
+    }    
+    .PostBoxReceiveInfoText{
+        background-color: rgb(232, 232, 242);
+        font-size: calc(var(--FontSizeSmal)*2);
+    }
+.MyPostBoxReceiveTable{
+    box-sizing: border-box;
+    position: relative;
+    background-color: lightgray;
+    width: 100%;
+}
+.MyChatButton{
+    float: left;
+    margin-left: 0vw;
+    left: 0;
+    background-color: gray;
+    position: relative;
+    color: black;
+    border-color: white;
+    border-radius: 0.5vw;
+    width: 50%;
+    height: 8vw;
+    background-image: linear-gradient(gray, lightgray);
+    font-size: calc(var(--FontSizeSmal)*3);
+    border-radius: 2vw;
+}
+.button-group {
+    display: flex;
+ }
+ .button-group button {
+    font-size: calc(var(--FontSizeSmal)*4);
+    border: 0;
+ }
+.MyChatButton:hover{
+    background-image: linear-gradient(lightgray, gray);
+}
+
+
+.PostBoxReceiveSection{
+    border: 4px;
+    border-radius: 0.5vw;
+    border-style:groove;
+    border-color: lightgray;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+ 
+}
+.PostBoxReceiveSection:hover{
+    border: 4px;
+    border-style:outset;  
+    border-color: gray;
+} 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+
+
+.PostBoxReceiveClose{
+    position: relative;
+    /* left: 47%; */
+    top: auto;
+    width: calc(var(--FontSizeSmal)*24);
+    height: calc(var(--FontSizeSmal)*10);
+    background-image: linear-gradient(blue, black);
+    color: yellow;
+    font-size: calc(var(--FontSizeSmal)*4);
+}

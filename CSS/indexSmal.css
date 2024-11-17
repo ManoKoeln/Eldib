@@ -1,0 +1,101 @@
+header{
+    /* display: flex; */
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* flex-direction: row; */
+}
+.HeaderL1{
+    position: relative;
+    top: 50%;
+}
+.HeaderL2{
+    position: absolute;
+    width: 100%;
+    height: 20%;
+}
+h1{
+    font-size: 7vw;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    text-align: center;
+    font-style: initial;
+}
+
+h2{
+    font-size: 5vw;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    top: 13%;
+    left: 0;
+}
+h3{
+    font-size: 9vw;
+    position: fixed;
+    top: 35%;
+    width: 100%;
+    text-align: center;
+}
+.IndexInput{
+    text-align: center;
+    position: unset;
+    left: 0;
+    margin: auto;
+}
+#SelectSchool{
+    position: relative;
+    width: 76%;
+    top: 40%;
+    font-size: 4vw;
+}
+.SelectSchoolDiv {
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    top: 30%;
+}
+form{
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+}
+.Passwort{
+    font-size: 5vw;
+    position: fixed;
+    width: 100%;
+    top: 82%;
+    text-align: center;
+}
+.register{
+    font-size: 7vw;
+    position: absolute;
+    width: 100%;
+    top: 87%;
+    text-align: center;
+}
+img{
+    height: 50%;
+    position: absolute;
+    left: 76%;
+    top: 2%;
+}
+input{
+    height: 10%;
+    width: 44vw;
+    border-radius: 2vw;
+    border-color: #e8f0fe;
+    font-size: 4vw;
+}
+button{
+    font-size: 2vw;
+    height: 15%;
+    font-size: 6vw;
+    background-color: #13ff00b5;
+    width: 45%;
+    border-radius: 2vw;
+    border-color: #13ff00b5;
+}

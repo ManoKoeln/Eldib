@@ -1,0 +1,416 @@
+header{
+    /* box-sizing: border-box; */
+    box-sizing: border-box;
+    position: fixed;
+    float: left;
+    box-sizing: border-box;
+    height: 30%;
+    width: 100%;
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+#google_translate_element{
+	position: absolute;
+	width: 44%;
+	LEFT: 26%;
+	top: 13%;
+}
+.goog-te-gadget img{
+	display: none;
+}
+.HeaderIndex{
+    position: absolute;
+    /* box-shadow: 0px 5px 13px 2px #000000; */
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+}
+.HeaderIndex1{
+	position: relative;
+	/* display: contents; */
+	width: 100%;
+	height: 100%;
+	box-shadow: 0px 5px 13px 2px #000000;
+}
+.HeaderIndex div h1{
+	/* font-size: calc(var(--FontSizeSmal)*3); */
+	font-size: 3vw;
+}
+.HeaderIndex div h2{
+	font-size: calc(var(--FontSizeSmal)*3);
+}
+
+.IndexContent{
+	position: absolute;
+	top: 30%;
+	/* align-items: center; */
+	/* left: 50%; */
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-direction: column;
+	width: 100%;
+	/* font-size: 3vw; */
+	margin: 0;
+}
+.IndexContent form button{
+    height: 8vw;
+    width: 26vw;
+    /* text-align: center; */
+    justify-content: center;
+    margin: 0vw;
+    left: 18%;
+    font-size: calc(var(--FontSizeSmal)*5);
+    border-radius: 2vw;
+    background-color: #00ff7291;
+}
+.IndexContent h1 {
+	margin: 0vw;
+	padding: 4vw;
+	font-size: calc(var(--FontSizeSmal)*5);
+}
+.IndexContent h2{
+	margin: 0vw;
+	padding: 4vw;
+	font-size: 5vw;
+}
+.IndexContent form {
+	margin: 0vw;
+	padding: 13vw;
+}
+.IndexContent a{
+	font-size: 4vw;
+	margin: 0;
+}
+.HeaderL1{
+	overflow: hidden;
+	padding-left: 0px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: calc(var(--FontSizeSmal)*1);
+	box-sizing: border-box;
+	position:absolute;
+	float:left;
+	width: 40%;
+	height: 100%;
+}
+.HeaderL1 h1{
+	position: absolute;
+}
+.HeaderL2{
+	box-sizing: border-box;
+	position:absolute;
+	float:left;
+	width: 50%;
+	height: 5%;
+	overflow: hidden;
+	left: 25%;
+	top: 3%;
+	margin: 0;
+	padding: 0;
+}
+.HeaderL2a{
+	box-shadow: 5px -5px 5px 5px lightgrey;
+	box-sizing: border-box;
+	position: absolute;
+	float:left;
+	width: 100%;
+	height: 10%;padding: 5px;border:3px ridge white;border-radius: 0.8vw 0.8vw 0vw 0vw;background: lightgray;left: 0%;top: 19%;font-size: 1vw;display: none;}
+.ClipHead{
+	position: absolute;
+	height: 100%;
+	overflow: hidden;
+	font-size: calc(var(--FontSizeSmal)*1);
+}
+#DivClipBoard{
+	/* box-shadow: 10px 0px 5px 0px lightgray; */
+	position:absolute;
+	float:left;
+	width: 100%;
+	/* min-width: 50%; */
+	padding: 1em;
+	border: 5px 5px 5px 0px;
+	/* border-radius:  0vw 0vw 0.8vw 0.8vw; */
+	/* border-style: groove; */
+	height: 4em;
+	left: 0;
+	top: 30%;
+	background-color: white;
+	overflow: auto;
+}
+.Logo{
+	position: absolute;
+}
+.welcome{
+    position: fixed;
+    left: 0;
+    top: 2vw;
+    float: right;
+    padding: 2vw;
+}
+.WelcomeSchool {
+    font-size: calc(var(--AllFont)* 2);
+    position: fixed;
+    left: 0;
+    top: 15%;
+}
+h1 {
+	/* padding:0%; */
+	/* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+	/* font-size: 3vw; */
+	/* overflow: hidden; */
+	/* width: 100%; */
+	/* float: left; */
+	/* margin: 0%; */
+	/* text-align: center; */
+	/* width: 90%; */
+	/* left: 5%; */
+	font-size: 5vw;
+}
+h2 {
+	top: 20%;
+	/* padding: 0; */
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: calc(var(--FontSizeSmal)*4);
+	overflow: hidden;
+	/* width: 100%; */
+	float: left;
+	text-align: center;
+	width: 100%;
+}
+.Logo{
+	position: absolute;
+	float: right;
+	height: 14em;
+	/* top: 0%; */
+	left: 80%;
+	/* visibility: visible; */
+	/* box-sizing: border-box; */
+	/* width: 10vw; */
+	top: 0%;
+}
+
+/* Menue*/
+#MainNavigation{
+        z-index: 12;
+        position: relative;
+        margin: 0;
+        /* left: 0%; */
+        width: 36%;
+        height: fit-content;
+        display: none;
+        overflow: hidden;
+    }
+#click:checked ~ #MainNavigation {
+	height: 80%;
+	background-color: red;
+	width: 36%;
+}
+#click:not(:checked) ~ #MainNavigation {
+	height: 10%;
+	background-color: blue;
+}
+
+#click:checked ~ ul{
+	display: block;
+	/* position: relative; */
+	background-color: white;
+	border: 1px;
+	border-style: groove;
+	border-radius: 2vw;
+	margin: 0;
+	padding: 0;
+	top: 13vw;
+	height: 40vw;
+	left: 0;
+}
+#click:checked ~ label .eins{
+	transform: rotate(-45deg);
+	top: 18px;
+	transition:  0.5s;
+}
+#click:checked ~ label .zwei{
+	/* opacity: 0; */
+	transform: rotate(360deg);
+	width: 0;
+	transition:  2s;	
+}
+#click:checked ~ label .drei{
+	transform: rotate(45deg);
+	top: 18px;
+	transition:  0.5s;
+}
+#click{
+	display: none;
+}
+
+ul{
+	display: none;
+	float: left;
+	/* left: 0; */
+	margin: 0;
+}
+.Linie{
+	width: 40px;
+	height: 4px;
+	background-color: black;
+	border-radius: 2px;
+	position: absolute;
+}
+.eins{
+	top: 7px;
+}
+.zwei{
+	top: 20px;
+}
+.drei{
+	top: 34px;
+}
+.rahmen{
+	width: 50px;
+	height: 50px;
+	background-color: white;
+	margin: 0;
+	padding-left: 2px;
+	padding-right: 2px;
+	position: relative;
+	cursor: pointer;
+}
+/* ENDE Menue*/
+
+ul li {
+        float: left;
+        list-style: none;
+        position: relative;
+        /* width: auto; */
+        /* padding: 1px; */
+        border-style: outset;
+        margin: 0vw;
+        border-radius: 2vw;
+    }
+
+ul li a{
+	font-family: Arial, Helvetica, sans-serif;
+	color: black;
+	font-size: 5vw;
+	text-decoration: none;
+	padding: 0.5vw;
+	display: block;
+	margin: 0;
+}
+ul li:hover{
+	border-style:outset;
+	background-color: lightgray;
+	border-radius: 3vw;
+}
+#SetFontSize{
+	z-index: 13;
+}
+#FontSizeBigger{
+	font-size: calc(var(--FontSizeSmal)*4);
+	width: 34vw;
+	left: 0;
+}
+#FontSizeSmaller{
+	font-size: calc(var(--FontSizeSmal)*4);
+	/* font-size: 3vw; */
+	width: 34vw;
+	left: 27%;
+}
+
+
+
+/* reset our lists to remove bullet points and padding */
+ .mainmenu, .submenu {
+  list-style: none;
+  padding: 0px;
+  margin: 0;
+}
+
+/* make ALL links (main and submenu) have padding and background color */
+ .mainmenu a {
+  display: block;
+  background-color: #CCC;
+  text-decoration: none;
+  padding: 10px;
+  color: #000;
+  border-radius: 1vw;
+}
+
+.MenuButton{
+	display: block;
+	background-color: #CCC;
+	text-decoration: none;
+	padding: 8px;
+	color: black;
+	left: 0;
+	position: initial;
+	/* background-image: none; */
+	border-style: none;
+	border-radius: 1vw;
+	text-align: center;
+	font-size: 5vw;
+	width: 100%;
+}
+.MenuButton:hover {
+	display: block;
+	background-color: #CCC;
+	text-decoration: none;
+	padding: 10px;
+	color: #000;
+	background-image: none;
+}
+/* add hover behaviour */
+ .mainmenu a:hover {
+    background-color: #C5C5C5;
+}
+
+
+/* when hovering over a .mainmenu item,
+  display the submenu inside it.
+  we're changing the submenu's max-height from 0 to 200px;
+*/
+
+ .mainmenu li:hover .submenu,
+ .mainmenu li:active .submenu,
+ .mainmenu li:focus .submenu
+  {
+  display: block;
+  max-height: 200px;
+}
+
+/*
+  we now overwrite the background-color for .submenu links only.
+  CSS reads down the page, so code at the bottom will overwrite the code at the top.
+*/
+
+ .submenu a {
+  background-color: transparent;
+}
+
+/* hover behaviour for links inside .submenu */
+ .submenu a:hover {
+  background-color: #666;
+}
+
+.submenu li{
+	left: 0vw;
+	border-radius: 4vw;
+	background-color: lightgray;
+}
+
+
+/* this is the initial state of all submenus.
+  we set it to max-height: 0, and hide the overflowed content.
+*/
+  .submenu {
+  overflow: hidden;
+  max-height: 0;
+  /* left: 5vw; */
+  /* height: 11vw; */
+  background-color: #d6d8f3;
+  -webkit-transition: all 0.5s ease-out;
+  }

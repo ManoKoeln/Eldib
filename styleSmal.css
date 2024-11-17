@@ -1,0 +1,176 @@
+.root{
+    --AllFont: 0.8;
+    --AllFontSmal: 0.8;
+    --FontSize: 0.8;
+    --FontSizeSmal: 0.8;
+}
+h1{
+    text-align: center;
+    font-size: 3vw;
+}
+h2 {
+    color: green;
+    text-align: center;
+    font-size: 2vw;
+    }
+    #Auswahl{
+        height: 3vw;
+        font-size: 1vw;
+        text-align: center;
+        /* justify-content: center; */
+        border-radius: 1vw;
+    }
+
+.ButtonHelp{
+    /* background-color: yellow; */
+    position: absolute;
+    left: 80%;
+    top: 7%;
+    color: yellow;
+}
+.ZielStufe{
+    font-weight: bold;
+}
+.ButtonHelp a{
+    color: yellow;
+}
+
+#SelectClient{
+    font-size: 1.5vw;
+    top: 19%;
+    height: 4em;
+    border-radius: 1em;
+    position: absolute;
+    top: 5%;
+}
+.TabContent{
+    background-color: aqua;
+    padding: 1vw;
+}
+.TabContent1{
+    background-color: rgb(158, 158, 255);
+    padding: 1vw;
+}
+.TabContent2{
+    background-color: rgb(255, 158, 158);
+    padding: 1vw;
+}
+.TabContent3{
+    background-color: rgb(158, 255, 158);
+    padding: 1vw;
+}
+.TabContent4{
+    background-color: rgb(158, 158, 158);
+    padding: 1vw;
+}
+.Stichwörter{
+    width: 42%;
+    left: 7%;
+    padding: 0px;
+    margin: 0px;
+    font-size: calc(var(--AllFont)*1);
+}
+.StichwörterDesc{
+    height: 2vw;
+}
+.ZielBeschreibung{
+    width: 40%;
+}
+.ZielNummer{
+    width: 10%;
+}
+.option1{
+    background-color: lightgray;
+}
+.option2{
+    background-color: gray;
+}
+.option3{
+    background-color: black;
+    color: white;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+button{
+    justify-content: center;
+    height: 2vw;
+    width: 6vw;
+}
+.Assessors{
+    left: 40%;
+    top: 10%;
+    display: none;
+    z-index: 12;
+    box-sizing: border-box;
+    float: none;
+    position: absolute; /*dafür muss das parent- element auf relativ stehen*/
+    height: 20%;
+    background-color: lightgray;
+    width: 26%;
+    overflow: hidden;
+}
+.Assessors div{
+    float: none;
+}
+
+.SelectionButton{
+    height: 8vw;
+    width: 35vw;
+    margin: 1vw;
+    background-color: chartreuse;
+    border-radius: 1.5vw;
+    left: 0;
+}
+.ButtonBack{
+    height: calc(3 * var(--FontSizeSmal));
+    width: calc(2 * var(--FontSizeSmal));
+    /* margin: 1vw; */
+    /* background-color: chartreuse; */
+    /* border-radius: calc(var(--FontSizeSmal)*2); */
+    /* position: absolute; */
+    /* left: 1%; */
+    /* top: 3%; */
+    font-size: var(--FontSizeSmal);
+}
+.ClientSelection{
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 16%;
+    top: 21%;
+    margin-left: 1vw;
+}
+.AktualClient{
+    box-sizing: border-box;
+    position: absolute;
+    float: left;
+    width: 99%;
+    margin-left: 1vw;
+    /* height: 25%; */
+    top: 38%;
+}
+.AktualClient div{
+    float: none;
+}
+div{
+    float: none;
+}
+.rightSite{
+    box-sizing: border-box;
+    position: absolute;
+    float:left;
+    width: 50%;
+    margin: 0;
+    /* right: 50%; */
+    left: 45%;
+    top: 20%;
+}
+.tdELDiBHistory{
+    background-color: #e1ffcd;
+    border-style: groove;
+    padding: 1vw;
+}

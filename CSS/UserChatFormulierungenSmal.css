@@ -1,0 +1,147 @@
+#MyUserChatFormulierungen{
+    display: none;
+    box-sizing: border-box;
+    float: none;
+    position: absolute; /*dafür muss das parent- element auf relativ stehen*/
+    top: 12%;
+    left: 0%;
+    z-index: 9;
+    background-color:white;
+    width: 100%;
+    height: 84%;
+    overflow: hidden;
+}
+#MyUserChatFormulierungenText {
+    box-sizing: border-box;
+    float: none;
+    width: 100%;
+    height: 85.5%;
+}         
+.MyUserChatFormulierungenHead1{
+    width: 98%;
+    /* background-color: lightblue; */
+    margin-left: 1%;
+    background:#FADCEF;
+    border: 0px;
+    border-radius: 0.5vw;
+    border-style:groove;
+    border-color: gray;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: calc(var(--FontSizeSmal)*6);
+    text-align: center;
+    margin-bottom: 0.5vw;
+    font-weight: bold;
+}
+.MyUserChatFormulierungenHead2{
+    width: 49%;
+    margin-left: 1%;
+    /* background-color: lightblue; */
+    background:#C4FF0E;
+    border: 0px;
+    border-radius: 0.5vw;
+    border-style:groove;
+    border-color: gray;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: calc(var(--FontSizeSmal)*4);
+    text-align: center;
+    margin-bottom: 0.5vw;
+}
+.MyUserChatFormulierungenDiv1{
+    overflow: auto;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    margin-left: 1%;
+    width: 98%;
+    height: 93%;
+    /* border: solid 2px;
+    border-color: black; */
+}
+.MyUserChatFormulierungenDiv2{
+    overflow: auto;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    margin-left: 1%;
+    width: 49%;
+    height: 93%;
+    /* border: solid 2px;
+    border-color: black; */
+}
+.MyUserChatFormulierungenDiv3{
+    overflow: auto;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    margin-left: 1%;
+    width: 49%;
+    height: 7%;
+    /* border: solid 2px;
+    border-color: black; */
+}
+.MyUserChatFormulierungenTable{
+    box-sizing: border-box;
+    position: relative;
+    background-color: lightgray;
+    width: 100%;
+}
+.MyChatButton{
+    float: left;
+    margin-left: 2vw;
+    left: 5vw;
+    background-color: gray;
+    position: relative;
+    color: black;
+    border-color: white;
+    border-radius: 0.5vw;
+    width: 10vw;
+    height: 2vw;
+    background-image: linear-gradient(gray, lightgray);
+    font-size: calc(var(--FontSizeSmal)*1);
+}
+.button-group {
+    display: flex;
+ }
+ .button-group button {
+    font-size: calc(var(--FontSizeSmal)*4);
+    border: 0;
+ }
+.MyChatButton:hover{
+    background-image: linear-gradient(lightgray, gray);
+}
+
+
+.UserChatFormulierungenSection{
+    border: 4px;
+    border-radius: 0.5vw;
+    border-style:groove;
+    border-color: lightgray;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+ 
+}
+.UserChatFormulierungenSection:hover{
+    border: 4px;
+    border-style:outset;  
+    border-color: gray;
+} 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+
+
+.UserChatFormulierungenClose{
+    position: absolute;
+    left: 47%;
+    top: 88%;
+    width: 21vw;
+    height: 8vw;
+    background-image: linear-gradient(blue, black);
+    color: yellow;
+    font-size: calc(var(--FontSizeSmal)*3);
+    border-radius: 2vw;
+}
+tr{
+    width: 20%;
+}
+td{
+    width: 15%;
+}
+.TabSection{
+    width: 50%;
+}

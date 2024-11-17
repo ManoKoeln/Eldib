@@ -1,0 +1,158 @@
+.container{width: 100%;height: 100%;position: absolute;}
+#MyPopUp{
+    box-sizing: border-box;
+    float: none;
+    position: relative; /*dafür muss das parent- element auf relativ stehen*/
+    /* justify-content: center; */
+    display: none;
+    /* display: contents; */
+    top: 12%;
+    left: 0%;
+    z-index: 10;
+    background-color: lightgray;
+    width: 100%;
+    height: 84%;
+}
+#MyPopUpText1{
+    /* float:unset;
+    box-sizing: border-box; */
+    box-sizing: border-box;
+    /* border: 2px; */
+    color: blue;
+    position: relative;
+    left: 2%;
+    top: 5%;
+    width: 98%;
+    height: 90%;
+}
+.PopUpQuestion{
+    color: red;
+    text-shadow: 2px;
+}
+.PopUpText{
+    box-sizing: border-box;
+	width: 100%;
+	height: 50%;
+    border: 3px ridge red;
+	position:relative; 
+	float:left; 
+	background:#FADCEF;
+	 padding: 5px;	
+	 font-size: var(--FontSize);
+	 overflow-wrap: break-word;
+}
+.FormSetup{
+    float: left;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    /* inline-size: auto; */
+    /* margin: 10%; */
+    /* padding-block: unset; */
+    padding: center;
+    padding: 3vw;
+    /* margin: 4vw; */
+}
+.FormSetup input{
+    padding: 3vw;
+    font-size: calc(var(--FontSize)*2);
+    margin: 1vw;
+    size: 2vw;
+    height: 1vw;
+}
+.SetupButtonClose{
+    float: left;
+    top: 83%;
+    left: 40%;
+    position: absolute;
+}
+.SetupButtonTakeOver{
+    float: left;
+    top: 60%;
+    margin: 0;
+}
+.SetupButtonPW{
+    float: left;
+    top: 66%;
+    left: 40%;
+    position: absolute;
+}
+
+.PopUpDiv1{    
+box-sizing: border-box;    
+width: 48%;    
+height: 100%;    
+position: absolute;
+}
+.PopUpDiv2{
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 48%;
+    height: 100%;
+    position: relative;
+}
+
+/* textarea{
+    box-sizing: border-box;
+    justify-content: center;
+    width: 100%;
+    height: 12vw;
+} */
+.PopUpText{
+    box-sizing: border-box;
+	width: 100%;
+
+	/* height: 2em; */
+	background: #FADCEF; 
+	padding: 15px; 
+	margin: 0em;
+    border-radius: 0.5vw;
+}
+.PopUpInfoText{
+    box-sizing: border-box;
+    position: relative;
+	width: 50%;
+
+	height: 0.5vw;
+	background: #34f1e8; 
+	padding: 5px; 
+	margin: 0em;
+    border-radius: 0.5vw;
+}
+.PopUpInfoDiv1{
+text-decoration-line: underline;
+    width: 60%;
+}
+.PopUpInfoDiv2{
+    text-align: right;
+    width: 40%;
+}
+
+.PopUpTabel {
+    box-sizing: border-box;
+    position: relative;
+    background-color: lightgray;
+    width: 100%;
+}
+#sendchat{
+	height: 2vw;
+	width: 3vw;
+	margin: 1vw;
+}
+#sendpost{
+	/* size: 2vw; */
+	height: 2vw;
+	width: 3vw;
+	margin: 1vw;
+}
+textarea{
+    font-size: calc(var(--FontSize)*1.5);
+    height: 15vw;
+}
+.CheckTable{top: 10%;font-size: calc(var(--FontSize)*2);background-color: transparent;width: 100%;}
+.CheckTab{width: 20%;margin: 2%;}
+.CheckDescription{width: 80%;text-align: left;font-size: calc(var(--FontSize)*1);
+}
+#changePW{
+    display: none;
+}

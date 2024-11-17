@@ -1,0 +1,48 @@
+#changePW{
+    box-sizing: border-box;
+    float: none;
+    position: absolute; /*dafür muss das parent- element auf relativ stehen*/
+    /* justify-content: center; */
+    display: none;
+    top: 12%;
+    left: 0%;
+    z-index: 16;
+    background-color: lightgray;
+    width: 100%;
+    height: 84%;
+}
+#changePW h1{
+    position: absolute;
+    /* float: unset; */
+    /* align-items: center; */
+    /* left: 39%; */
+}
+#changePW button{
+    left: 0%;
+}
+
+.FormchangePW{
+    float:left;
+    position: relative;
+    top: 20%;
+    left: 30%;
+    align-self: center;
+}
+.FormchangePW button{
+    position: initial;
+    margin: 1vw;
+    /* align-content: center; */
+    /* left: 0%; */
+    /* left: 0%; */
+}
+
+.FormchangePW input{
+    margin: 1vw;
+    width: 20vw;
+
+}
+.changePWButtonClose{
+    position: absolute;
+    top: 45%;
+    left: 40%;
+}

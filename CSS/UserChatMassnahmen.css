@@ -1,0 +1,112 @@
+#MyUserChatMassnahmen{
+    display: none;
+    box-sizing: border-box;
+    float: none;
+    position: absolute; /*dafür muss das parent- element auf relativ stehen*/
+    top: 16%;
+    /* left: 0%; */
+    z-index: 9;
+    background-color:white;
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+}
+#MyUserChatMassnahmenText {
+    box-sizing: border-box;
+    float: none;
+    width: 95%;
+    height: 85.5%;
+}         
+.MyUserChatMassnahmenHead2{
+    width: 93%;
+    /* background-color: lightblue; */
+    margin-left: 2%;
+    background:#FADCEF;
+    border: 0px;
+    border-radius: 0.5vw;
+    border-style:groove;
+    border-color: gray;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: calc(var(--FontSize)*2);
+    text-align: center;
+    margin-bottom: 0.5vw;
+    /* width: 98%; */
+    /* margin-left: 2%; */
+}
+.MyUserChatMassnahmenDiv2{
+    overflow: auto;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    margin-left: 1%;
+    width: 98%;
+    height: 93%;
+    margin-left: 2%;
+}
+.MyUserChatMassnahmenDiv3{
+    overflow: auto;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    margin-left: 1%;
+    width: 49%;
+    height: 7%;
+    /* border: solid 2px;
+    border-color: black; */
+}
+.MyUserChatMassnahmenTable{
+    box-sizing: border-box;
+    position: relative;
+    background-color: lightgray;
+    width: 100%;
+}
+.MyChatButton{
+    float: left;
+    margin-left: 2vw;
+    left: 5vw;
+    background-color: gray;
+    position: relative;
+    color: black;
+    border-color: white;
+    border-radius: 0.5vw;
+    width: 10vw;
+    height: 2vw;
+    background-image: linear-gradient(gray, lightgray);
+    font-size: 1vw;
+}
+.button-group {
+    display: flex;
+ }
+ .button-group button {
+    font-size: calc(var(--FontSize)*2);
+    border: 0;
+ }
+.MyChatButton:hover{
+    background-image: linear-gradient(lightgray, gray);
+}
+
+
+.UserChatMassnahmenSection{
+    border: 4px;
+    border-radius: 0.5vw;
+    border-style:groove;
+    border-color: lightgray;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+ 
+}
+.UserChatMassnahmenSection:hover{
+    border: 4px;
+    border-style:outset;  
+    border-color: gray;
+} 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+
+
+.UserChatMassnahmenClose{
+    position: absolute;
+    left: 47%;
+    top: 91%;
+    width: 10vw;
+    height: 2vw;
+    background-image: linear-gradient(blue, black);
+    color: yellow;
+}

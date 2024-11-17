@@ -1,0 +1,77 @@
+/* #Name{padding: 1vw;border-radius: 0.4vw;position: absolute;} */
+/* #Vorname{
+    padding: 1vw;    
+}
+#Birthday{
+    padding: 1vw;    
+}
+#email{
+    padding: 1vw;  
+}
+#ParentName{
+    padding: 1vw; 
+}
+#ParentVorname{
+    padding: 1vw; 
+}
+#Parentemail{
+    padding: 1vw;
+} */
+.NewClientbutton{
+    margin: auto;
+    transform: translateX(30%);
+    width: 100%;
+    /* position: absolute; */
+    /* height: 10%; */
+    padding: 1%;
+    left: 1%;
+}
+.NewClientbutton button{
+    width: 24%;
+    height: 4%;
+}
+.NewClientInside{
+    position: relative;
+    background-color: lightgray;
+    border-radius: 1vw;
+    margin: auto;
+    width: 97%;
+    height: 82%;
+    /* padding: 2%; */
+    /* margin: auto; */
+}
+.NewClientInside form{
+    margin: auto;
+}
+.NewClientInside h4{
+    font-weight: bold;
+    text-align: center;
+}
+.FormContent{
+    /* background-color: azure; */
+    padding: 1vw;
+    font-size: calc(var(--AllFont)*1);
+    height: 2vw;
+    /* margin: auto; */
+}
+input{
+    border-radius: 0.4vw;
+    /* padding-left: 10VW; */
+    left: 10vw;
+    position: absolute;
+    height: 7.5vw;
+    left: 30%;
+    width: 48%;
+}
+.FormContent {
+    /* border-radius: 0.8vw; */
+    font-size: calc(var(--AllFont)*1);
+    padding: 1%;
+    /* margin: 1%; */
+    /* left: auto; */
+    /* top: auto; */
+    /* position: fixed; */
+    width: 100%;
+    height: 8%;
+}
+

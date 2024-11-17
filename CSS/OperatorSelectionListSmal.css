@@ -1,0 +1,37 @@
+#OperatorSelection{
+    display: none;
+    z-index: 12;
+    position: absolute;
+    background-color: aliceblue;
+    height: 59%;
+    width: 38%;
+    left: 1%;
+    top: 19%;
+    padding: 1%;
+    border-radius: 1vw;
+}
+.FormContent{
+    /* background-color: azure; */
+    padding: 1vw;
+    font-size: calc(var(--AllFont)*1);
+    height: 1vw;
+}
+input{
+    border-radius: 0.4vw;
+    /* padding-left: 10VW; */
+    left: 10vw;
+    position: relative;
+    height: 1.5vw;
+    left: 30%;
+    width: 48%;
+}
+.FormContent {
+    /* border-radius: 0.8vw; */
+    height: 10%;
+    overflow: hidden;
+    /* height: calc(var(--FontSize)*2); */
+    font-size: calc(var(--AllFont)*1);
+}
+
+
+

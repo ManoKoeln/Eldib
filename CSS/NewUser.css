@@ -1,0 +1,68 @@
+.FormContent{
+    padding: 2px;
+}
+.NewUser{
+    display: none;
+    z-index: 12;
+    box-sizing: border-box;
+    float: none;
+    position: absolute;
+    height: 96%;
+    background-color: #d3d3d366;
+    width: 100%;
+    /* justify-content: center; */
+    /* margin: auto; */
+}
+.NewUserError{
+    /* margin: auto; */
+    text-align: center;
+    padding: 17%;
+}
+.NewUserErrorButton{
+    /* margin: auto; */
+    /* position: relative; */
+    /* height: 2vw; */
+    /* width: auto; */
+    /* left: 0; */
+}
+.NewUserInside{
+    position: relative;
+    background-color: lightgray;
+    border-radius: 1vw;
+    margin: auto;
+    width: 39%;
+    height: 82%;
+}
+.NewUserInside h4{
+    font-weight: bold;
+    text-align: center;
+}
+.FormContent{
+    /* background-color: azure; */
+    padding: 1vw;
+    font-size: calc(var(--AllFont)*1);
+    height: 1vw;
+}
+input{
+    border-radius: 0.4vw;
+    /* padding-left: 10VW; */
+    left: 10vw;
+    position: relative;
+    height: 1.5vw;
+    left: 30%;
+    width: 48%;
+}
+
+.FormContent label{
+    width: 30%;
+    position: absolute;
+}
+.NewUserbutton{
+    /* -ms-transform: translateY(-50%); */
+    transform: translateX(30%);
+    margin: 0.5vw;
+}
+
+
+
+

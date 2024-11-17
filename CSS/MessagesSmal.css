@@ -1,0 +1,67 @@
+#Messages{
+    display: none;
+    box-sizing: border-box;
+    float: left;
+    position: absolute; /*dafür muss das parent- element auf relativ stehen*/
+    /* justify-content: center; */
+    /* display: block; */
+    /* display: contents; */
+    top: 12%;
+    left: 0%;
+    z-index: 12;
+    background-color: #c1e8e0;
+    width: 100%;
+    height: 84%;
+}
+/* h1{
+    
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2vw;
+    left: 50%;
+    text-align: left;
+} */
+.UserChatSend{
+    position: absolute;
+    top: 89%;
+}
+.MessagesInput{
+    height: 70%;
+    width: 90%;
+    font-size: calc(var(--FontSizeSmal)*2);
+    left: 10%;
+    top: 20%;
+}
+.MessagesInput form textarea{
+    font-size: calc(var(--FontSizeSmal)*5);
+    height: 97%;
+    width: 100%;
+}
+.containerMessage{
+	position:relative;
+	width: 100%;
+	left: 5%;
+	height: 100%;
+}
+.ButtonMessageSend{
+    top: 85%;
+    position: absolute;
+    left: 50%;
+    margin: 1vw;
+}
+.ButtonMessageClose{
+    top: 85%;
+    left: 0%;
+    position: absolute;
+    margin: 1vw;
+}
+#Messages h1{
+    color: black;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: calc(var(--FontSizeSmal)*4);
+    /* left: 50%; */
+    text-align: left;
+    padding: 1vw;
+    width: 100%;
+}

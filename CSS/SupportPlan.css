@@ -1,0 +1,247 @@
+.HeadData{
+    background-color: lightgray;
+}
+.ContentTable{
+    /* background-color: lightgray; */
+    background-color: rgb(245 244 244);
+    position: relative;
+    width: 100%;
+    /* border-style: ridge; */
+    margin: 0;
+    height: 2vw;
+    top: 10%;
+    /* left: 0; */
+}
+.ContentTableInhalt{
+    background-color: rgb(245 244 244);
+    /* position: absolute; */
+    width: 100%;
+    /* border-style: ridge; */
+    /* margin: 0; */
+    height: 64%;
+    /* min-height: 3vw; */
+    /* left: 0; */
+    top: 10%;
+    overflow: auto;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+}
+.ContentTableInhalt table{
+    min-width: 100%;
+}
+.ContentTable table{
+    min-width: 100%;
+}
+#CloseSelectSupportPlan{
+    position: absolute;
+    left: 25%;
+    top: -1%;
+    height: 4vw;
+    width: 11vw;
+}
+#SupportPlan{
+    display: none;
+    z-index: 10;
+    box-sizing: border-box;
+    float: none;
+    position: absolute;
+    background-color: antiquewhite;
+    height: 90%;
+    width: 100%;
+    margin: 0;
+}
+#SupportPlan div{
+    float: left;
+    position: relative;
+    width: 100%;
+    /* margin: 0; */
+}
+#CloseSelectSupportPlan{
+    display: none;
+}
+#SelectSupportPlan{
+    font-size: calc(var(--FontSize)*2);
+}
+.ContentTable tr{
+    border-style: groove;
+    /* background-color: red; */
+}
+.ContentTableInhalt tr{
+    border-style: groove;
+    width: 100%;
+    min-width: 100%;
+}
+.columnSupportHead1{
+    width: 25%;
+    box-sizing: border-box;
+    /* width: 100%; */
+    height: 50%;
+    position: relative;
+    float: left;
+    left: 0;
+    margin: 0;
+}
+.columnSupportHead2{
+    width: 25%;
+    left: 20%;
+    /* position: relative; */
+    box-sizing: border-box;
+    /* width: 100%; */
+    height: 50%;
+    position: relative;
+    float: left;
+    margin: 0;
+}
+.columnSupportHead3{
+    width: 25%;
+    box-sizing: border-box;
+    /* width: 100%; */
+    height: 50%;
+    position: relative;
+    float: left;
+    left: 45%;
+}
+.columnSupportHead4{
+    width: 24%;
+    box-sizing: border-box;
+    /* width: 100%; */
+    height: 50%;
+    position: relative;
+    float: left;
+    left: 67%;
+}
+.columnSupport1{
+    width: 24%;
+    position: relative;
+    float: left;
+    margin: 0;
+    /* left: 0; */
+    border-top-style: groove;
+    display: flex;
+    /* border-right-style: groove; */
+}
+.columnSupport2{
+    width: 25%;
+    position: relative;
+    float: left;
+    margin: 0;
+    /* left: 1%; */
+    border-left-style: groove;
+    border-top-style: groove;
+    /* border-right-style: groove; */
+    display: flex;
+}
+.columnSupport3{
+    width: 25%;
+    position: relative;
+    float: left;
+    margin: 0;
+    left: 0;
+    border-left-style: groove;
+    border-top-style: groove;
+    display: flex;
+}
+.columnSupport4{
+    width: 24%;
+    position: relative;
+    float: left;
+    margin: 0;
+    left: 0;
+    border-left-style: groove;
+    border-top-style: groove;
+    display: flex;
+}
+.TabInhalt{/* padding: 1vw; */} 
+.TabEmpty{
+    height: 2vw;
+    min-width: 24%;
+}
+
+
+.columnSupportTextarea{
+    font-family: sans-serif;
+    /* margin: 0; */
+    padding: 1vw;
+    /* margin: 0px; */
+    border: 0;
+} 
+.columnSupportdiv{
+    width: 100%;
+    border-radius: 0;
+    overflow: hidden;
+    font-family: sans-serif;
+    height: 2vw;
+}
+
+.heading{
+    font-weight: bold;
+    font-size: calc(var(--FontSize)*2);
+    /* height: auto; */
+    left: 0;
+    /* position: relative; */
+    /* margin: 0; */
+}
+.NewLineSupportButton{
+    /* background-color: aqua; */
+    position: absolute;
+    top: 90%;
+}
+.NewLineButtontr{
+    display: inline-grid;
+}
+/* #NewSupportPlan{
+    display: none;
+}
+#SaveSupportPlan{
+    display: none;
+} */
+.SaveSupportPlanButton{
+    height: 3vw;
+    margin: 1vw;
+}
+#SupportPlanForm{
+    display: none;
+    z-index: 16;
+    box-sizing: border-box;
+    position: absolute;
+    height: 10vw;
+    width: 100%;
+    background-color: aqua;
+    top: 41%;
+}
+.SupportPlanFormular{
+    /* position: relative; */
+    /* width: 100%; */
+    height: auto;
+}
+#SupportPlanFormRow1{
+    width: 25%;
+    /* height: auto; */
+    position: inherit;
+    border-radius: 0;
+}
+#SupportPlanFormRow2{
+    width: 25%;
+    /* height: auto; */
+    position: inherit;
+    border-radius: 0;
+}
+#SupportPlanFormRow3{
+    width: 25%;
+    /* height: auto; */
+    position: inherit;
+    border-radius: 0;
+}
+#SupportPlanFormRow4{
+    width: 25%;
+    /* height: auto; */
+    position: inherit;
+    border-radius: 0;
+}
+.NewLineButtontd{
+    
+}
+.SaveSupportPlanFromData{position: relative;width: 100%;}
+.columnSupportDeleteButton{
+    width: 4vw;
+}
