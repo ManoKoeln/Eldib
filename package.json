@@ -1,0 +1,24 @@
+{
+  "name": "eldib",
+  "version": "1.0.0",
+  "description": "",
+  "main": "ELDiBEltern.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "tailwindcss -i ./src/styles.css -o ./dist/styles.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ManoKoeln/Eldib.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ManoKoeln/Eldib/issues"
+  },
+  "homepage": "https://github.com/ManoKoeln/Eldib#readme",
+  "dependencies": {
+    "tailwindcss": "^3.4.15"
+  }
+}
