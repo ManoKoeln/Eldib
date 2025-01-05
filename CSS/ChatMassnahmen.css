@@ -114,10 +114,10 @@ button{
     /* position: absolute; */
     /* left: 47%; */
     /* top: 25%; */
-    width: 10vw;
-    height: 2vw;
-    background-image: linear-gradient(blue, black);
-    color: yellow;
+    /* width: 10vw; */
+    /* height: 2vw; */
+    /* background-image: linear-gradient(blue, black); */
+    /* color: yellow; */
 }
 
 /* button:hover{ */

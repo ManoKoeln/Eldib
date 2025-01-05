@@ -1,7 +1,7 @@
 function ChangedSelectionSchool(){
     
     let school = document.getElementById("SelectSchool").value; 
-    console.log("Start ChangedSelectionSchool =" + school);    
+    console.log("[index.js] Start ChangedSelectionSchool =" + school);    
     if (window.XMLHttpRequest){ xmlhttp=new XMLHttpRequest(); } else { xmlhttp=new ActiveXObject("Microsoft.XMLHTTP"); }
   xmlhttp.onreadystatechange=function()
   {

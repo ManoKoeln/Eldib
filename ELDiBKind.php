@@ -8,6 +8,9 @@
 </html> -->
 
 <?php
+if (session_status() == PHP_SESSION_NONE) {
+  session_start(); // Starten der Session nur, wenn keine Session aktiv ist
+}
 $Stichwort = " stichwort";
 include("content/db.php");
 include_once("content/helpers.php");

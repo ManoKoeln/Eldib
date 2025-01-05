@@ -91,9 +91,9 @@ body{
 
 
 button{
-    justify-content: center;
-    height: 2vw;
-    width: 6vw;
+    /* justify-content: center; */
+    /* height: 2vw; */
+    /* width: 6vw; */
 }
 .Assessors{
     left: 40%;

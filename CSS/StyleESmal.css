@@ -334,17 +334,17 @@ img
 	padding-right: 0vw;
 }
 button{
-	position: relative;
-	font-size: calc(var(--FontSizeSmal)*2);
-	border-radius: 0.5vw;
-	height: 11vw;
-	width: 25vw;
-	height: calc(2vw * var(--fontsizesmal));
-	width: calc(2vw * var(--fontsizesmal));
-	border-radius: 1vw;
-	margin: 0vw;
-	top: 42%;
-	left: 27%;
+	/* position: relative; */
+	/* font-size: calc(var(--FontSizeSmal)*2); */
+	/* border-radius: 0.5vw; */
+	/* height: 11vw; */
+	/* width: 25vw; */
+	/* height: calc(2vw * var(--fontsizesmal)); */
+	/* width: calc(2vw * var(--fontsizesmal)); */
+	/* border-radius: 1vw; */
+	/* margin: 0vw; */
+	/* top: 42%; */
+	/* left: 27%; */
 }
 .ButtonDelete {
 	
