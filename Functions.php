@@ -1,7 +1,14 @@
     <script src="Myjs.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
     <link href="CSS/header.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" media="screen and (max-aspect-ratio: 4/3)" href="CSS/headerSmal.css" />
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <?php
+if (session_status() == PHP_SESSION_NONE) {
+  session_start(); // Starten der Session nur, wenn keine Session aktiv ist
+}
     $OperatorReadWrite[] = "";
     $OperatorReadOnly[] = "";
     // if(!isset($_SESSION["username"])){
@@ -58,32 +65,32 @@ if ( isset($_GET['SetClient']) ){
     $_SESSION["Parentemail"] = $zeile['Parentemail'] ;
     $Inhalt = "";
     // $Inhalt = $Inhalt .  '</form>';
-    $Inhalt = $Inhalt . '<div>';
+    $Inhalt = $Inhalt . '<div class="row mb-1 ml-1">';
     // $Inhalt = $Inhalt . 'Name : ('.$zeile['id'].'),'.$zeile['Name'].', '.$zeile['Vorname'].' ';
     $Inhalt = $Inhalt . 'Name : '.$zeile['Name'].', '.$zeile['Vorname'].' ';
     $Inhalt = $Inhalt .  '</div>';
-    $Inhalt = $Inhalt . '<div>';
+    $Inhalt = $Inhalt . '<div class="row mb-1 ml-1">';
     $Inhalt = $Inhalt . 'Geburtsdatum : '.$zeile['Geburtsdatum'].' ';
     $Inhalt = $Inhalt .  '</div>';
-    $Inhalt = $Inhalt . '<div>';
+    $Inhalt = $Inhalt . '<div class="row mb-1 ml-1">';
     $Inhalt = $Inhalt . 'email : '.$zeile['email'].' ';
     $Inhalt = $Inhalt .  '</div>';
-    $Inhalt = $Inhalt . '<div>';
+    $Inhalt = $Inhalt . '<div class="row mb-1 ml-1">';
     $Inhalt = $Inhalt . 'Geburtsdatum : '.$zeile['Geburtsdatum'].' ';
     $Inhalt = $Inhalt .  '</div>';
-    $Inhalt = $Inhalt . '<div>_____________________________________________</div>';
-    $Inhalt = $Inhalt . '<div>';
+    $Inhalt = $Inhalt . '<div class="row mb-1 ml-1">_____________________________________________</div>';
+    $Inhalt = $Inhalt . '<div class="row mb-1 ml-1">';
     $Inhalt = $Inhalt . 'Eltern : '.$zeile['Parentvorname'].'  '.$zeile['Parentname'].'  ';
     $Inhalt = $Inhalt .  '</div>';
-    $Inhalt = $Inhalt . '<div>';
+    $Inhalt = $Inhalt . '<div class="row mb-1 ml-1">';
     $Inhalt = $Inhalt . 'email Eltern : '.$zeile['Parentemail'].' ';
     $Inhalt = $Inhalt .  '</div>';
-    // $Inhalt = $Inhalt .  '<div><button typ="button" class="SelectionButton" onclick="ShowELDiBLehrer();">ELDiB Lehrer</button></div><div><button>einladen</button>';
-    $Inhalt = $Inhalt .  '<div><button typ="button" class="SelectionButton" onclick="ShowELDiBLehrer();">ELDiB Lehrer</button><button onclick="OperatorSelectionShow();">einladen</button>';
-    $Inhalt = $Inhalt .  '<div><button typ="button" class="SelectionButton" onclick="ShowELDiBKind();">ELDiB Kind</button></button><button onclick="ShowEmailKind();">Email Einladung</button></div>';
-    $Inhalt = $Inhalt .  '<div><button typ="button" class="SelectionButton" onclick="ShowELDiBEltern();">ELDiB Eltern</button><button onclick="ShowEmailEltern();">Email Einladung</button></div>';
-    $Inhalt = $Inhalt .  '<div><button typ="button" class="SelectionButton" onclick="ShowSupportPlan();">Förderplan</button></div>';
-    $Inhalt = $Inhalt .  '<div><button typ="button" class="SelectionButton" onclick="ShowELDiBLehrer_New();">ELDiB Lehrer New</button>';
+    // $Inhalt = $Inhalt .  '<div><button typ="button" class="btn btn-outline-primary btn-sm" onclick="ShowELDiBLehrer();">ELDiB Lehrer</button></div><div><button>einladen</button>';
+    $Inhalt = $Inhalt .  '<div class="row mb-1 ml-1 justify-content-left"><button typ="button" class="btn btn-outline-primary btn-sm" onclick="ShowELDiBLehrer();">ELDiB Lehrer</button><button onclick="OperatorSelectionShow();">einladen</button></div>';
+    $Inhalt = $Inhalt .  '<div class="row mb-1 ml-1 justify-content-left"><button typ="button" class="btn btn-outline-primary btn-sm" onclick="ShowELDiBKind();">ELDiB Kind</button></button><button onclick="ShowEmailKind();">Email Einladung</button></div>';
+    $Inhalt = $Inhalt .  '<div class="row mb-1 ml-1 justify-content-left"><button typ="button" class="btn btn-outline-primary btn-sm" onclick="ShowELDiBEltern();">ELDiB Eltern</button><button onclick="ShowEmailEltern();">Email Einladung</button></div>';
+    $Inhalt = $Inhalt .  '<div class="row mb-1 ml-1 justify-content-left"><button typ="button" class="btn btn-outline-primary btn-sm" onclick="ShowSupportPlan();">Förderplan</button></div>';
+    $Inhalt = $Inhalt .  '<div class="row mb-1 ml-1 justify-content-left"><button typ="button" class="btn btn-outline-primary btn-sm" onclick="ShowELDiBLehrer_New();">ELDiB Lehrer New</button>';
     echo $Inhalt;
   }
 }

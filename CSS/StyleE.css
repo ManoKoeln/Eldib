@@ -377,8 +377,8 @@ img
 }
 button{
 	/* position: relative; */
-	font-size: var(--FontSize);
-	border-radius: 0.5vw;
+	/* font-size: var(--FontSize); */
+	/* border-radius: 0.5vw; */
 }
 .ButtonDelete {
 	

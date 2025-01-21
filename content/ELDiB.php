@@ -1,5 +1,7 @@
 <?php
-
+if (session_status() == PHP_SESSION_NONE) {
+    session_start(); // Starten der Session nur, wenn keine Session aktiv ist
+}
 include ("db.php");
 // $_SESSION["userid"] = 1;
 // $_SESSION["username"] = "mano";

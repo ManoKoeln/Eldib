@@ -4,6 +4,9 @@
 <div id="SupportPlan">
 </div>
     <?php
+    if (session_status() == PHP_SESSION_NONE) {
+      session_start(); // Starten der Session nur, wenn keine Session aktiv ist
+  }
     $SupportplanNotSaved = 1;
 if ( isset($_GET['SetSupportPlan']) ){
     require ("content/db.php");

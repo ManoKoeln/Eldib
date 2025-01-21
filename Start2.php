@@ -1,5 +1,8 @@
+
 <?php
+session_start(); // Starten der Session
 $Sessioncounter = 0;
+// echo '<script>console.log("Start2Test run: pw ok" + ' . json_encode($_SESSION["username"]) . ');</script>';
 if(!isset($_SESSION["username"])){
   echo "<h1>Der Login ist fehlgeschlagen für User: ".$_SESSION["username"]."</h1>";
     session_destroy();
@@ -78,6 +81,7 @@ if(isset($_SESSION['screen_width']) AND isset($_SESSION['screen_height'])){
   $_SESSION['screen_height'] = $_REQUEST['height'];
   header('Location: ' . $_SERVER['PHP_SELF']);
 } else {
+  echo '<script>console.log("Neues Endgerät hinzugefügt: '.$_SERVER['HTTP_USER_AGENT'].'");</script>';
   echo '<script type="text/javascript">window.location = "' . $_SERVER['PHP_SELF'] . '?width="+screen.width+"&height="+screen.height;</script>';
 }
 }
@@ -109,22 +113,22 @@ if(isset($_SESSION['screen_width']) AND isset($_SESSION['screen_height'])){
     <script src="EmailEltern.js"></script>
     <!-- <script src="NewClient.js"></script> -->
     <?php
-         require ("content/db.php");
-         include("content/helpers.php");
-         include("NewClient.php");
-         include("NewUser.php");
-         include("Assessors.php");
-         include("ELDiBEltern.php");
-         include("ELDiBLehrer.php");
-         include("ELDiBLehrer_New.php");
-        include("ELDiBKind.php");
-        include("SupportPlan.php");
-        include("SupportPlanForm.php");
-        include("content/ELDiB.php");
-        include("OperatorSelectionList.php");
+         require "content/db.php";
+         include "content/helpers.php";
+         include "NewClient.php";
+         include "NewUser.php";
+         include "Assessors.php";
+         include "ELDiBEltern.php";
+         include "ELDiBLehrer.php";
+         include "ELDiBLehrer_New.php";
+        include "ELDiBKind.php";
+        include "SupportPlan.php";
+        include "SupportPlanForm.php";
+        include "content/ELDiB.php";
+        include "OperatorSelectionList.php";
         
-        include("EmailKind.php");
-        include("EmailEltern.php");
+        include "EmailKind.php";
+        include "EmailEltern.php";
         ?>
 </head>
 

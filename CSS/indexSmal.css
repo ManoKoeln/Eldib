@@ -3,6 +3,7 @@ header{
     justify-content: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     /* flex-direction: row; */
+    /* height: 20%; */
 }
 .HeaderL1{
     position: relative;
@@ -18,8 +19,9 @@ h1{
     position: fixed;
     top: 0%;
     width: 100%;
-    text-align: center;
-    font-style: initial;
+    /* text-align: center; */
+    /* font-style: initial; */
+    /* margin: 0; */
 }
 
 h2{
@@ -56,9 +58,9 @@ h3{
     top: 30%;
 }
 form{
-    height: 50%;
+    height: 75%;
     position: absolute;
-    top: 50%;
+    top: 25%;
     width: 100%;
     align-items: center;
     text-align: center;
@@ -90,12 +92,12 @@ input{
     border-color: #e8f0fe;
     font-size: 4vw;
 }
-button{
+/* button{
     font-size: 2vw;
-    height: 15%;
+    /* height: 15%; */
     font-size: 6vw;
     background-color: #13ff00b5;
     width: 45%;
     border-radius: 2vw;
     border-color: #13ff00b5;
-}
+} */

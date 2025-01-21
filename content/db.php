@@ -10,6 +10,15 @@
   $user_name = 'dbu1855995';
   $password = 'ManoEtep:2000';
 
+  $host_name = 'localhost';
+  $database = 'dbs10487900';
+  $user_name = 'root';
+  // $user_name = 'admin';
+  // $password = 'ManoEtep:2000';
+  $password = 'MaNo:1926';
+
+
+
   $_SESSION["host_name"]=$host_name; 
   $_SESSION["database"]=$database; 
   $_SESSION["user_name"]=$user_name; 
