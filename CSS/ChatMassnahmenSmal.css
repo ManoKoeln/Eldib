@@ -101,11 +101,11 @@ text-decoration-line: underline;
     width: 40%;
 } */
 
-h2 {
+/* h2 {
     color: green;
     text-align: center;
-    }
-button{
+    } */
+/* button{
     position: absolute;
     left: 47%;
     top: 33%;
@@ -113,24 +113,24 @@ button{
     height: 2vw;
     background-image: linear-gradient(blue, black);
     color: yellow;
-}
+} */
 
-button:hover{
+/* button:hover{
     background-image: linear-gradient(rgb(12, 9, 54), blue);
-}
-button:before{
+} */
+/* button:before{
     content: attr(data-hover);
     visibility: hidden;
     opacity: 0;
     transition: opacity 1s ease-in-out;
-}
-button:hover:before{
+} */
+/* button:hover:before{
     /* https://sebhastian.com/html-hover-text/ */
     
-    opacity: 1;
+    /* opacity: 1;
     visibility: visible;
-}
-#ChatTextMassnahmen{
+} */
+#ChatTextMassnahmen{ 
     font-size: calc(var(--FontSizeSmal)*3);
     height: 30vw;
 }

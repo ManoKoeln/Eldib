@@ -23,32 +23,20 @@ height: 82%;
 }
 
 .EmailElternTextArea{
-
 position: relative;
-
 width: 90%;
-
 left: 5%;
-
 top: 7vw;
 }
 .EmailElternButtonClose{
-    
 position: relative;
-    
 left: 40%;
-    
 top: 10vw;
-    
 margin-top: 1vw;
 }
 .EmailElternButtonSend{
-    
 position: relative;
-    
 left: 40%;
-    
 top: 10vw;
-    
 /* margin-top: 1vw; */
     }

@@ -1,10 +1,10 @@
-.root{
+/* .root{
     --AllFont: 0.8;
     --AllFontSmal: 0.8;
     --FontSize: 0.8;
     --FontSizeSmal: 0.8;
-}
-h1{
+} */
+/* h1{
     text-align: center;
     font-size: 3vw;
 }
@@ -18,11 +18,10 @@ h2 {
         font-size: 1vw;
         text-align: center;
         /* justify-content: center; */
-        border-radius: 1vw;
-    }
+        /* border-radius: 1vw;
+    } */ 
 
-.ButtonHelp{
-    /* background-color: yellow; */
+/* .ButtonHelp{
     position: absolute;
     left: 80%;
     top: 7%;
@@ -33,12 +32,41 @@ h2 {
 }
 .ButtonHelp a{
     color: yellow;
+} */
+#EContent{
+    display: none;
+    z-index: 14;
+    box-sizing: border-box;
+    float: none;
+    position: absolute;
+    height: 90%;
+    width: 100%;
+    background-color: white;
 }
-
-#SelectClient{
+ #Div1{
+    display: none;
+    box-sizing: border-box;
+        position: absolute;
+        float: left;
+        width: 95%;
+        margin: 0em;
+        height: 7%;
+        overflow: auto;
+        overflow-x: hidden;
+        top: 19%;
+        padding-left: 5%;
+        left: 0;
+ }
+/* .form-select{
+    width: 100%;
+    height: 2vw;
+    font-size: 1vw;
+    text-align: center;
+} */
+/* #SelectClient{
     font-size: 1.5vw;
     top: 19%;
-}
+} */
 .TabContent{
     background-color: aqua;
     padding: 1vw;
@@ -90,11 +118,7 @@ body{
 }
 
 
-button{
-    /* justify-content: center; */
-    /* height: 2vw; */
-    /* width: 6vw; */
-}
+
 .Assessors{
     left: 40%;
     top: 10%;
@@ -138,18 +162,18 @@ button{
     top: 17%;
     margin-left: 1vw;
 }
-.AktualClient{
+/* .AktualClient{
     box-sizing: border-box;
     position:absolute;
     float:left;
     width: 50%;
     margin-left: 1vw;
-    /* height: 25%; */
     top: 21%;
 }
 .AktualClient div{
     float: none;
-}
+} */
+ 
 div{
     float: none;
 }
@@ -167,4 +191,28 @@ div{
     background-color: #e1ffcd;
     border-style: groove;
     padding: 1vw;
+}
+footer
+{
+	box-sizing: border-box;
+	position: absolute;
+	/* bottom: 0%; */
+	width: 100%;
+	height: 10%;
+	background: #F1F3F4;
+	top: 90%;
+	overflow: hidden;
+}
+.Footer1{
+	padding: 0.5vw;
+    position: relative;
+    float: left;
+    width: 80%;
+}
+.Footer2{
+	padding: 0.5vw;
+    position: relative;
+    text-align: right;
+    width: 0%;
+
 }

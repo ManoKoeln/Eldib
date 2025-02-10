@@ -33,7 +33,7 @@
 }
 #changePW button{
     left: 46%;
-    height: calc(var(--FontSizeSmal)*10);
+    /* height: calc(var(--FontSizeSmal)*10); */
 }
 
 .FormchangePW input{

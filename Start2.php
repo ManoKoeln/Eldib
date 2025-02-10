@@ -92,16 +92,16 @@ if(isset($_SESSION['screen_width']) AND isset($_SESSION['screen_height'])){
 <head>
     <title>ETEP</title>
 
-    <!-- <title>ETEP</title><button title="Help" class="ButtonHelp"><a target="_blank" href="https://youtu.be/a7MMDw8-H2E">Help ?</a></button> -->
-    <!-- <title>ETEP</title><button class="ButtonHelp"><a target="_blank" href="Video/ELDiB Bogen ausfüllen.mp4">Help ?</a></button> -->
     
-    <!-- <a href="https://youtu.be/NshsQsGGbus">Video 1</a> -->
-    
-    <link href="style.css" rel="stylesheet" type="text/css">
-    <link href="CSS/header.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" media="screen and (max-aspect-ratio: 4/3)" href="styleSmal.css" />
-    <link rel="stylesheet" media="screen and (max-aspect-ratio: 4/3)" href="CSS/headerSmal.css" />
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">     -->
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" media="screen and (max-aspect-ratio: 4/3)" href="css/styleSmal.css" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+     
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
+
+
     <script src="Myjs.js"></script>
     <script src="Operator.js"></script>
     <script src="ELDiBEltern.js"></script>
@@ -132,39 +132,55 @@ if(isset($_SESSION['screen_width']) AND isset($_SESSION['screen_height'])){
         ?>
 </head>
 
-<body>
+<!-- <body> -->
 <!-- <audio controls id="audioPlayer"></audio> -->
-<div class="ClientSelection">
-  <label for="SelectClient"> </label>
-      <select title="SelectClient" name="SelectClient" id="SelectClient" onchange="ChangedSelection()">
-      <option class="optionclient" value=0>Kind auswählen</option>
-      <?php
-      //aktuelles Kind eintragen
+<!-- <div class="ClientSelection"> -->
+<!-- <div class="container "> -->
+  <div class="row row-cols-md-2 ml-2" > <!-- Selection child -->
+    <div class="col-12 ml-2 ">
+    <div class="d-flex justify-content-between align-items-center">
+      <!-- <label for="SelectClient"> schüler auswählen</label> -->
+      <!-- <div class="row"> -->
+        <!-- <div class="col"> -->
+        
 
-      $db_link = new mysqli($_SESSION["host_nameSchool"], $_SESSION["user_nameSchool"], $_SESSION["passwordSchool"], $_SESSION["databaseSchool"]);
-    
-      $sql = "SELECT * FROM client ";
-      $db_erg = mysqli_query( $db_link, $sql );
-      if ( ! $db_erg )
-      {
-        $Inhalt = 'ungültige Bereich Abfrage client: Error message: %s\n'. $db_link->error;
-      }
-        while ($zeile = mysqli_fetch_assoc( $db_erg))
-      {
-        // echo '<option class="optionclient" value="'.$zeile['id'].'">('.$zeile['id'].'),'.$zeile['Name'].', '.$zeile['Vorname'].' - '.$zeile['Geburtsdatum'].'</option>';
-        echo '<option class="optionclient" value="'.$zeile['id'].'">'.$zeile['Name'].', '.$zeile['Vorname'].' - '.$zeile['Geburtsdatum'].'</option>';
-      }
-      ?>
-      </select>
-      <button type="button" onclick="NewClient();">Neu</button><br>
+          <select class="form-control" title="SelectClient" name="SelectClient" id="SelectClient" onchange="ChangedSelection()">
+            <option class="optionclient" value=0>Kind auswählen</option>
+            <?php
+            //aktuelles Kind eintragen
+
+            $db_link = new mysqli($_SESSION["host_nameSchool"], $_SESSION["user_nameSchool"], $_SESSION["passwordSchool"], $_SESSION["databaseSchool"]);
+          
+            $sql = "SELECT * FROM client ";
+            $db_erg = mysqli_query( $db_link, $sql );
+            if ( ! $db_erg )
+            {
+              $Inhalt = 'ungültige Bereich Abfrage client: Error message: %s\n'. $db_link->error;
+            }
+              while ($zeile = mysqli_fetch_assoc( $db_erg))
+            {
+              // echo '<option class="optionclient" value="'.$zeile['id'].'">('.$zeile['id'].'),'.$zeile['Name'].', '.$zeile['Vorname'].' - '.$zeile['Geburtsdatum'].'</option>';
+              echo '<option class="optionclient" value="'.$zeile['id'].'">'.$zeile['Name'].', '.$zeile['Vorname'].' - '.$zeile['Geburtsdatum'].'</option>';
+            }
+            ?>
+          </select>
+
+
+          <button type="button" class="btn btn-primary ml-2" onclick="NewClient();">Neu</button>
+
+      </div>
     </div>
-<div class="AktualClient" id="AktualClient">
+  </div>
+<!-- </div> -->
+<!-- <div class="AktualClient" id="AktualClient"> -->
+<div class="row row-cols-md-2 mx-auto"  id="AktualClient">
 <!-- wird von Functions.php gefüllt -->
   </div>
-  <div class="rightSite" id="rightSite">
+
+  <div  id="rightSite"> <!-- class="rightSite" -->
 
   </div>
-</body>
+<!-- </body> -->
 </html>
 
 

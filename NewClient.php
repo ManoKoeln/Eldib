@@ -1,7 +1,7 @@
 <script src="NewClient.js"></script>
 <link href="CSS/NewClient.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" media="screen and (max-aspect-ratio: 4/3)" href="CSS/NewClientSmal.css" />
-<body>
+<!-- <body> -->
 
     <div class="NewClient" id="NewClient">
     </div>
@@ -55,7 +55,7 @@ if ( ! $db_erg )
 $_POST["SubmitButton"] = NULL;
 }
 ?>
-</body>
+<!-- </body> -->
 
 
 

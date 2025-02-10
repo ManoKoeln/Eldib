@@ -136,12 +136,12 @@
     font-size: calc(var(--FontSizeSmal)*3);
     border-radius: 2vw;
 }
-tr{
+/* tr{
     width: 20%;
 }
 td{
     width: 15%;
-}
+} */
 .TabSection{
     width: 50%;
 }

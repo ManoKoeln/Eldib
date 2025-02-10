@@ -2,19 +2,45 @@
 <html lang="de" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <title>Passwort erneuern</title>
     <script src="../content/PasswordRequest.js"></script>
+    <link href="../scss/custom.css" rel="stylesheet">
     <!-- <script src="../JScript/index.js"></script> -->
   </head>
+  <header>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
+  <!-- <div class="HeaderL1" > -->
+  <div class="container">
+      <div class="col-sm-12">
+        <div class="row content-between">
+          <div class="col-sm-8 text-left">
+            <h1 class="fs-1 text-center">ETEP</h1>
+            <h2 class="fs-2 text-center">Entwicklungstherapie/ Entwicklungspädagogik</h2>
+          </div>
+          <div class="col-sm-4 text-right">
+            <img src="../CSS/ManoLogoTrans3.ico" alt="logo" style="width: auto; height: auto; max-width: 50%; max-height: 50%;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
   <body>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
+  
     <?php
     error_reporting(E_ALL); 
     //  use PHPMailer\PHPMailer\PHPMailer;
         if(isset($_POST["email1"])){
-    include_once("../content/PasswordGenerate.php");
-    include_once("../content/sendEmail.php");
+    include_once "../content/PasswordGenerate.php";
+    include_once "../content/sendEmail.php";
 
-        require("../content/db.php");
+        require "../content/db.php";
               $db_link = new mysqli($host_name, $user_name, $password, $database);
       $sql = "SELECT * FROM hostschool WHERE id = '".$_POST['SelectSchool']."'";
       $db_erg = mysqli_query( $db_link, $sql );
@@ -123,19 +149,17 @@ $nachricht = "<html>
 </body>";
 
 $header = "From: ETEP online Zugang neues Passwort angefordert <NoReply@manosoftware.de>\r\n";
-// $header = "From: ETEP online Zugang neues Passwort angefordert\r\n";
 $header .= "Reply-To: NoReply\r\n";
 $header .= "Content-Type: text/html; charset=UTF-8\r\n";
-// $header = $header. "Content-Type: text/html\r\n";
 $empfaenger = $_POST["email1"];
-// echo 'Empfänger = '.$empfaenger.'<br>'.'betreff = '. $betreff.'<br>'.'nachricht = '. $nachricht.'<br>'.'header = '. $header;
+
           if (mail($empfaenger, $betreff, $nachricht, $header)){
             $status = "";
             $response = "";
-        $Inhalt = $status . '  ' . $response . 'eine email mit einem neuen Passwort wurde versendet'.'<br>'.'<br>'.'<a href="../index.php">Zurück zur Anmeldung</a>';
+        $Inhalt = $status . '  ' . $response . 'eine email mit einem neuen Passwort wurde versendet'.'<a href="../index.php">Zurück zur Anmeldung</a>';
         } else {
             $status = "failed";
-            $response = "Something is wrong: <br><br>";
+            $response = "Something is wrong: ";
             $Inhalt = $status. '  '. $response. 'email wurde nicht versendet !!!';
         }
         echo $Inhalt;
@@ -144,35 +168,57 @@ $empfaenger = $_POST["email1"];
       }
      ?>
          <script src="../content/PasswordRequest.js"></script>
-    <h1>Passwort anfordern</h1>
-    <form action="../content/PasswordRequest.php" method="post">
-    <div class="SelectSchoolDiv">
-    <select title="SelectSchool" name="SelectSchool" id="SelectSchool" onclick="ChangedSelectionSchool();" required>
-          <option class="optionSchool" value=0>Schule auswählen</option>
-          <?php
+         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
+        <form action="../content/PasswordRequest.php" method="post">
+         <div class="row mb-3"> 
+           <p class="col-sm-12 col-form-label fs-2 text-center">Passwort anfordern</p>
+          </div>
+
+    <div class="row mb-3 ml-1 justify-content-center">   
+      <label for="inputPassword3" class="col-sm-2 col-form-label">Schule auswählen</label>
+      <div class="col-sm-4 ">
+        <select class="form-control " title="SelectSchool" name="SelectSchool" id="SelectSchool" onclick="ChangedSelectionSchool();" required class="form-select" aria-label="Default select example">
+            <option class="optionSchool" value=0>Schule auswählen</option>
+            <?php
+            
+            require "../content/db.php";
+            //Schulen eintragen
+            $db_link = new mysqli($host_name, $user_name, $password, $database);
           
-          require("../content/db.php");
-          //Schulen eintragen
-          $db_link = new mysqli($host_name, $user_name, $password, $database);
-        
-          $sql = "SELECT * FROM school ";
-          $db_erg = mysqli_query( $db_link, $sql );
-          if ( ! $db_erg )
-          {
-            $Inhalt = 'ungültige Bereich Abfrage School: Error message: %s\n'. $db_link->error;
-          }
-            while ($zeile = mysqli_fetch_assoc( $db_erg))
-          {
-            echo '<option class="optionSchool" value="'.$zeile['id'].'">'.$zeile['Name'].', '.$zeile['Straße'].', '.$zeile['Ort'].' - '.$zeile['PLZ'].'</option>';
-          }
-          ?>
-          </select>
+            $sql = "SELECT * FROM school ";
+            $db_erg = mysqli_query( $db_link, $sql );
+            if ( ! $db_erg )
+            {
+              $Inhalt = 'ungültige Bereich Abfrage School: Error message: %s\n'. $db_link->error;
+            }
+              while ($zeile = mysqli_fetch_assoc( $db_erg))
+            {
+              echo '<option class="optionSchool" value="'.$zeile['id'].'">'.$zeile['Name'].', '.$zeile['Straße'].', '.$zeile['Ort'].' - '.$zeile['PLZ'].'</option>';
+            }
+            ?>
+            </select>
+      </div>
     </div>
-    
-      <input type="email" name= "email1" placeholder="email" required><br>
-      <button type="submit" name="submit">Passwort anfordern</button>
-    </form>
-    <br>
+    <div class="row mb-3 ml-1 justify-content-center">
+      <label for="formFile" class="col-sm-2 col-form-label col-form-label-sm">Email</label>
+      <div class="col-sm-4"> 
+      <input type="email" class="form-control form-control-sm" name= "email1" placeholder="email" required>
+      </div>
+    </div>
+
+    <div class="row mb-3 ml-1 justify-content-center text-center">    
+      <div class="col-sm-12"> 
+        <button type="submit" class="btn btn-primary btn-sm" name="submit">Passwort anfordern</button>
+        </div>
+        </div>
+
+    <div class="row mb-3 ml-1 justify-content-center text-center">    
+      <div class="col-sm-12"> 
     <a href="../index.php">Hast du bereits einen Account?</a>
+    </div>
+    </div>
+    </form>
   </body>
 </html>

@@ -2,7 +2,7 @@
 if (session_status() == PHP_SESSION_NONE) {
     session_start(); // Starten der Session nur, wenn keine Session aktiv ist
 }
-include ("db.php");
+include "db.php";
 // $_SESSION["userid"] = 1;
 // $_SESSION["username"] = "mano";
 echo '<script>console.log("ELDiB Start with User: '.$_SESSION["username"].'");</script>';
@@ -120,7 +120,7 @@ require ("changePW.php");
 
 ?> 
 <!-- Beispiel aus: https://css-tricks.com/resolution-specific-stylesheets/ -->
-<link href="CSS/StyleE.css" rel="stylesheet" type="text/css">
+<link href="css/Style.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" media="screen and (max-aspect-ratio: 4/3)" href="CSS/StyleESmal.css" />
 
 

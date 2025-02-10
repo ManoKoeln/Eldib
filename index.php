@@ -12,12 +12,37 @@
     if(isset($_POST["submit"])){
       require ("content/db.php");
       if ($_POST['SelectSchool'] == 0){
-        echo '<link href="CSS/index.css" rel="stylesheet" type="text/css">';
-        echo '<link rel="stylesheet" media="screen and (max-aspect-ratio: 4/3)" href="CSS/indexSmal.css" />';
-        echo '<form class="formError" action="../ELDiB/index.php">';
-        echo '<h1>keine Schule ausgewählt</h1>';
-        echo '  <button type="submit">zurück</button>';
+        // echo '<link href="CSS/index.css" rel="stylesheet" type="text/css">';
+        // echo '<link rel="stylesheet" media="screen and (max-aspect-ratio: 4/3)" href="CSS/indexSmal.css" />';
+        echo '<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>';
+        echo '<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>';
+        echo '<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>';
+        echo '<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">';
+        echo '<div class="container">';
+        echo '<div class="col-sm-12">';
+          echo '<div class="row content-between">';
+            echo '<div class="col-sm-8 text-left">';
+              echo '<h1 class="fs-1 text-center">ETEP</h1>';
+              echo '<h2 class="fs-2 text-center">Entwicklungstherapie/ Entwicklungspädagogik</h2>';
+            echo '</div>';
+            echo '<div class="col-sm-4 text-right">';
+              echo '<img src="img/ManoLogoTrans3.ico" alt="logo" style="width: auto; height: auto; max-width: 50%; max-height: 50%;">';
+            echo '</div>';
+          echo '</div>';
+        echo '</div>';
+      echo '</div>';
+        echo '<div class="row  justify-content-center text-center align-items-center" style="height: 50vh;">';     
+         echo '<form class="form" action="../ELDiB/index.php">';
+        echo '<div class="col-sm-12">';
+        echo '<h1 class="fs-3 text-center">keine Schule ausgewählt</h1>';
+        echo '</div>';
+        echo '<div class="row mb-3 ml-1 justify-content-center text-center">';
+        echo '<div class="col-sm-12">';
+        echo '<button class="btn btn-primary btn-sm" type="submit">zurück</button>';
+        echo '</div>';
+        echo '</div>';
         echo '</form>';
+        echo '</div>';
 
         // session_destroy();
         exit;
@@ -108,8 +133,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="icon" href="content/Favicon.ico"/>
-    <link href="CSS/index.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" media="screen and (max-aspect-ratio: 4/3)" href="CSS/indexSmal.css" />
+    <!-- <link href="CSS/index.css" rel="stylesheet" type="text/css"> -->
+    <!-- <link href="scss/custom.css" rel="stylesheet"> -->
+
+    <!-- <link rel="stylesheet" media="screen and (max-aspect-ratio: 4/3)" href="CSS/indexSmal.css" /> -->
     <script src="JScript/index.js"></script>
     <title>Login</title>
   </head>
@@ -120,13 +147,13 @@
   <!-- <div class="HeaderL1" > -->
   <div class="container">
       <div class="col-sm-12">
-        <div class="row">
-          <div class="col-sm-8">
-            <h1 class="fs-1">ETEP</h1>
-            <h2 class="fs-2">Entwicklungstherapie/ Entwicklungspädagogik</h2>
+        <div class="row content-between">
+          <div class="col-sm-8 text-left">
+            <h1 class="fs-1 text-center">ETEP</h1>
+            <h2 class="fs-2 text-center">Entwicklungstherapie/ Entwicklungspädagogik</h2>
           </div>
           <div class="col-sm-4 text-right">
-            <img src="CSS/ManoLogoTrans3.ico" alt="logo" style="width: auto; height: auto; max-width: 100%; max-height: 100%;">
+            <img src="img/ManoLogoTrans3.ico" alt="logo" style="width: auto; height: auto; max-width: 50%; max-height: 50%;">
           </div>
         </div>
       </div>
@@ -136,10 +163,11 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
-  <form action="index.php" method="post"  needs-validation" novalidate>
+    <div class="row  justify-content-center text-center align-items-center" style="height: 50vh;witdh: 100vw;">
+  <form  class="col-12" style="witdh: 100vw;" action="index.php" method="post"  needs-validation novalidate>
   <!-- <form action="index.php" method="post"> -->
-    <div class="row mb-3"> 
-      <p class="col-sm-12 col-form-label fs-2">Anmelden</p>
+    <div class="row mb-3 align-items-center"> 
+      <p class="col-sm-12 col-form-label fs-2 text-center">Anmelden</p>
     </div>
     <div class="row mb-3 ml-1 justify-content-center">   
       <label for="inputPassword3" class="col-sm-2 col-form-label">Schule auswählen</label>
@@ -183,14 +211,15 @@
             <input type="password" class="form-control form-control-sm" name="pw" placeholder="Passwort" required >
         </div>
     </div>
-      <div class="row mb-3 ml-1 justify-content-center">    
+
+      <div class="row mb-3 ml-1 justify-content-center text-center">    
         <div class="col-sm-12"> 
           <button type="submit" class="btn btn-primary btn-sm" autocomplete= "password" suggested="current-password" name="submit">Einloggen</button>
         </div>
     </div>
 
     <div class="row mb-3 ml-1 justify-content-center"> 
-    <div class="col-sm-12"> 
+    <div class="col-sm-12 text-center"> 
       <a href="content/PasswordRequest.php">Passwort anfordern</a>
       </div>
     </div>
@@ -202,6 +231,7 @@
       <br> -->
 
   </form>
+  </div>
   <!-- <script>
         var elem = document.documentElement;
         if (document.exitFullscreen) {

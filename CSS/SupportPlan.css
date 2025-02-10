@@ -151,7 +151,7 @@
     border-top-style: groove;
     display: flex;
 }
-.TabInhalt{/* padding: 1vw; */} 
+
 .TabEmpty{
     height: 2vw;
     min-width: 24%;
@@ -238,9 +238,7 @@
     position: inherit;
     border-radius: 0;
 }
-.NewLineButtontd{
-    
-}
+
 .SaveSupportPlanFromData{position: relative;width: 100%;}
 .columnSupportDeleteButton{
     width: 4vw;

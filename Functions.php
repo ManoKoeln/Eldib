@@ -2,8 +2,8 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
-    <link href="CSS/header.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" media="screen and (max-aspect-ratio: 4/3)" href="CSS/headerSmal.css" />
+    <!-- <link href="CSS/header.css" rel="stylesheet" type="text/css"> -->
+<!-- <link rel="stylesheet" media="screen and (max-aspect-ratio: 4/3)" href="CSS/headerSmal.css" /> -->
 <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <?php
 if (session_status() == PHP_SESSION_NONE) {
@@ -17,12 +17,12 @@ if (session_status() == PHP_SESSION_NONE) {
     //   header("Location: ../index.php");
     //   exit;
     // }
-        require ('content/db.php');
-        include("content/helpers.php");
-        include("NewClient.php");
-        include("Assessors.php");
+        require 'content/db.php';
+        include "content/helpers.php";
+        include "NewClient.php";
+        // include "Assessors.php";
 
-if ( isset($_GET['SetClient']) ){
+if ( isset($_GET['SetClient']) ){ // SetClient wird übergeben, wenn ein neuer Client ausgewählt wird
   $_SESSION['ActualClient'] = $_GET['SetClient'];
   if ($_SESSION['LocalChat'] == true){
     $db_link = new mysqli($_SESSION["host_nameSchool"], $_SESSION["user_nameSchool"], $_SESSION["passwordSchool"], $_SESSION["databaseSchool"]);
@@ -64,40 +64,49 @@ if ( isset($_GET['SetClient']) ){
     $_SESSION["Parentvorname"] = $zeile['Parentvorname'] ;
     $_SESSION["Parentemail"] = $zeile['Parentemail'] ;
     $Inhalt = "";
-    // $Inhalt = $Inhalt .  '</form>';
-    $Inhalt = $Inhalt . '<div class="row mb-1 ml-1">';
-    // $Inhalt = $Inhalt . 'Name : ('.$zeile['id'].'),'.$zeile['Name'].', '.$zeile['Vorname'].' ';
-    $Inhalt = $Inhalt . 'Name : '.$zeile['Name'].', '.$zeile['Vorname'].' ';
-    $Inhalt = $Inhalt .  '</div>';
-    $Inhalt = $Inhalt . '<div class="row mb-1 ml-1">';
-    $Inhalt = $Inhalt . 'Geburtsdatum : '.$zeile['Geburtsdatum'].' ';
-    $Inhalt = $Inhalt .  '</div>';
-    $Inhalt = $Inhalt . '<div class="row mb-1 ml-1">';
-    $Inhalt = $Inhalt . 'email : '.$zeile['email'].' ';
-    $Inhalt = $Inhalt .  '</div>';
-    $Inhalt = $Inhalt . '<div class="row mb-1 ml-1">';
-    $Inhalt = $Inhalt . 'Geburtsdatum : '.$zeile['Geburtsdatum'].' ';
-    $Inhalt = $Inhalt .  '</div>';
-    $Inhalt = $Inhalt . '<div class="row mb-1 ml-1">_____________________________________________</div>';
-    $Inhalt = $Inhalt . '<div class="row mb-1 ml-1">';
-    $Inhalt = $Inhalt . 'Eltern : '.$zeile['Parentvorname'].'  '.$zeile['Parentname'].'  ';
-    $Inhalt = $Inhalt .  '</div>';
-    $Inhalt = $Inhalt . '<div class="row mb-1 ml-1">';
-    $Inhalt = $Inhalt . 'email Eltern : '.$zeile['Parentemail'].' ';
-    $Inhalt = $Inhalt .  '</div>';
-    // $Inhalt = $Inhalt .  '<div><button typ="button" class="btn btn-outline-primary btn-sm" onclick="ShowELDiBLehrer();">ELDiB Lehrer</button></div><div><button>einladen</button>';
-    $Inhalt = $Inhalt .  '<div class="row mb-1 ml-1 justify-content-left"><button typ="button" class="btn btn-outline-primary btn-sm" onclick="ShowELDiBLehrer();">ELDiB Lehrer</button><button onclick="OperatorSelectionShow();">einladen</button></div>';
-    $Inhalt = $Inhalt .  '<div class="row mb-1 ml-1 justify-content-left"><button typ="button" class="btn btn-outline-primary btn-sm" onclick="ShowELDiBKind();">ELDiB Kind</button></button><button onclick="ShowEmailKind();">Email Einladung</button></div>';
-    $Inhalt = $Inhalt .  '<div class="row mb-1 ml-1 justify-content-left"><button typ="button" class="btn btn-outline-primary btn-sm" onclick="ShowELDiBEltern();">ELDiB Eltern</button><button onclick="ShowEmailEltern();">Email Einladung</button></div>';
-    $Inhalt = $Inhalt .  '<div class="row mb-1 ml-1 justify-content-left"><button typ="button" class="btn btn-outline-primary btn-sm" onclick="ShowSupportPlan();">Förderplan</button></div>';
-    $Inhalt = $Inhalt .  '<div class="row mb-1 ml-1 justify-content-left"><button typ="button" class="btn btn-outline-primary btn-sm" onclick="ShowELDiBLehrer_New();">ELDiB Lehrer New</button>';
-    echo $Inhalt;
+    // $Inhalt.=  '</form>';
+   
+
+    // $Inhalt.= '<div class="row row-cols-md-1">';
+      $Inhalt.= '<div class="col-md-4 mx-auto" >';
+      $Inhalt.=  '<div style="height: 2vh;"></div>';
+        $Inhalt.= '<table class="table table-sm">'; //table-borderless deleted
+          $Inhalt.= '<tr>';
+          $Inhalt.= '<td>Name : </td><td>'.$zeile['Name'].', '.$zeile['Vorname'].'</td>';
+          $Inhalt.= '</tr>';
+          $Inhalt.= '<tr>';
+            $Inhalt.= '<td>Geburtsdatum : </td><td>'.$zeile['Geburtsdatum'].'</td>';
+          $Inhalt.= '</tr>';
+          $Inhalt.= '<tr>';
+          $Inhalt.= '<td>email : </td><td>'.$zeile['email'].'</td>';
+          $Inhalt.= '</tr>';
+          $Inhalt.= '<tr>';
+          $Inhalt.= '<td></td><td></td>';
+          $Inhalt.= '</tr>';
+          $Inhalt.= '<tr>';
+            $Inhalt.= '<td>Eltern : </td><td>'.$zeile['Parentvorname'].'  '.$zeile['Parentname'].'</td>';
+          $Inhalt.= '</tr>';
+          $Inhalt.= '<tr>';
+            $Inhalt.= '<td>email Eltern : </td><td>'.$zeile['Parentemail'].'</td>';
+          $Inhalt.= '</tr>';
+          $Inhalt.= '<tr>';
+        $Inhalt.= '</table>';
+
+      $Inhalt.= '</div>';
+      // $Inhalt.= '<div class="row row-md-1">';
+
+
+
+    // $Inhalt.= '</div>';
+    
+
+    // echo $Inhalt;
   }
-}
-if ( isset($_GET['SetRightSite']) ){
-  $Inhalt = "";
-  $Inhalt = $Inhalt . '<div class="OperatorHead">Verantwortliche / Einschätzende';
-  $Inhalt = $Inhalt . '<table>';
+// }
+$Inhalt.= '<div class="col-md-6 mx-auto" >';
+  $Inhalt.= '<p class="fs-4">Verantwortliche / Einschätzende  </p>';
+   
+  $Inhalt.= '<table class="table col-8 table-borderless table-sm" style="border: 1px solid black;">';
 
   //aktuelles Operator anzeigen
   if ($_SESSION['LocalChat'] == true){
@@ -128,21 +137,23 @@ if ( isset($_GET['SetRightSite']) ){
         }
           while ($zeile = mysqli_fetch_assoc( $db_erg))
         {
-          $Inhalt = $Inhalt .  '<tr>';
-          $Inhalt = $Inhalt . '<td class="tdoperator" >'.$zeile['Vorname'].', '.$zeile['Nachname'].'</td>';
-          $Inhalt = $Inhalt . '<td class="tdoperator" >'.$zeile['EMAIL'].'</td>';
-          $Inhalt = $Inhalt . '<td class="tdoperator" ><button class="tdoperatorbutton" onclick="removeoperatorReadWrite('.$os.');">entfernen</button></td>';
-          $Inhalt = $Inhalt . '</tr>';
+          $Inhalt.=  '<tr>';
+          $Inhalt.= '<td >'.$zeile['Vorname'].', '.$zeile['Nachname'].'</td>';
+          $Inhalt.= '<td  >'.$zeile['EMAIL'].'</td>';
+          $Inhalt.= '<td  ><button class="btn btn-primary "  onclick="removeoperatorReadWrite('.$os.');">entfernen</button></td>';
+          $Inhalt.= '</tr>';
         }
       }
     }
   }
        
-  $Inhalt = $Inhalt .'</table>';
-  $Inhalt = $Inhalt .'</div>';
+  $Inhalt.='</table>';
+  // $Inhalt.='</div>';
 
-  $Inhalt = $Inhalt . '<div class="OperatorHead">Verantwortliche / Einschätzende (nur lesen)';
-  $Inhalt = $Inhalt . '<table>';
+  // $Inhalt.= '<div col-md-6 col-sm-12>';
+  $Inhalt.= '<p class="fs-4">Verantwortliche / Einschätzende (nur lesen)</p>';
+  // $Inhalt.= '<div row>';
+  $Inhalt.= '<table class="table col-8 table-borderless table-sm" style="border: 1px solid black;">';
 
   //aktuelles Operator nur lesen eintragen
   if ($_SESSION['LocalChat'] == true){
@@ -173,19 +184,44 @@ if ( isset($_GET['SetRightSite']) ){
         }
           while ($zeile = mysqli_fetch_assoc( $db_erg))
         {
-          $Inhalt = $Inhalt .  '<tr>';
-          $Inhalt = $Inhalt . '<td class="tdoperator" >'.$zeile['Vorname'].', '.$zeile['Nachname'].'</td>';
-          $Inhalt = $Inhalt . '<td class="tdoperator" >'.$zeile['EMAIL'].'</td>';
-          $Inhalt = $Inhalt . '<td class="tdoperator" ><button class="tdoperatorbutton" onclick="removeoperatorReadOnly('.$os.');">entfernen</button></td>';
-          $Inhalt = $Inhalt . '</tr>';
+          $Inhalt.=  '<tr>';
+          $Inhalt.= '<td>'.$zeile['Vorname'].', '.$zeile['Nachname'].'</td>';
+          $Inhalt.= '<td>'.$zeile['EMAIL'].'</td>';
+          $Inhalt.= '<td><button class="btn btn-primary "  onclick="removeoperatorReadOnly('.$os.');">entfernen</button></td>';
+          $Inhalt.= '</tr>';
         }
       }
     }
   }
-           
-  $Inhalt = $Inhalt .'</table>';
-  $Inhalt = $Inhalt .'</div>';
+  $Inhalt.= '</div>';
+  // $Inhalt.= '<div class="col-md-5 col-sm-12 ">';           
+  $Inhalt.= '</table>';
+  $Inhalt.= '</div>';
+  $Inhalt.= '<div class="col-4 ml-2">';
+  $Inhalt.= '<hr class="featurette-divider">';
+  $Inhalt.= '<table class="table table-sm table-borderless">';
+    $Inhalt.= '<tr>';
+      $Inhalt.= '<td><button typ="button" class="btn-primary "  onclick="ShowELDiBLehrer();">ELDiB Lehrer</button></td><td><button typ="button" class="btn-primary"  onclick="OperatorSelectionShow();">einladen</button></td>';
+    $Inhalt.= '</tr>';
+    $Inhalt.= '<tr>';
+      $Inhalt.= '<td><button typ="button" class="btn-primary "  onclick="ShowELDiBKind();">ELDiB Kind</button></td><td><button typ="button" class="btn-primary "  onclick="ShowEmailKind();">Email Einladung</button></td>';
+    $Inhalt.= '</tr>';
+    $Inhalt.= '<tr>';
+      $Inhalt.= '<td><button typ="button" class="btn-primary "  onclick="ShowELDiBEltern();">ELDiB Eltern</button></td><td><button typ="button" class="btn-primary "  onclick="ShowEmailEltern();">Email Einladung</button></td>';
+    $Inhalt.= '</tr>';
+    $Inhalt.= '<tr>';
+    $Inhalt.= '<td><button typ="button" class="btn-primary "  onclick="ShowSupportPlan();">Förderplan</button></td>';
+    $Inhalt.= '</tr>';
+    $Inhalt.= '<tr>';
+      $Inhalt.= '<td><button typ="button" class="btn-primary "  onclick="ShowELDiBLehrer_New();">ELDiB Lehrer New</button></td>';
+    $Inhalt.= '</tr>';
+  $Inhalt.= '</table>';
+  $Inhalt.= '</div>';
+  $Inhalt.= '</div>';
+  $Inhalt.= '</div>';
   echo $Inhalt;
+
+
 }
   if ( isset($_GET['NewOperatorReadWrite']) ){
   

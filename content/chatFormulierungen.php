@@ -3,7 +3,7 @@
 <?php
 $FormulierungenID ;
 ?>
-<link href="CSS/ChatFormulierungen.css" rel="stylesheet" type="text/css">
+<link href="css/ChatFormulierungen.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" media="screen and (max-aspect-ratio: 4/3)" href="CSS/ChatFormulierungenSmal.css" />
 <body>
     <div  id="MyChatFormulierungen" >

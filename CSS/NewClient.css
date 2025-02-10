@@ -31,15 +31,14 @@
     font-size: calc(var(--AllFont)*1);
     height: 1vw;
 }
-input{
+/* input{
     border-radius: 0.4vw;
-    /* padding-left: 10VW; */
     left: 10vw;
     position: relative;
     height: 1.5vw;
     left: 30%;
     width: 48%;
-}
+} */
 
 .FormContent label{
     width: 30%;

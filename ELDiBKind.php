@@ -39,27 +39,27 @@ if ( isset($_GET['SetELDiBKind']) ){
         $TableStatus = $zeile['Status'];
       
     }
-    $Inhalt = $Inhalt . '  <h1>ELDiB Bewertungsbogen Kind</h1><button type="button" onclick="HideELDiBKind();" class="ButtonBack">zurück</button>';
-    $Inhalt = $Inhalt . '<div class="Schuelerdaten">';    
-    $Inhalt = $Inhalt . '<div>';
-    $Inhalt = $Inhalt . 'Name : '.$_SESSION["Name"].', '.$_SESSION["Vorname"].' ';
-    $Inhalt = $Inhalt .  '</div>';
-    $Inhalt = $Inhalt . '<div>';
-    $Inhalt = $Inhalt . 'Geburtsdatum : '.$_SESSION["Geburtsdatum"].' ';
-    $Inhalt = $Inhalt .  '</div>';
-    $Inhalt = $Inhalt . '<div>';
-    $Inhalt = $Inhalt . 'email : '.$_SESSION["email"].' ';
-    $Inhalt = $Inhalt .  '</div>';
-    $Inhalt = $Inhalt . '<div>';
-    $Inhalt = $Inhalt . 'Geburtsdatum : '.$_SESSION["Geburtsdatum"].' ';
-    $Inhalt = $Inhalt .  '</div>';
-    // $Inhalt = $Inhalt . '<div>_____________________________________________</div>';
-    $Inhalt = $Inhalt .  '</div>';
-    $Inhalt = $Inhalt . '<div>';
+    $Inhalt.= '  <h1>ELDiB Bewertungsbogen Kind</h1><button type="button" onclick="HideELDiBKind();" class="btn btn-primary btn-sm">zurück</button>';
+    $Inhalt.= '<div class="Schuelerdaten">';    
+    $Inhalt.= '<div>';
+    $Inhalt.= 'Name : '.$_SESSION["Name"].', '.$_SESSION["Vorname"].' ';
+    $Inhalt.=  '</div>';
+    $Inhalt.= '<div>';
+    $Inhalt.= 'Geburtsdatum : '.$_SESSION["Geburtsdatum"].' ';
+    $Inhalt.=  '</div>';
+    $Inhalt.= '<div>';
+    $Inhalt.= 'email : '.$_SESSION["email"].' ';
+    $Inhalt.=  '</div>';
+    $Inhalt.= '<div>';
+    $Inhalt.= 'Geburtsdatum : '.$_SESSION["Geburtsdatum"].' ';
+    $Inhalt.=  '</div>';
+    // $Inhalt.= '<div>_____________________________________________</div>';
+    $Inhalt.=  '</div>';
+    $Inhalt.= '<div>';
     if($TableStatus == 0){
-      $Inhalt = $Inhalt .'<button type="button" class="CreateNewTableELDiBKEL" onclick="CreateNewTableELDiBKind();">neuen Bogen erstellen</button>';
+      $Inhalt.='<button type="button" class="btn btn-primary btn-sm" onclick="CreateNewTableELDiBKind();">neuen Bogen erstellen</button>';
     }
-    $Inhalt = $Inhalt . '</div>';
+    $Inhalt.= '</div>';
     $ValuesArray = array("Key");
     $ArrayCounter = 1;
     $ValueCounter = 1;
@@ -117,23 +117,23 @@ if ( isset($_GET['SetELDiBKind']) ){
       $StartPosY = $Maxy - $ValuesArray[1];
       $OffsetPos = $Distance / 2;
       $StartPosX = $OffsetPos ;
-      $Inhalt = $Inhalt . '<svg class="DiagrammBox" style= "width: '.$Maxx.'px; height: '.$Maxy.'px;">'; //height="$Maxy" width="700"
+      $Inhalt.= '<svg class="DiagrammBox" style= "width: '.$Maxx.'px; height: '.$Maxy.'px;">'; //height="$Maxy" width="700"
       for($Test = 1; $Test < $ArrayCounter; $Test ++){
-      $Inhalt = $Inhalt . '<line x1="'.$StartPosX.'" y1="'.$StartPosY.'" x2="'.$Distance * ($Test - 1) + $OffsetPos.'" y2="'. $Maxy - $ValuesArray[$Test].'" style="stroke:rgb(255,0,0);stroke-width:2" />';
+      $Inhalt.= '<line x1="'.$StartPosX.'" y1="'.$StartPosY.'" x2="'.$Distance * ($Test - 1) + $OffsetPos.'" y2="'. $Maxy - $ValuesArray[$Test].'" style="stroke:rgb(255,0,0);stroke-width:2" />';
       $StartPosX = $Distance * ($Test - 1) + $OffsetPos;
       $StartPosY = $Maxy - $ValuesArray[$Test];
   
       }
-        $Inhalt = $Inhalt . '</svg>';
+        $Inhalt.= '</svg>';
     }
-    $Inhalt = $Inhalt .'</div>';
-    $Inhalt = $Inhalt .'<div id="ELDiBKindcontainer" class="tableFixHead">';
-    $Inhalt = $Inhalt .'<table>';
-    $Inhalt = $Inhalt .'<thead>';    
-    $Inhalt = $Inhalt .'<tr class="BeschreibungHead">';
-    $Inhalt = $Inhalt .'<td class="KELZielBeschreibungHead">Beschreibung</td><td class="KELZielNummerHead">Bereich</td>'; 
+    $Inhalt.='</div>';
+    $Inhalt.='<div id="ELDiBKindcontainer" class="tableFixHead">';
+    $Inhalt.='<table class="table table-bordered table-striped table-hover table-sm">';
+    $Inhalt.='<thead>';    
+    $Inhalt.='<tr class="BeschreibungHead">';
+    $Inhalt.='<th class="KELZielBeschreibungHead">Beschreibung</th><th class="KELZielNummerHead">Bereich</th>'; 
     if ($TableStatus >= 1){
-      $Inhalt = $Inhalt .'<td><button type="button" onclick="SaveTableELDiBKind();">Bogen speichern</button></td>';
+      $Inhalt.='<th><button class="btn btn-primary btn-sm" type="button" onclick="SaveTableELDiBKind();">Bogen speichern</button></th>';
     }
 
     //History Datum eintragen
@@ -152,9 +152,9 @@ if ( isset($_GET['SetELDiBKind']) ){
     
     while ($zeileHistory = mysqli_fetch_assoc( $db_ergHistory))
       {       
-        $Inhalt = $Inhalt .'<td>'.date("d.m.Y",strtotime($zeileHistory['SaveTime'])).'</td>';
+        $Inhalt.='<th>'.date("d.m.Y",strtotime($zeileHistory['SaveTime'])).'</th>';
     }
-    $Inhalt = $Inhalt .'</tr>';
+    $Inhalt.='</tr>';
   //alle 4 Bereiche durchgehen
   for($BereichID = 1; $BereichID <=4; $BereichID++){
     $Stufe = 0;
@@ -170,10 +170,10 @@ if ( isset($_GET['SetELDiBKind']) ){
       {
         //Stufe anzeigen
       if ($Stufe != $zeile['Stufe']){
-        $Inhalt = $Inhalt .'<tr>';
+        $Inhalt.='<tr>';
       
         //Stufe Beschreibung
-        $Inhalt = $Inhalt .'<td class="ZielStufe" >Stufe :'.$zeile['Stufe'];
+        $Inhalt.='<td class="ZielStufe" >Stufe :'.$zeile['Stufe'];
         $db_link = new mysqli($_SESSION["host_name"], $_SESSION["user_name"], $_SESSION["password"], $_SESSION["database"]);
 
         $sqls = "SELECT * FROM stufenbeschreibungen WHERE BereichID = '1' AND Stufe = ".$zeile['Stufe']." ";
@@ -185,15 +185,15 @@ if ( isset($_GET['SetELDiBKind']) ){
           
           while ($zeiles = mysqli_fetch_assoc( $db_ergs))
           {
-            $Inhalt = $Inhalt .'  '.MyStringHTML($zeiles['Beschreibung1']).'<br> '.MyStringHTML($zeiles['Beschreibung2']).'</td>';
+            $Inhalt.='  '.MyStringHTML($zeiles['Beschreibung1']).'<br> '.MyStringHTML($zeiles['Beschreibung2']).'</td>';
           }
           // echo '$Stufe = '.$Stufe.' zeile ='.$zeile['Stufe'].'/r/n'.$zeiles;
-        $Inhalt = $Inhalt . "</tr>";
+        $Inhalt.= "</tr>";
         $Stufe = $zeile['Stufe'];
       }
       // Beschreibung und Stichwort Ziele eintragem
-      $Inhalt = $Inhalt .'<td class="ZielBeschreibung TabContent'.$BereichID.'" ondblclick="readText(this)"> '.MyStringHTML($zeile['ZieleBeschreibung']).'</td>';
-      $Inhalt = $Inhalt .'<td class="ZielNummer TabContent'.$BereichID.'" ondblclick="readText(this)">'.$zeile['ZieleNummer'].' '.MyStringHTML($zeile['ZieleStichwort']).'</td>';
+      $Inhalt.='<td class="ZielBeschreibung TabContent'.$BereichID.'" ondblclick="readText(this)"> '.MyStringHTML($zeile['ZieleBeschreibung']).'</td>';
+      $Inhalt.='<td class="ZielNummer TabContent'.$BereichID.'" ondblclick="readText(this)">'.$zeile['ZieleNummer'].' '.MyStringHTML($zeile['ZieleStichwort']).'</td>';
       // Value von eldibdatadetailskind abfragen
       if ($_SESSION['LocalChat'] == true){
         $db_link = new mysqli($_SESSION["host_nameSchool"], $_SESSION["user_nameSchool"], $_SESSION["passwordSchool"], $_SESSION["databaseSchool"]);
@@ -221,31 +221,31 @@ if ( isset($_GET['SetELDiBKind']) ){
         }
         //das Select entsprechend dem Status setzen
         if($TableStatus == 1){  
-        $Inhalt = $Inhalt .'<td>
+        $Inhalt.='<td>
         <label for="Auswahl"> </label>
         <select name="Auswahl" id="AuswahlELDiBKind" onchange="ChangedSelectionELDiBKind('.$zeile['id'].','.$idData.',selectedIndex)">';
         if($StatusVal == 0){
-          $Inhalt = $Inhalt .'<option class="option1" value="später" selected>später</option>';
+          $Inhalt.='<option class="option1" value="später" selected>später</option>';
         }
         else
         {
-          $Inhalt = $Inhalt .'<option class="option1" value="später" >später</option>';
+          $Inhalt.='<option class="option1" value="später" >später</option>';
         }
         if($StatusVal == 1){
-          $Inhalt = $Inhalt .'<option class="option2" value="übt es jetzt" selected>Übt es jetzt</option>';
+          $Inhalt.='<option class="option2" value="übt es jetzt" selected>Übt es jetzt</option>';
         }
         else
         {
-          $Inhalt = $Inhalt .'<option class="option2" value="übt es jetzt">Übt es jetzt</option>';
+          $Inhalt.='<option class="option2" value="übt es jetzt">Übt es jetzt</option>';
         }
         if($StatusVal == 2){
-          $Inhalt = $Inhalt .'<option class="option3" value="kann das Kind" selected>Kann das Kind</option>';
+          $Inhalt.='<option class="option3" value="kann das Kind" selected>Kann das Kind</option>';
         }
         else{
 
-            $Inhalt = $Inhalt .'<option class="option3" value="kann das Kind" >Kann das Kind</option>';
+            $Inhalt.='<option class="option3" value="kann das Kind" >Kann das Kind</option>';
         }
-        $Inhalt = $Inhalt .'</select>
+        $Inhalt.='</select>
         </td>';        
         }   
                 //History anzeigen
@@ -260,34 +260,34 @@ if ( isset($_GET['SetELDiBKind']) ){
                   {
                     switch ($zeileHistory[$MyZiel]) {
                       case 0:
-                        $Inhalt = $Inhalt .'<td class="tdELDiBHistory"><div>später</div><br>';
+                        $Inhalt.='<td class="tdELDiBHistory"><div>später</div><br>';
                           break;
                       case 1:
-                        $Inhalt = $Inhalt .'<td class="tdELDiBHistory"><div>übt es jetzt</div><br>';
+                        $Inhalt.='<td class="tdELDiBHistory"><div>übt es jetzt</div><br>';
                         break;
                       case 2:
-                        $Inhalt = $Inhalt .'<td class="tdELDiBHistory"><div>kann das Kind</div><br>';
+                        $Inhalt.='<td class="tdELDiBHistory"><div>kann das Kind</div><br>';
                         break;
                       }
                       $Inhalt = $Inhalt.$zeileHistory[$MyZiel.$Stichwort].'</td>';
                   }
 
-        $Inhalt = $Inhalt . "</tr>";
-        $Inhalt = $Inhalt .'<tr>';
+        $Inhalt.= "</tr>";
+        $Inhalt.='<tr>';
         if($TableStatus == 1){  
-        $Inhalt = $Inhalt . '<td><div class="StichwörterDesc">Stichwörter <input type="text" onchange="ChangedKeywordELDiBKind('.$zeile['id'].','.$idData.',this.value);" class="Stichwörter" value="'.$keyword.'"></input></div></td>';
+        $Inhalt.= '<td><div class="StichwörterDesc">Stichwörter <input type="text" onchange="ChangedKeywordELDiBKind('.$zeile['id'].','.$idData.',this.value);" class="Stichwörter" value="'.$keyword.'"></input></div></td>';
         }
         else{
-          $Inhalt = $Inhalt . '<td><div class="StichwörterDesc"></div></td>';
+          $Inhalt.= '<td><div class="StichwörterDesc"></div></td>';
         }
-        $Inhalt = $Inhalt . "</tr>";
+        $Inhalt.= "</tr>";
       
       
       }
 	
   }
-  $Inhalt = $Inhalt . "</table>";			
-  $Inhalt = $Inhalt . "</div>";	
+  $Inhalt.= "</table>";			
+  $Inhalt.= "</div>";	
     echo $Inhalt;
 }
 
