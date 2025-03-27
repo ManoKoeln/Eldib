@@ -1,5 +1,172 @@
+
+
+function WriteHeadData()
+{
+  vorname = document.getElementById("validationVorname").value;
+  nachname = document.getElementById("validationName").value;
+  klasse = document.getElementById("validationKlasse").value;
+  lehrer = document.getElementById("validationLehrer").value;
+  if (window.XMLHttpRequest){ xmlhttp=new XMLHttpRequest(); } else { xmlhttp=new ActiveXObject("Microsoft.XMLHTTP"); }
+  xmlhttp.onreadystatechange=function()
+  {
+  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    {
+
+    }
+  }
+  xmlhttp.open("POST","ELDiBLehrer.php?WriteHeadData&vorname="+vorname+"&nachname="+nachname+"&klasse="+klasse+"&lehrer="+lehrer,false);
+  xmlhttp.send();
+}
+function ELDiBLehrerOpen() {
+  document.getElementById('fileInput').click();
+}
+// // in ELDiBLehrer.js
+// function ShowELDiBLehrer_JSON(){
+//   console.log("Start ShowELDiBLehrer_JSON");
+//     document.getElementById("ELDiBLehrercontent_New").style.display = "block"; 
+//     document.getElementById("AktualClient").style.display = "flex";
+//     document.getElementById("MainNavigation").style.display = "none";
+//     let MyVal = document.getElementById("SelectClient").value;
+//     if (window.XMLHttpRequest){ xmlhttp=new XMLHttpRequest(); } else { xmlhttp=new ActiveXObject("Microsoft.XMLHTTP"); }
+//   xmlhttp.onreadystatechange=function()
+//   {
+//   if (xmlhttp.readyState==4 && xmlhttp.status==200)
+//     {
+//         document.getElementById("ELDiBLehrercontent_New").innerHTML=xmlhttp.responseText;
+//     }
+//   }
+
+// xmlhttp.open("POST","ReadELDiBTable.php",false);
+// xmlhttp.send();
+// }
+
+function handleFileSelect(event) {
+  var file = event.target.files[0];
+  if (file) {
+      var reader = new FileReader();
+      reader.onload = function(e) {
+          var fileContent = e.target.result;
+                      // JSON-Daten parsen
+                      var jsonData = JSON.parse(fileContent);
+          document.getElementById('fileContent').value = fileContent;
+          // Hier können Sie den Inhalt der Datei weiterverarbeiten
+          // console.log("Dateiinhalt:", fileContent);
+
+
+        if (jsonData.Vorname && jsonData.Vorname.length > 0) {
+            // console.log("Erstes Detail:", jsonData.Vorname);
+            document.getElementById("validationVorname").value = jsonData.Vorname;
+        }
+        else{
+          document.getElementById("validationVorname").value = "Vorname";
+        }
+        console.log("handleFileSelect -> Erstes Detail:", jsonData.Nachname);
+        if (jsonData.Nachname && jsonData.Nachname.length > 0) {
+          
+          document.getElementById("validationName").value = jsonData.Nachname;
+      }
+      else{
+        document.getElementById("validationName").value = "Name";
+      }
+
+      if (jsonData.Lehrer && jsonData.Lehrer.length > 0) {
+        // console.log("Erstes Detail:", jsonData.Lehrer);
+        document.getElementById("validationLehrer").value = jsonData.Lehrer;
+    }
+    else{
+      document.getElementById("validationLehrer").value = "Lehrer";
+    }
+
+      if (jsonData.Klasse && jsonData.Klasse.length > 0) {
+        // console.log("Erstes Detail:", jsonData.Klasse);
+        document.getElementById("validationKlasse").value = jsonData.Klasse;
+    }
+    else{
+      document.getElementById("validationKlasse").value = "Klasse";
+    }
+
+
+        // document.getElementById("validationName").value = jsonData.Nachname;
+        // document.getElementById("validationKlasse").value = jsonData.Klasse;
+        // document.getElementById("validationLehrer").value = jsonData.Lehrer;
+          sendJSONToServer(fileContent,file.name);
+      };
+      reader.readAsText(file);
+  }
+}
+
+function sendJSONToServer(jsonData, fileName) {
+  var xhr = new XMLHttpRequest();
+  xhr.open("POST", "Start2.php", true);
+  xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+  xhr.onreadystatechange = function() {
+      if (xhr.readyState === 4 && xhr.status === 200) {
+          console.log("sendJSONToServer - fileName:", fileName);
+          // document.getElementById("Startseite").innerHTML = xhr.responseText;
+          // ReadHeadData();
+          ShowELDiBLehrerNew(fileName,false);
+      }
+  };
+  xhr.send(jsonData);
+}
+
+function setSessionVariable(variableName, value) {
+  var xhr = new XMLHttpRequest();
+  xhr.open("POST", "set_session_variable.php", true);
+  xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+  xhr.onreadystatechange = function() {
+      if (xhr.readyState === 4 && xhr.status === 200) {
+          console.log("Session variable set successfully");
+      }
+  };
+  xhr.send("variableName=" + encodeURIComponent(variableName) + "&value=" + encodeURIComponent(value));
+}
+function autoResize(textarea) {
+  textarea.style.height = 'auto';
+  textarea.style.height = textarea.scrollHeight + 'px';
+}
+
+function Start()
+{
+  // let MyVal = document.getElementById("SelectClient").value;
+
+  // alert("Start1");
+  if (window.XMLHttpRequest){ xmlhttp=new XMLHttpRequest(); } else { xmlhttp=new ActiveXObject("Microsoft.XMLHTTP"); }
+xmlhttp.onreadystatechange=function()
+{
+if (xmlhttp.readyState==4 && xmlhttp.status==200)
+  {
+      document.getElementById("Startseite").innerHTML=xmlhttp.responseText;
+  }
+}
+
+xmlhttp.open("POST","Functions.php?Start=True",false);
+xmlhttp.send();
+}
+
+function StartHead()
+{
+  // let MyVal = document.getElementById("SelectClient").value;
+
+  // alert("Start1");
+  if (window.XMLHttpRequest){ xmlhttp=new XMLHttpRequest(); } else { xmlhttp=new ActiveXObject("Microsoft.XMLHTTP"); }
+xmlhttp.onreadystatechange=function()
+{
+if (xmlhttp.readyState==4 && xmlhttp.status==200)
+  {
+    //  alert("StartHead :"+xmlhttp.responseText);
+      document.getElementById("Header").innerHTML=xmlhttp.responseText;
+  }
+}
+
+xmlhttp.open("POST","headerMain.php?StartHead=True",false);
+xmlhttp.send();
+Start();
+}
+
 function ChangedSelection()
 {
+  alert("ChangedSelection");
     let MyVal = document.getElementById("SelectClient").value;
     //  alert("MyVal = "+ MyVal);
     if (window.XMLHttpRequest){ xmlhttp=new XMLHttpRequest(); } else { xmlhttp=new ActiveXObject("Microsoft.XMLHTTP"); }
@@ -15,6 +182,7 @@ function ChangedSelection()
 xmlhttp.open("POST","Functions.php?SetClient="+MyVal,false);
 xmlhttp.send();
 }
+
 
 
 // function ShowELDiBEltern(){

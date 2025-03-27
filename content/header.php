@@ -14,10 +14,6 @@ function googleTranslateElementInit() {
 </script>
 <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 <header>
-
-
-
-
   <div class="row mb-2" >
     <div id="MainNavigation"  class="col-sm-2">
       <div class="dropdown ml-2 dropdown-menu-color-primary">
@@ -45,50 +41,20 @@ function googleTranslateElementInit() {
       </div>
     </div>
 
-    <!-- </div> -->
-      
   <div class="col-sm-10">
-    <!-- <div class="d-flex justify-content-between align-items-center">
-      <h3 class="text-center sm-fs2">Entwicklungstherapie/ Entwicklungspädagogik</h3>
-      <img src="img/ManoLogoTrans3.ico" alt="logo"></img>
-      <div  id="google_translate_element"></div>
-    </div> -->
+
     <div class="row rod-cols-2 row-cols-md-1">
       <div class="col-12 col-md-8">
-      <div class="d-flex justify-content-between align-items-center">
-      <h3 class="text-center sm-fs2">Entwicklungstherapie/ Entwicklungspädagogik</h3>
-      <img src="img/ManoLogoTrans3.ico" alt="logo"></img>
-      </div>
-      </div>
-      <div class="col-6 col-md-4">
-        <div  id="google_translate_element"></div>      
+        <div class="d-flex justify-content-between align-items-center">
+        <h3 class="text-center sm-fs2">Entwicklungstherapie/ Entwicklungspädagogik</h3>
+        <img src="img/ManoLogoTrans3.ico" alt="logo"></img>
+        <div  id="google_translate_element"></div> 
+        </div>
+
       </div>
     </div>
 
-    <?php
-          require "content/db.php";
-          //Schule eintragen
-          $db_link = new mysqli($host_name, $user_name, $password, $database);
-        
-          $sql = "SELECT * FROM school WHERE id = ".$_SESSION["SelectionSchool"]." ";
-          $db_erg = mysqli_query( $db_link, $sql );
-          if ( ! $db_erg )
-          {
-            $Inhalt = 'ungültige Bereich Abfrage School: Error message: %s\n'. $db_link->error;
-          }
-            while ($zeile = mysqli_fetch_assoc( $db_erg))
-          {
-            echo '<div class="row row-cols-5 row-cols-md-1">';
-            echo '<div class="col col-1 col-md-12">';
-            echo '<table class="table table-borderless">';
-            echo  '<td>'.$zeile['Name'].'</td><td>'.$zeile['Straße'].'</td><td >'.$zeile['Ort'].'</td><td >'.$zeile['PLZ'].'</td>';
-            
-          }
 
-    echo '<td>'.$_SESSION["Vorname"].', '.$_SESSION["Nachname"].'  </td><td><a href="abmelden.php">abmelden</a></td>';
-    echo '</table>';
-    echo '</div>';
-    ?> 
 
     <!-- </div> -->
     <!-- <div class="col-sm-2" id="google_translate_element"> -->

@@ -1,6 +1,9 @@
 <!-- <header(Content-type: text/html; charset=utf-8)>
 <script src="ChatFormulierungen.js"></script> -->
 <?php
+if (session_status() == PHP_SESSION_NONE) {
+    session_start(); // Starten der Session nur, wenn keine Session aktiv ist
+}
 $FormulierungenID ;
 ?>
 <link href="css/ChatFormulierungen.css" rel="stylesheet" type="text/css">
@@ -17,7 +20,7 @@ $FormulierungenID ;
     </div>
 </body>
 <?php
-include_once("helpers.php");
+include_once"helpers.php";
 // session_start();
 $last_id;
 
@@ -46,8 +49,8 @@ function fFormulierungenID1(){
 
 	$Inhalt ="";
 	//Linke Seite
-	$Inhalt = $Inhalt.'<table class="ChatFormulierungenTabel">';
-	$Inhalt = $Inhalt.'<tr class="ZielTab">';
+	$Inhalt.='<table class="ChatFormulierungenTabel">';
+	$Inhalt.='<tr class="ZielTab">';
 //-----------------------------------------------------------------------------------------------------------------------
 	//   Beschreibungen holen
 	if ($_SESSION['LocalChat'] == true){
@@ -120,36 +123,36 @@ function fFormulierungenID1(){
 
 	//Ende   Beschreibungen holen
 	//------------------------------------------------------------------------------------------------------------
-	$Inhalt = $Inhalt.'<tr class="ZielTab">';
-	$Inhalt = $Inhalt.'<td class="cFormulierungenText" colspan="3"><div onclick="MessageToAutor('.$myFormulierungenAutorID.')";>Autor dieses Eintrages ist : '.$myFormulierungenAutor.'</div></td>';
-	$Inhalt = $Inhalt.'</tr>';
-	$Inhalt = $Inhalt.'<tr>';
-	$Inhalt = $Inhalt.'<td class="BereichText" colspan="3">'.$myBereichText.'</td>';
-	$Inhalt = $Inhalt.'</tr>';
-	$Inhalt = $Inhalt.'<tr><div class="ZielText">';
-	$Inhalt = $Inhalt.'<td class="cZielZieleNummer">'.$myZieleNummer.' </td>';
-	$Inhalt = $Inhalt.'<td class="cZielZieleStichwort">'.$myZieleStichwort.' </td>';
-	$Inhalt = $Inhalt.'<td class="cZielZieleBeschreibung">'.$myZieleBeschreibung.' </td>';
-	$Inhalt = $Inhalt.'</div></tr>';
-	$Inhalt = $Inhalt.'<tr>';
-	$Inhalt = $Inhalt . '<td class="cFormulierungenText" colspan="3">' . $myFormulierungenText.'</td>';
-	$Inhalt = $Inhalt.'</tr>';
-	$Inhalt = $Inhalt.'<td colspan="3">Deinen Beitrag eingeben :</td>';
-	$Inhalt = $Inhalt.'</tr>';
-	$Inhalt = $Inhalt.'<tr>';
-	$Inhalt = $Inhalt.'<td><form action="ELDiB.php" target="top" method="get">
+	$Inhalt.='<tr class="ZielTab">';
+	$Inhalt.='<td class="cFormulierungenText" colspan="3"><div onclick="MessageToAutor('.$myFormulierungenAutorID.')";>Autor dieses Eintrages ist : '.$myFormulierungenAutor.'</div></td>';
+	$Inhalt.='</tr>';
+	$Inhalt.='<tr>';
+	$Inhalt.='<td class="BereichText" colspan="3">'.$myBereichText.'</td>';
+	$Inhalt.='</tr>';
+	$Inhalt.='<tr><div class="ZielText">';
+	$Inhalt.='<td class="cZielZieleNummer">'.$myZieleNummer.' </td>';
+	$Inhalt.='<td class="cZielZieleStichwort">'.$myZieleStichwort.' </td>';
+	$Inhalt.='<td class="cZielZieleBeschreibung">'.$myZieleBeschreibung.' </td>';
+	$Inhalt.='</div></tr>';
+	$Inhalt.='<tr>';
+	$Inhalt.= '<td class="cFormulierungenText" colspan="3">' . $myFormulierungenText.'</td>';
+	$Inhalt.='</tr>';
+	$Inhalt.='<td colspan="3">Deinen Beitrag eingeben :</td>';
+	$Inhalt.='</tr>';
+	$Inhalt.='<tr>';
+	$Inhalt.='<td><form action="ELDiB.php" target="top" method="get">
 	<textarea id="ChatTextFormulierungen" type="text/html" name="ChatEingabe" placeholder="Ihr Text"></textarea><br>	
 	</form></td>';
-	$Inhalt = $Inhalt.'</tr>';
-	$Inhalt = $Inhalt.'<tr>';
-	$Inhalt = $Inhalt.'<td>';													
-	$Inhalt = $Inhalt.'<button type="button" onclick="SaveChatFormulierungen('.MyString($FormulierungenID).');" > speichern</button></td>';	
-	$Inhalt = $Inhalt.'</tr>';
-	// $Inhalt = $Inhalt.'<tr>';
-	// $Inhalt = $Inhalt.'<td>';
-	// $Inhalt = $Inhalt.'<button type="button" onclick="NoDisplayChatFormulierungen();" > schliessen</button></td>';
-	// $Inhalt = $Inhalt.'</tr>';
-	$Inhalt = $Inhalt.'</table>';	
+	$Inhalt.='</tr>';
+	$Inhalt.='<tr>';
+	$Inhalt.='<td>';													
+	$Inhalt.='<button type="button" onclick="SaveChatFormulierungen('.MyString($FormulierungenID).');" > speichern</button></td>';	
+	$Inhalt.='</tr>';
+	// $Inhalt.='<tr>';
+	// $Inhalt.='<td>';
+	// $Inhalt.='<button type="button" onclick="NoDisplayChatFormulierungen();" > schliessen</button></td>';
+	// $Inhalt.='</tr>';
+	$Inhalt.='</table>';	
 	echo $Inhalt;
 }
 if ( isset($_GET['FormulierungenID2']) ){
@@ -187,10 +190,10 @@ if ( ! $db_erg )
 
 while ($zeile = mysqli_fetch_array( $db_erg, MYSQLI_ASSOC))
 {
-	$Inhalt = $Inhalt .'<tr>';
+	$Inhalt.='<tr>';
 	if (empty($zeile['IdUser'])){
-		$Inhalt = $Inhalt .'<td class="ChatFormulierungenInfoText">';
-		$Inhalt = $Inhalt .'<div class="ChatFormulierungenInfoDiv1" onclick="MessageToAutor('.$zeile['IdAutor'].')";">';	
+		$Inhalt.='<td class="ChatFormulierungenInfoText">';
+		$Inhalt.='<div class="ChatFormulierungenInfoDiv1" onclick="MessageToAutor('.$zeile['IdAutor'].')";">';	
 
 		// Name des Autor eintragen
 		if ($_SESSION['LocalChat'] == true){
@@ -208,21 +211,21 @@ while ($zeile = mysqli_fetch_array( $db_erg, MYSQLI_ASSOC))
 
 
 		while ($zeileAutor = mysqli_fetch_array($db_ergAutor, MYSQLI_ASSOC)) {
-			// $Inhalt = $Inhalt .$zeileAutor['USERNAME'];
+			// $Inhalt.=$zeileAutor['USERNAME'];
 			if($zeile['deactivated'] <> 1){
-				$Inhalt = $Inhalt .$zeileAutor['USERNAME'];
+				$Inhalt.=$zeileAutor['USERNAME'];
 				}
 				else
 				{
-					$Inhalt = $Inhalt .$zeileAutor['USERNAME'].' hat den Chat verlassen';	
+					$Inhalt.=$zeileAutor['USERNAME'].' hat den Chat verlassen';	
 				}
 		}	
 		
-		$Inhalt = $Inhalt .'</div>';
+		$Inhalt.='</div>';
 	}
 	else{
-		$Inhalt = $Inhalt .'<td class="ChatFormulierungenInfoText">';
-		$Inhalt = $Inhalt .'<div class="ChatFormulierungenInfoDiv1" onclick="MessageToAutor('.$zeile['IdUser'].')";>';
+		$Inhalt.='<td class="ChatFormulierungenInfoText">';
+		$Inhalt.='<div class="ChatFormulierungenInfoDiv1" onclick="MessageToAutor('.$zeile['IdUser'].')";>';
 
 		// Name des Autor eintragen
 		if ($_SESSION['LocalChat'] == true){
@@ -241,35 +244,35 @@ while ($zeile = mysqli_fetch_array( $db_erg, MYSQLI_ASSOC))
 
 		while ($zeileAutor = mysqli_fetch_array($db_ergAutor, MYSQLI_ASSOC)) {
 			if($zeile['deactivated'] <> 1){
-			$Inhalt = $Inhalt .$zeileAutor['USERNAME'];
+			$Inhalt.=$zeileAutor['USERNAME'];
 			}
 			else
 			{
-				$Inhalt = $Inhalt .$zeileAutor['USERNAME'].' hat den Chat verlassen';	
+				$Inhalt.=$zeileAutor['USERNAME'].' hat den Chat verlassen';	
 			}
 		}	
 
-		$Inhalt = $Inhalt .'</div>';
+		$Inhalt.='</div>';
 	}
-	$Inhalt = $Inhalt .'<div class="ChatFormulierungenInfoDiv2">';
-	$Inhalt = $Inhalt .$zeile['Time'];
-	$Inhalt = $Inhalt .'</div>';
-	$Inhalt = $Inhalt .'</td>';
-	$Inhalt = $Inhalt .'</tr>';
-	$Inhalt = $Inhalt .'<tr>';
-	$Inhalt = $Inhalt .'<td class="FormulierungenText">';
-	$Inhalt = $Inhalt .'<div>'.nl2br($zeile['Text']).'</div>';
-	$Inhalt = $Inhalt .'</td>';
-	$Inhalt = $Inhalt .'</tr>';
+	$Inhalt.='<div class="ChatFormulierungenInfoDiv2">';
+	$Inhalt.=$zeile['Time'];
+	$Inhalt.='</div>';
+	$Inhalt.='</td>';
+	$Inhalt.='</tr>';
+	$Inhalt.='<tr>';
+	$Inhalt.='<td class="FormulierungenText">';
+	$Inhalt.='<div>'.nl2br($zeile['Text']).'</div>';
+	$Inhalt.='</td>';
+	$Inhalt.='</tr>';
 
 
 
 }
 
 //__________________________________________________________________________
-	$Inhalt = $Inhalt.'<tr>';
+	$Inhalt.='<tr>';
 
-	$Inhalt = $Inhalt.'</table>';
+	$Inhalt.='</table>';
 	echo $Inhalt;
 
 }		

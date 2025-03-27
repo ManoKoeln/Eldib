@@ -4,21 +4,24 @@
 <div id="SupportPlanForm">
 </div>
 <?php
-if ( isset($_GET['ShowSupportPlanForm']) ){
+if (session_status() == PHP_SESSION_NONE) {
+   session_start(); // Starten der Session nur, wenn keine Session aktiv ist
+ }
+if ( isset($_GET['DeaktiviertShowSupportPlanForm']) ){
 
 // $Inhalt = '<form class="SupportPlanFormular" action="SaveSupportPlanFromData();" method="post" autocomplete="off">';
-$Inhalt = '<form class="SupportPlanFormular" autocomplete="off">';
-$Inhalt = $Inhalt. '<textarea id="SupportPlanFormRow1" class="TabInhalt" type="text" name="Row1" value="" autocomplete="off"></textarea>';
-$Inhalt = $Inhalt. '<textarea id="SupportPlanFormRow2" class="TabInhalt" type="text" name="Row2" value="" autocomplete="off"></textarea>';
-$Inhalt = $Inhalt. '<textarea id="SupportPlanFormRow3" class="TabInhalt" type="text" name="Row3" value="" autocomplete="off"></textarea>';
-$Inhalt = $Inhalt. '<textarea id="SupportPlanFormRow4" class="TabInhalt" type="text" name="Row4" value="" autocomplete="off"></textarea>';
-$Inhalt = $Inhalt. '<button class="SaveSupportPlanFromData" type="button" onclick="SaveSupportPlanFromData();" >übernehmen</button>';
-$Inhalt = $Inhalt. '</form>';
-echo $Inhalt;
+// $Inhalt = '<form class="SupportPlanFormular" autocomplete="off">';
+// $Inhalt.='<textarea id="SupportPlanFormRow1" class="TabInhalt" type="text" name="Row1" value="" autocomplete="off"></textarea>';
+// $Inhalt.='<textarea id="SupportPlanFormRow2" class="TabInhalt" type="text" name="Row2" value="" autocomplete="off"></textarea>';
+// $Inhalt.='<textarea id="SupportPlanFormRow3" class="TabInhalt" type="text" name="Row3" value="" autocomplete="off"></textarea>';
+// $Inhalt.='<textarea id="SupportPlanFormRow4" class="TabInhalt" type="text" name="Row4" value="" autocomplete="off"></textarea>';
+// $Inhalt.='<button class="SaveSupportPlanFromData" type="button" onclick="SaveSupportPlanFromData();" >übernehmen</button>';
+// $Inhalt.='</form>';
+// echo $Inhalt;
 }
 if ( isset($_GET['SaveSupportPlanFromData']) ){
-    include ("content/helpers.php");
-    require ("content/db.php");
+    include "content/helpers.php";
+    require "content/db.php";
     if ($_SESSION['LocalChat'] == true){
       $db_link = new mysqli($_SESSION["host_nameSchool"], $_SESSION["user_nameSchool"], $_SESSION["passwordSchool"], $_SESSION["databaseSchool"]);
     }
@@ -44,6 +47,8 @@ if($actID > 0){
    {
       echo  'ungültige Bereich NewLineSupportPlan: Error message: %s\n'. $db_link->error;
    }
+
 }
+
 }
 ?>

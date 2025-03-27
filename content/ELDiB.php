@@ -104,24 +104,24 @@ while ($zeile = mysqli_fetch_array($db_erg, MYSQLI_ASSOC)) {
 
 
 <?php
-require ("header.php");
-require ("db.php");
-require ("chatFormulierungen.php");
-require ("chatMassnahmen.php");
-require ("UserChatFormulierungen.php");
-require ("UserChatMassnahmen.php");
-require ("Messages.php");
-require ("PostBoxReceive.php");
-require ("PostBoxSend.php");
+require "header.php";
+require "db.php";
+require "chatFormulierungen.php";
+require "chatMassnahmen.php";
+require "UserChatFormulierungen.php";
+require "UserChatMassnahmen.php";
+require "Messages.php";
+require "PostBoxReceive.php";
+require "PostBoxSend.php";
 
-require ("PopUp.php");
-require ("changePW.php");
+require "PopUp.php";
+require "changePW.php";
 
 
 ?> 
 <!-- Beispiel aus: https://css-tricks.com/resolution-specific-stylesheets/ -->
 <link href="css/Style.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" media="screen and (max-aspect-ratio: 4/3)" href="CSS/StyleESmal.css" />
+<link rel="stylesheet" media="screen and (max-aspect-ratio: 4/3)" href="CSS/StyleSmal.css" />
 
 
 <div id="EContent">
@@ -130,7 +130,7 @@ require ("changePW.php");
     Bitte aktivieren Sie JavaScript, um das JavaScript-Element zu sehen.
   </noscript> -->
 <?php
-require ('konfiguration.php');
+require 'konfiguration.php';
 // echo '<br>';
 
 if ($_SESSION['LocalChat'] == true){
@@ -156,10 +156,10 @@ if ($_SESSION['LocalChat'] == true){
 			<td  class="BereichText" >Bereich</td>
 		</tr>
 		<tr class="ZieleHeadline" >
-			<td class="ZielZieleStufe">Stufe</td>
-			<td class="ZielZieleNummer">Bereich</td>
-			<td class="ZielZieleStichwort">Ziel</td>
-			<td class="ZielZieleBeschreibung">Beschreibung </td>
+			<th class="ZielZieleStufe">Stufe</th>
+			<th class="ZielZieleNummer">Bereich</th>
+			<th class="ZielZieleStichwort">Ziel</th>
+			<th class="ZielZieleBeschreibung">Beschreibung </th>
 		</tr>
 
 		<tr class="FormulierungenHeadline" id="Div3Head">
@@ -200,6 +200,11 @@ if ( ! $db_erg )
 	echo '<div class="container" id="Div2"></div>';
 	echo '<div class="container" id="Div3" ></div>';
 	echo '<div class="container" id="Div4" ></div>';
+	// echo '<td class="container" id="Div2"></td>';
+	// echo '<td class="container" id="Div3" ></td>';
+	// echo '<td class="container" id="Div4" ></td>';
+
+	// echo "</table>";
 	echo '</div>'; 
 
 //--------------------------------

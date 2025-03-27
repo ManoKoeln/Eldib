@@ -1,6 +1,6 @@
 <script src="SupportPlan.js"></script>
-<link href="CSS/SupportPlan.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" media="screen and (max-aspect-ratio: 4/3)" href="CSS/SupportPlanSmal.css" />
+<link href="CSS/style.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" media="screen and (max-aspect-ratio: 4/3)" href="CSS/styleSmal.css" />
 <div id="SupportPlan">
 </div>
     <?php
@@ -9,8 +9,8 @@
   }
     $SupportplanNotSaved = 1;
 if ( isset($_GET['SetSupportPlan']) ){
-    require ("content/db.php");
-    include ("content/helpers.php");
+    require "content/db.php";
+    include "content/helpers.php";
     //Prüfen ob noch ein offener Supportplan besteht
     if ($SupportplanNotSaved < 2){
       if ($_SESSION['LocalChat'] == true){
@@ -36,21 +36,21 @@ if ( isset($_GET['SetSupportPlan']) ){
 
 
     $Inhalt ="";
-    $Inhalt = $Inhalt . '<div class="HeadData">';
+    $Inhalt.= '<div class="HeadData">';
     if ($_SESSION['LocalChat'] == true){
       $db_link = new mysqli($_SESSION["host_nameSchool"], $_SESSION["user_nameSchool"], $_SESSION["passwordSchool"], $_SESSION["databaseSchool"]);
-    }
+      }
     else{
-    $db_link = new mysqli($_SESSION["host_name"], $_SESSION["user_name"], $_SESSION["password"], $_SESSION["database"]);
-    }
+      $db_link = new mysqli($_SESSION["host_name"], $_SESSION["user_name"], $_SESSION["password"], $_SESSION["database"]);
+      }
 
     $sql = "SELECT * FROM client WHERE `id` =  ".$_SESSION['ActualClient']." ";
     $db_erg = mysqli_query( $db_link, $sql );
     if ( ! $db_erg )
-    {
-      $Inhalt = 'ungültige Bereich Abfrage Ziele: Error message: %s\n'. $db_link->error;
-    }
-      while ($zeile = mysqli_fetch_assoc( $db_erg))
+      {
+        $Inhalt = 'ungültige Bereich Abfrage Ziele: Error message: %s\n'. $db_link->error;
+      }
+    while ($zeile = mysqli_fetch_assoc( $db_erg))
     {
     
       $_SESSION['Name'] = $zeile['Name'] ;
@@ -59,43 +59,43 @@ if ( isset($_GET['SetSupportPlan']) ){
       $_SESSION['email'] = $zeile['email'] ;
       $_SESSION['id'] = $zeile['id'] ;
       $Inhalt = "";
-      $Inhalt = $Inhalt . '<div>';
-      $Inhalt = $Inhalt . 'Name : ('.$zeile['id'].'),'.$zeile['Name'].', '.$zeile['Vorname'].' ';
-      $Inhalt = $Inhalt .  '</div>';
-      $Inhalt = $Inhalt . '<div>';
-      $Inhalt = $Inhalt . 'Geburtsdatum : '.$zeile['Geburtsdatum'].' ';
-      $Inhalt = $Inhalt .  '</div>';
-      $Inhalt = $Inhalt . '<div>';
-      $Inhalt = $Inhalt . 'email : '.$zeile['email'].' ';
-      $Inhalt = $Inhalt .  '</div>';
-      $Inhalt = $Inhalt . '<div>';
-      $Inhalt = $Inhalt . 'Geburtsdatum : '.$zeile['Geburtsdatum'].' ';
-      $Inhalt = $Inhalt .  '</div>';
-      $Inhalt = $Inhalt . '<div>_____________________________________________</div>';
-      $Inhalt = $Inhalt . '<div>';
-      $Inhalt = $Inhalt . 'Eltern : '.$zeile['Parentvorname'].'  '.$zeile['Parentname'].'  ';
-      $Inhalt = $Inhalt .  '</div>';
-      $Inhalt = $Inhalt . '<div>';
-      $Inhalt = $Inhalt . 'email Eltern : '.$zeile['Parentemail'].' ';
-      $Inhalt = $Inhalt .  '</div>';
-      $Inhalt = $Inhalt .  '<div><button typ="button" class="btn btn-primary btn-sm" onclick="HideSupportPlan();">schliessen</button><button typ="button" class="btn btn-primary btn-sm" onclick="LoadELDiBTable();">Liste</button>';
+      $Inhalt.= '<div>';
+      $Inhalt.= 'Name : ('.$zeile['id'].'),'.$zeile['Name'].', '.$zeile['Vorname'].' ';
+      $Inhalt.=  '</div>';
+      $Inhalt.= '<div>';
+      $Inhalt.= 'Geburtsdatum : '.$zeile['Geburtsdatum'].' ';
+      $Inhalt.=  '</div>';
+      $Inhalt.= '<div>';
+      $Inhalt.= 'email : '.$zeile['email'].' ';
+      $Inhalt.=  '</div>';
+      $Inhalt.= '<div>';
+      $Inhalt.= 'Geburtsdatum : '.$zeile['Geburtsdatum'].' ';
+      $Inhalt.=  '</div>';
+      $Inhalt.= '<div>_____________________________________________</div>';
+      $Inhalt.= '<div>';
+      $Inhalt.= 'Eltern : '.$zeile['Parentvorname'].'  '.$zeile['Parentname'].'  ';
+      $Inhalt.=  '</div>';
+      $Inhalt.= '<div>';
+      $Inhalt.= 'email Eltern : '.$zeile['Parentemail'].' ';
+      $Inhalt.=  '</div>';
+      $Inhalt.=  '<div><button typ="button" class="btn btn-primary btn-sm m-3" onclick="HideSupportPlan();">schliessen</button><button typ="button" class="btn btn-primary btn-sm" onclick="LoadELDiBTable();">Liste</button>';
 
        //SaveSupportPlanButton
        if ($SupportplanNotSaved == 0){
-        $Inhalt = $Inhalt .'<button typ="button" id="SaveSupportPlan"class="btn btn-primary btn-sm" onclick="SaveSupportPlan('.$_GET['SetSupportPlan'].');">Förderplan speichern</button>';
-        $Inhalt = $Inhalt .'<button typ="button" id="CancelSupportPlan"class="btn btn-primary btn-sm" onclick="CancelSupportPlan('.$_GET['SetSupportPlan'].');">Förderplan verwerfen</button>';
+        $Inhalt.='<button typ="button" id="SaveSupportPlan"class="btn btn-primary btn-sm m-3" onclick="SaveSupportPlan('.$_GET['SetSupportPlan'].');">Förderplan speichern</button>';
+        $Inhalt.='<button typ="button" id="CancelSupportPlan"class="btn btn-primary btn-sm m-3" onclick="CancelSupportPlan('.$_GET['SetSupportPlan'].');">Förderplan verwerfen</button>';
        }
        else if ($SupportplanNotSaved == 1){
-        $Inhalt = $Inhalt .'<button typ="button" id="NewSupportPlan" class="btn btn-primary btn-sm" onclick="NewSupportPlan('.$_GET['SetSupportPlan'].');">neuen Förderplan erstellen</button>';
-        $Inhalt = $Inhalt .'<button typ="button" id="CreateSupportPlan" class="btn btn-primary btn-sm" onclick="CreateSupportPlan('.$_GET['SetSupportPlan'].');">Förderplan automatisch erstellen</button>';
+        $Inhalt.='<button typ="button" id="NewSupportPlan" class="btn btn-primary btn-sm m-3" onclick="NewSupportPlan('.$_GET['SetSupportPlan'].');">neuen Förderplan erstellen</button>';
+        $Inhalt.='<button typ="button" id="CreateSupportPlan" class="btn btn-primary btn-sm m-3" onclick="CreateSupportPlan('.$_GET['SetSupportPlan'].');">Förderplan automatisch erstellen</button>';
        }
        
-        $Inhalt = $Inhalt .'<button typ="button" id="CloseSelectSupportPlan"class="btn btn-primary btn-sm" onclick="CloseSelectSupportPlan();">gespeicherten Förderplan schließen</button>';
+        $Inhalt.='<button typ="button" id="CloseSelectSupportPlan"class="btn btn-primary btn-sm m-3" onclick="CloseSelectSupportPlan();">gespeicherten Förderplan schließen</button>';
        
        //gespeicherte Förderpläne
-       $Inhalt = $Inhalt .  '<label for="SelectSupportPlan"> </label>';
-       $Inhalt = $Inhalt .  '<select title="SelectSupportPlan" name="SelectSupportPlan" id="SelectSupportPlan" onchange="ChangedSelectionSupportPlan()">';
-       $Inhalt = $Inhalt .  '<option class="optionSupportPlan" value=0>gespeicherten Förderplan auswählen</option>';
+       $Inhalt.=  '<label for="SelectSupportPlan"> </label>';
+       $Inhalt.=  '<select title="SelectSupportPlan" name="SelectSupportPlan" id="SelectSupportPlan" onchange="ChangedSelectionSupportPlan()">';
+       $Inhalt.=  '<option class="optionSupportPlan" value=0>gespeicherten Förderplan auswählen</option>';
 
        //  Supportplan eintragen
        if ($_SESSION['LocalChat'] == true){
@@ -105,7 +105,7 @@ if ( isset($_GET['SetSupportPlan']) ){
       $db_linkSaved = new mysqli($_SESSION["host_name"], $_SESSION["user_name"], $_SESSION["password"], $_SESSION["database"]);
       }
      
-       $sqlSaved = "SELECT * FROM `supportplan` WHERE `clientID` = ".$_SESSION['ActualClient']." AND `gespeichert` > 0";
+       $sqlSaved = "SELECT * FROM `supportplan` WHERE `clientID` = ".$_SESSION['ActualClient']." AND `gespeichert` > 0 ORDER BY `erstellt` DESC";
        $db_ergSaved = mysqli_query( $db_linkSaved, $sqlSaved );
        if ( ! $db_ergSaved )
        {
@@ -114,25 +114,33 @@ if ( isset($_GET['SetSupportPlan']) ){
          while ($zeileSaved = mysqli_fetch_assoc( $db_ergSaved))
        {
          // echo '<option class="optionSupportPlan" value="'.$zeile['id'].'">('.$zeile['id'].'),'.$zeile['Name'].', '.$zeile['Vorname'].' - '.$zeile['Geburtsdatum'].'</option>';
-         $Inhalt = $Inhalt . '<option class="optionSupportPlan" value="'.$zeileSaved['id'].'">'.$zeileSaved['geaendert'].'</option>';
+         $Inhalt.= '<option class="optionSupportPlan" value="'.$zeileSaved['id'].'">'.$zeileSaved['geaendert'].'</option>';
        }
 
-       $Inhalt = $Inhalt .  '</select>';
+       $Inhalt.=  '</select>';
        //ENDE
        
-      $Inhalt = $Inhalt .  '</div>';
-      $Inhalt = $Inhalt .  '</div>';
+      $Inhalt.=  '</div>';
+      $Inhalt.=  '</div>';
       
     }
 
     
     //Inhalt
-    $Inhalt = $Inhalt .  '<div class="ContentTableInhalt" id="ContentTableInhalt">';
-    $Inhalt = $Inhalt .  '<table class="table table-bordered table-striped table-hover table-sm">';
-    $Inhalt = $Inhalt .  '<th class="columnSupportHead1 heading">Entwicklungsbereiche</th>';
-    $Inhalt = $Inhalt .  '<th class="columnSupportHead2 heading">Lernausgangslage</th>';
-    $Inhalt = $Inhalt .  '<th class="columnSupportHead3 heading">Formulierungen</th>';
-    $Inhalt = $Inhalt .  '<th class="columnSupportHead4 heading">Maßnahmen</th>';
+    //$Inhalt.=  '<div class="tableFixHead" id="ContentTableInhalt">';
+    $Inhalt.=  '<div class="ContentTableInhalt tableFixHead" id="ContentTableInhalt">'; //ContentTableInhalt
+    //$Inhalt.=  '<table class="tableFixHead">';
+
+    $Inhalt.=  '<table class="table table-bordered table-striped table-hover table-sm ">';
+    $Inhalt.=  '<thead>';
+    $Inhalt.=  '<tr >';
+    $Inhalt.=  '<th class="heading">Entwicklungsbereiche</th>'; //columnSupportHead1
+    $Inhalt.=  '<th class="heading">Lernausgangslage</th>';
+    $Inhalt.=  '<th class="heading">Formulierungen</th>';
+    $Inhalt.=  '<th class="heading">Maßnahmen</th>';
+    $Inhalt.=  '</tr>';
+    $Inhalt.=  '</thead>';
+    $Inhalt.=  '<tbody>';
     if ($_SESSION['LocalChat'] == true){
       $db_linkDat = new mysqli($_SESSION["host_nameSchool"], $_SESSION["user_nameSchool"], $_SESSION["passwordSchool"], $_SESSION["databaseSchool"]);
     }
@@ -148,26 +156,32 @@ if ( isset($_GET['SetSupportPlan']) ){
       while ($zeileDat = mysqli_fetch_assoc( $db_ergDat))
     {
  
-    $Inhalt = $Inhalt .  '<tr >';
-    $Inhalt = $Inhalt .  '<td class="columnSupport1 TabInhalt"><div  class="columnSupportTextarea" id="columnSupport1" >'.$zeileDat['Spalte1'].'</div></td>';
-    $Inhalt = $Inhalt .  '<td class="columnSupport2 TabInhalt"><div class="columnSupportTextarea" id="columnSupport2" >'.$zeileDat['Spalte2'].'</div></td>';
-    $Inhalt = $Inhalt .  '<td class="columnSupport3 TabInhalt"><div class="columnSupportTextarea" id="columnSupport3" >'.$zeileDat['Spalte3'].'</div></td>';
-    $Inhalt = $Inhalt .  '<td class="columnSupport4 TabInhalt"><div class="columnSupportTextarea" id="columnSupport4" >'.$zeileDat['Spalte4'].'</div></td>';
-    $Inhalt = $Inhalt .  '<td  class="TabInhalt"><button type="button" class="btn btn-primary btn-sm" onclick="DeleteSupportTextArea('.$zeileDat['idItem'].');">löschen</button></td>';
-    $Inhalt = $Inhalt .  '</tr>';
+    $Inhalt.=  '<tr >';
+    $Inhalt.=  '<td class="columnSupport1 TabInhalt"><div  class="columnSupportTextarea" id="columnSupport1" >'.$zeileDat['Spalte1'].'</div></td>';
+    $Inhalt.=  '<td class="columnSupport2 TabInhalt"><div class="columnSupportTextarea" id="columnSupport2" >'.$zeileDat['Spalte2'].'</div></td>';
+    $Inhalt.=  '<td class="columnSupport3 TabInhalt"><div class="columnSupportTextarea" id="columnSupport3" >'.$zeileDat['Spalte3'].'</div></td>';
+    $Inhalt.=  '<td class="columnSupport4 TabInhalt"><div class="columnSupportTextarea" id="columnSupport4" >'.$zeileDat['Spalte4'].'</div></td>';
+    $Inhalt.=  '<td  class="TabInhalt"><button type="button" class="btn btn-primary btn-sm" onclick="DeleteSupportTextArea('.$zeileDat['idItem'].');">löschen</button></td>';
+    $Inhalt.=  '</tr>';
     }
-       
     if ($SupportplanNotSaved == 0){
-      $Inhalt = $Inhalt .  '<tr  onclick="ShowSupportPlanForm();" >';
-      $Inhalt = $Inhalt .  '<td class="columnSupport1 TabEmpty"><div  class="columnSupportdiv" id="columnSupport1"></div></td>';
-      $Inhalt = $Inhalt .  '<td class="columnSupport2 TabEmpty"><div onclick="ShowSupportPlanForm();" class="columnSupportdiv" id="columnSupport2"></div></td>';
-      $Inhalt = $Inhalt .  '<td class="columnSupport3 TabEmpty"><div onclick="ShowSupportPlanForm();" class="columnSupportdiv" id="columnSupport3"></div></td>';
-      $Inhalt = $Inhalt .  '<td class="columnSupport4 TabEmpty"><div onclick="ShowSupportPlanForm();" class="columnSupportdiv" id="columnSupport4"></div></td>';
-      $Inhalt = $Inhalt .  '</tr>';
+      $Inhalt.=  '<tr  onclick="?ShowSupportPlanForm();" style="align-items: center;">';
+      $Inhalt.=  '<td class="columnSupport1 TabEmpty" height:auto;><div onclick="?ShowSupportPlanForm();" class="columnSupportdiv" id="SupportPlanFormRow1" style="height: fit-content;"> </div></td>';
+      $Inhalt.=  '<td class="columnSupport2 TabEmpty" height:auto;><div onclick="?ShowSupportPlanForm();" class="columnSupportdiv" id="SupportPlanFormRow2" style="height: fit-content;"> </div></td>';
+      $Inhalt.=  '<td class="columnSupport3 TabEmpty" height:auto;><div contenteditable="true" onclick="?ShowSupportPlanForm();" class="columnSupportdiv" id="SupportPlanFormRow3" style="height: fit-content;"> </div></td>';
+      $Inhalt.=  '<td class="columnSupport4 TabEmpty" height:auto;><div contenteditable="true" onclick="?ShowSupportPlanForm();" class="columnSupportdiv" id="SupportPlanFormRow4" style="height: fit-content;"> </div></td>';
+      // $Inhalt.=  '<td class="columnSupport1 TabEmpty"><div onclick="?ShowSupportPlanForm();" class="columnSupportdiv" id="SupportPlanFormRow1"> </div></td>';
+      // $Inhalt.=  '<td class="columnSupport2 TabEmpty"><div onclick="?ShowSupportPlanForm();" class="columnSupportdiv" id="SupportPlanFormRow2"> </div></td>';
+      // $Inhalt.=  '<td class="columnSupport3 TabEmpty"><div contenteditable="true" onclick="?ShowSupportPlanForm();" class="columnSupportdiv" id="SupportPlanFormRow3" > </div></td>';
+      // $Inhalt.=  '<td class="columnSupport4 TabEmpty"><div contenteditable="true" onclick="?ShowSupportPlanForm();" class="columnSupportdiv" id="SupportPlanFormRow4" > </div></td>';
+      $Inhalt.=  '</tr>';
     }
-    $Inhalt = $Inhalt .  '</table class="table table-bordered table-striped table-hover table-sm">';     
-    $Inhalt = $Inhalt .  '</div>';
-    // $Inhalt = $Inhalt .'<div class="NewLineButtontd"><button typ="button" class="btn btn-primary btn-sm" onclick="NewLineSupportPlan('.$_GET['SetSupportPlan'].');">neue Zeile</button></div>';   
+    $Inhalt.=  '</tbody>';
+    $Inhalt.=  '</table class="table table-bordered table-striped table-hover table-sm">';  
+
+    $Inhalt.=  '</div>';
+    $Inhalt.='<div style="text-align: center;"><button class="btn btn-primary btn-sm m-3" type="button" onclick="SaveSupportPlanFromData();" >übernehmen</button></div>';   
+    // $Inhalt.='<div class="NewLineButtontd"><button typ="button" class="btn btn-primary btn-sm" onclick="NewLineSupportPlan('.$_GET['SetSupportPlan'].');">neue Zeile</button></div>';   
 
   echo $Inhalt;
 }
@@ -477,6 +491,7 @@ if ( isset($_GET['NewLineSupportPlan']) ){
   ob_end_clean();
   echo $MyZieleID;
 }
+
 if ( isset($_GET['CheckSupportPlan']) ){
   //Prüfen ob noch ein offener Supportplan besteht
   if ($_SESSION['LocalChat'] == true){
@@ -504,7 +519,19 @@ if ( isset($_GET['CheckSupportPlan']) ){
 // ChangedSelectionSupportPlan
 if ( isset($_GET['ChangedSelectionSupportPlan']) ){
   require ("content/db.php");
-  $Inhalt =  '<table class="table table-bordered table-striped table-hover table-sm">';
+  $Inhalt =  '<div class="ContentTableInhalt tableFixHead" id="ContentTableInhalt">'; //ContentTableInhalt
+  //$Inhalt.=  '<table class="tableFixHead">';
+
+  $Inhalt.=  '<table class="table table-bordered table-striped table-hover table-sm ">';
+  $Inhalt.=  '<thead>';
+  $Inhalt.=  '<tr >';
+  $Inhalt.=  '<th class="heading">Entwicklungsbereiche</th>'; //columnSupportHead1
+  $Inhalt.=  '<th class="heading">Lernausgangslage</th>';
+  $Inhalt.=  '<th class="heading">Formulierungen</th>';
+  $Inhalt.=  '<th class="heading">Maßnahmen</th>';
+  $Inhalt.=  '</tr>';
+  $Inhalt.=  '</thead>';
+  $Inhalt.=  '<tbody>';
 
   if ($_SESSION['LocalChat'] == true){
     $db_linkDat = new mysqli($_SESSION["host_nameSchool"], $_SESSION["user_nameSchool"], $_SESSION["passwordSchool"], $_SESSION["databaseSchool"]);
@@ -516,21 +543,22 @@ if ( isset($_GET['ChangedSelectionSupportPlan']) ){
   $db_ergDat = mysqli_query( $db_linkDat, $sqlDat );
   if ( ! $db_ergDat )
   {
-    $Inhalt = 'ungültige Bereich supportplanitems: Error message: %s\n'. $db_linkDat->error;
+    $Inhalt.= 'ungültige Bereich supportplanitems: Error message: %s\n'. $db_linkDat->error;
   }
     while ($zeileDat = mysqli_fetch_assoc( $db_ergDat))
   {
 
-  $Inhalt = $Inhalt .  '<tr >';
-  $Inhalt = $Inhalt .  '<td class="columnSupport1 TabInhalt"><div  class="columnSupportTextarea" id="columnSupport1" >'.$zeileDat['Spalte1'].'</div></td>';
-  $Inhalt = $Inhalt .  '<td class="columnSupport2 TabInhalt"><div class="columnSupportTextarea" id="columnSupport2" >'.$zeileDat['Spalte2'].'</div></td>';
-  $Inhalt = $Inhalt .  '<td class="columnSupport3 TabInhalt"><div class="columnSupportTextarea" id="columnSupport3" >'.$zeileDat['Spalte3'].'</div></td>';
-  $Inhalt = $Inhalt .  '<td class="columnSupport4 TabInhalt"><div class="columnSupportTextarea" id="columnSupport4" >'.$zeileDat['Spalte4'].'</div></td>';
-  $Inhalt = $Inhalt .  '</tr>';
+  $Inhalt.=  '<tr >';
+  $Inhalt.=  '<td class="columnSupport1 TabInhalt"><div  class="columnSupportTextarea" id="columnSupport1" >'.$zeileDat['Spalte1'].'</div></td>';
+  $Inhalt.=  '<td class="columnSupport2 TabInhalt"><div class="columnSupportTextarea" id="columnSupport2" >'.$zeileDat['Spalte2'].'</div></td>';
+  $Inhalt.=  '<td class="columnSupport3 TabInhalt"><div class="columnSupportTextarea" id="columnSupport3" >'.$zeileDat['Spalte3'].'</div></td>';
+  $Inhalt.=  '<td class="columnSupport4 TabInhalt"><div class="columnSupportTextarea" id="columnSupport4" >'.$zeileDat['Spalte4'].'</div></td>';
+  $Inhalt.=  '</tr>';
   }
   $SupportplanNotSaved = 2;  
-  $Inhalt = $Inhalt .  '</table>';     
-  $Inhalt = $Inhalt .  '</div>';
+  $Inhalt.=  '</tbody>';
+  $Inhalt.=  '</table>';     
+  $Inhalt.=  '</div>';
   echo $Inhalt;
 }
 //CloseSelectSupportPlan

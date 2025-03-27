@@ -15,27 +15,18 @@
     margin: 0.5%;
 }
 
-.tableFixHead {
-    overflow-y: auto; /* make the table scrollable if height is more than 200 px  */
-    /* height: 200px; */ /* gives an initial height of 200px to the table */
-  }
-  /* .tableFixHead table{
-    font-size: 1vw;
-  } */
   .tableFixHead thead th {
     position: sticky; /* make the table heads sticky */
     top: 0px; /* table head will be placed from the top of the table and sticks to it */
   }
-  #ELDiBLehrercontainer table, #ELDiBElterncontainer table, #ELDiBKindcontainer table, #ELDiBLehrercontent_New table{
+  /* # table, #ELDiBElterncontainer table, #ELDiBKindcontainer table, #ELDiBLehrercontent_New table{
     border-collapse: collapse; /* make the table borders collapse to each other */
-    width: 100%;
-  }
-#ELDiBLehrerhead, #ELDiBElternhead, #ELDiBKindhead{
+    /* width: 100%;
+  } */ 
+/* #ELDiBLehrerhead, #ELDiBElternhead, #ELDiBKindhead{
     height: 30%;
-}
-#ELDiBLehrercontainer, #ELDiBElterncontainer, #ELDiBKindcontainer, #ELDiBLehrercontent_New{
-    height: 70%;
-}
+} */
+
 
 #ELDiBLehrercontainerTableHead, #ELDiBElterncontainerTableHead, #ELDiBKindcontainerTableHead{
     height: 2vw;
@@ -44,9 +35,7 @@
     margin: 0 auto;
     overflow: auto;
 }
-#ELDiBLehrercontainer th, #ELDiBElterncontainer th, #ELDiBKindcontainer th, #ELDiBLehrercontent_New th{
-text-align: left;
-}
+#ELDiBLehrercontainer th, #ELDiBElterncontainer th, #ELDiBKindcontainer th, #ELDiBLehrercontent_New th{text-align: left;width: 65vh;}
 .CreateNewTableELDiBKEL{
     position: absolute;
     left: 39%;
@@ -58,9 +47,7 @@ text-align: left;
     top: 8.5%;
     border-style: groove;
 }
-.BeschreibungHead{
-    /* position: fixed; */
-}
+
 .KELZielBeschreibungHead{
 width: 40%;
 }

@@ -33,6 +33,255 @@ h2 {
 .ButtonHelp a{
     color: yellow;
 } */
+.BereichHead{
+
+	box-sizing: border-box;
+	width: 10%;
+	position:relative; 
+	float:left; 
+	background: #84F58E; 
+	padding: 5px; 
+	border: 2px ;
+	border-color: red;
+	/* height: 3%; */
+}
+.BereichTab{
+
+	background: #84F58E; 
+
+}
+
+.BereichText {
+    width: 100%;
+    /* height: 2em; */
+    background: #84F58E;
+    padding: 5px;
+    margin: 0em;
+    font-size: var(--FontSize);
+    height: 100%;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+}
+
+#containerBereich{
+
+	width: 100%;
+}
+
+
+.HeadTable{
+	position: relative;
+}
+.BereichHeadline{
+	padding-left: 5px;
+	box-sizing: border-box;
+	position:absolute;
+	float:left;
+	width: 10%;
+	margin: 0em;
+	/* height: 2vw; */
+	background: #84F58E;
+}
+.ZieleHeadline{
+	box-sizing: border-box;
+	position:absolute;
+	float:left;
+	width: 50%;
+	margin: 0em;
+	/* height: 2vw; */
+	left: 10%;
+}
+#Div3Head.FormulierungenHeadline{
+	/* padding-left: 5px; */
+	padding-left: 5px;
+	box-sizing: border-box;
+	position:absolute;
+	float:left;
+	width: 20%;
+	margin: 0em;
+	/* height: 2vw; */
+	left: 60%;
+	background:#FADCEF;
+	/* vertical-align: middle; */
+}
+#Div4Head.MassnahmenHeadline{
+	padding-left: 5px;
+	box-sizing: border-box;
+	position:absolute; 
+	float:left; 
+	width: 20%; 
+	margin: 0em; 
+	/* height: 2vw; */
+	left: 80%;
+	background:#C4FF0E;
+
+}
+#Div1{
+	box-sizing: border-box;
+	position:absolute;
+	float:left;
+	width: 10%;
+	margin: 0em;
+	height: 62%;
+	overflow: auto;
+	overflow-x: hidden;
+	top: 29%;
+}
+#Div2{
+	
+	box-sizing: border-box;
+	position:absolute; 
+	float:left; 
+	width: 50%; 
+	margin: 0em; 
+	height: 62%;
+	overflow: auto;
+	overflow-x: hidden; 
+	top: 29%;
+	left: 10%;
+}
+#Div3{
+	box-sizing: border-box;
+	position:absolute; 
+	float:left; 
+	width: 20%; 
+	margin: 0em; 
+	height: 62%;
+	overflow: auto;
+	overflow-x: hidden; 
+	top: 29%;
+	left: 60%;
+}
+#Div4{
+	box-sizing: border-box;
+	position:absolute; 
+	float:left; 
+	width: 20%; 
+	margin: 0em; 
+	height: 62%;
+	overflow: auto;
+	overflow-x: hidden; 
+	top: 29%;
+	left: 80%;
+}
+.ZielHead {
+	box-sizing: border-box;
+	width: 50%;
+	position: relative; 
+	float:left; 
+	background: #D6D8F3;
+	 padding: 5px;
+	 margin: 0em;
+}
+.ZielTab{
+	background: #D6D8F3;
+}
+.ZielZieleStufe{
+	box-sizing: border-box;
+	width: 5%;
+	height: 100%;
+	position:relative; 
+	float:left; 
+	text-align: center;
+	background: #D6D8F3;
+	 padding: 5px;
+	 font-size: var(--FontSize);	
+}
+.ZielZieleNummer {
+	box-sizing: border-box;
+	width: 10%;
+	height: 100%;
+	position:relative;
+	float:left;
+	background: #D6D8F3;
+	padding: 5px;
+	font-size: var(--FontSize);
+}
+.ZielZieleStichwort {
+	box-sizing: border-box;
+	width: 15%;
+	height: 100%;
+	position:relative;
+	float:left;
+	background: #D6D8F3;
+	padding: 5px;
+	font-size: var(--FontSize);
+}
+.ZielZieleBeschreibung {
+	box-sizing: border-box;
+	width: 75%;
+	width: 70%;
+	height: 100%;
+	position:relative;
+	float:left;
+	background: #D6D8F3;
+	padding: 5px;
+	font-size: var(--FontSize);
+	overflow-wrap: break-word;
+}
+.FormulierungTab {
+	background: #FADCEF;
+}
+.FormulierungenHead{
+	box-sizing: border-box;
+	width: 20%;
+	position:relative; 
+	float:left; 
+	background: #FADCEF;
+	margin: 0em;
+	height: 2vw;
+	padding: 5px;
+}
+.FormulierungenText {
+	box-sizing: border-box;
+	width: 100%;
+	height: 50%;
+	position:relative; 
+	float:left; 
+	background:#FADCEF;
+	 padding: 5px;	
+	 font-size: var(--FontSize);
+	 overflow-wrap: break-word;
+}
+.MassnahmenHead{
+	box-sizing: border-box;
+	position:relative; 
+	float:left; 
+	width: 20%; 
+	background:#C4FF0E;
+	margin: 0em;
+	padding: 5px;
+}
+.MassnahmenTab{
+	background:#C4FF0E;
+}
+.MassnahmenText {
+	box-sizing: border-box;
+	width: 100%;
+	height: 50%;
+	position:relative; 
+	float:left; 
+	background:#C4FF0E;
+	padding: 5px;	
+	font-size: var(--FontSize);
+	overflow-wrap: break-word;
+}
+
+
+
+
+
+
+
+.MainContent{
+    position: absolute;
+    /* display: flex; */
+    height: calc(var(--FontSize)*2);
+    width: 100%;
+    top: 25%;
+    font-size: var(--FontSize);
+}
 #EContent{
     display: none;
     z-index: 14;
@@ -43,20 +292,7 @@ h2 {
     width: 100%;
     background-color: white;
 }
- #Div1{
-    display: none;
-    box-sizing: border-box;
-        position: absolute;
-        float: left;
-        width: 95%;
-        margin: 0em;
-        height: 7%;
-        overflow: auto;
-        overflow-x: hidden;
-        top: 19%;
-        padding-left: 5%;
-        left: 0;
- }
+
 /* .form-select{
     width: 100%;
     height: 2vw;
@@ -162,17 +398,7 @@ body{
     top: 17%;
     margin-left: 1vw;
 }
-/* .AktualClient{
-    box-sizing: border-box;
-    position:absolute;
-    float:left;
-    width: 50%;
-    margin-left: 1vw;
-    top: 21%;
-}
-.AktualClient div{
-    float: none;
-} */
+
  
 div{
     float: none;
@@ -215,4 +441,47 @@ footer
     text-align: right;
     width: 0%;
 
+}
+/* styleSmal.css */
+.tableFixHead {
+	overflow-y: auto;
+	 height: 60vh; 
+	}
+  
+  .tableFixHead thead th {
+	position: sticky;
+	top: 0;
+	background-color: #fff; /* Hintergrundfarbe des Tabellenkopfs */
+	z-index: 1;
+  }
+/*	Supportplan */
+#SupportPlan{
+    display: none;
+    z-index: 10;
+    box-sizing: border-box;
+    float: none;
+    position: absolute;
+    background-color: antiquewhite;
+    height: 90%;
+    width: 100%;
+    margin: 0;
+}
+#SupportPlan div{
+    float: left;
+    position: relative;
+    width: 100%;
+    /* margin: 0; */
+}
+#CloseSelectSupportPlan{
+    display: none;
+}
+#SelectSupportPlan{
+    font-size: calc(var(--FontSize)*2);
+}
+#CloseSelectSupportPlan{
+    position: absolute;
+    left: 25%;
+    top: -1%;
+    height: 4vw;
+    width: 11vw;
 }

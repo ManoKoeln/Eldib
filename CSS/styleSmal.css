@@ -20,6 +20,28 @@
         /* justify-content: center; */
         /*border-radius: 1vw;
     } */
+    .BereichTab{
+
+        background: #84F58E; 
+    
+    }
+    
+        .BereichText {
+            width: 100%;
+            /* height: 2em; */
+            background: #84F58E;
+            padding: 5px;
+            margin: 0em;
+            font-size: calc(var(--FontSizeSmal)*4);
+            height: 100%;
+            box-sizing: border-box;
+            text-align: center;
+            position: relative;
+            float: left;
+    }
+    .MainContent{
+        top: 30%;
+    }
     #EContent{
         display: none;
         z-index: 14;
@@ -77,19 +99,7 @@
         background:#C4FF0E;
         display: none;
     }
-    #Div1{
-        box-sizing: border-box;
-        position: absolute;
-        float: left;
-        width: 95%;
-        margin: 0em;
-        height: 7%;
-        overflow: auto;
-        overflow-x: hidden;
-        top: 19%;
-        padding-left: 5%;
-        left: 0;
-    }
+
     .custom-font-size {
         font-size: 1rem; /* Beispielgröße, Sie können die Größe nach Bedarf anpassen */
       }
@@ -231,17 +241,8 @@
     top: 21%;
     margin-left: 1vw;
 }
-/* .AktualClient{
-    box-sizing: border-box;
-    position: absolute;
-    float: left;
-    width: 99%;
-    margin-left: 1vw;
-    top: 38%;
-}
-.AktualClient div{
-    float: none;
-}
+
+
 div{
     float: none;
 } */
@@ -283,4 +284,47 @@ footer
     text-align: right;
     width: 0%;
 
+}
+/* styleSmal.css */
+.tableFixHead {
+    overflow-y: auto;
+    height: 400px; /* Höhe der scrollbaren Tabelle */
+  }
+  
+  .tableFixHead thead th {
+    position: sticky;
+    top: 0;
+    background-color: #fff; /* Hintergrundfarbe des Tabellenkopfs */
+    z-index: 1;
+  }
+/*	Supportplan */
+#SupportPlan{
+    display: none;
+    z-index: 10;
+    box-sizing: border-box;
+    float: none;
+    position: absolute;
+    background-color: antiquewhite;
+    height: 90%;
+    width: 100%;
+    margin: 0;
+}
+#SupportPlan div{
+    float: left;
+    position: relative;
+    width: 100%;
+    /* margin: 0; */
+}
+#CloseSelectSupportPlan{
+    display: none;
+}
+#SelectSupportPlan{
+    font-size: calc(var(--FontSize)*2);
+}
+#CloseSelectSupportPlan{
+    position: absolute;
+    left: 25%;
+    top: -1%;
+    height: 4vw;
+    width: 11vw;
 }
