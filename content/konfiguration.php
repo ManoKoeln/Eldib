@@ -1,4 +1,7 @@
 <?php
+if (session_status() == PHP_SESSION_NONE) {
+    session_start(); // Starten der Session nur, wenn keine Session aktiv ist
+}
 $included_files = get_included_files();
 $Helpersfound = 0;
 foreach ($included_files as $filename) {

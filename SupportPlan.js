@@ -20,17 +20,17 @@ function SetSupportPlan(){
   let MyVal = document.getElementById("SelectClient").value;
   // CheckSupportPlan();
   if (window.XMLHttpRequest){ xmlhttp=new XMLHttpRequest(); } else { xmlhttp=new ActiveXObject("Microsoft.XMLHTTP"); }
-xmlhttp.onreadystatechange=function()
-{
-if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    xmlhttp.onreadystatechange=function()
   {
+  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    {
       document.getElementById("SupportPlan").innerHTML=xmlhttp.responseText;
+    }
   }
+  xmlhttp.open("POST","SupportPlan.php?SetSupportPlan="+MyVal,false);
+  xmlhttp.send();
 }
 
-xmlhttp.open("POST","SupportPlan.php?SetSupportPlan="+MyVal,false);
-xmlhttp.send();
-}
 function ShowSupportPlan(){
     document.getElementById("SupportPlan").style.display = "block"; 
 }
@@ -111,21 +111,23 @@ function TakeOverBereich(id){
     // alert("TakeOverZiele = "+ id);
     console.log("TakeOverZiele = "+ id);
     document.getElementById("MainNavigation").style.display = "none";
-    document.getElementById("SupportPlanForm").style.display = "block"; 
+    //document.getElementById("SupportPlanForm").style.display = "block"; 
     if (window.XMLHttpRequest){ xmlhttp=new XMLHttpRequest(); } else { xmlhttp=new ActiveXObject("Microsoft.XMLHTTP"); }
     xmlhttp.onreadystatechange=function()
     {
     if (xmlhttp.readyState==4 && xmlhttp.status==200)
       {
         document.getElementById("SupportPlanFormRow1").innerHTML="";
+        document.getElementById("SupportPlanFormRow1").innerText =xmlhttp.responseText;
           document.getElementById("SupportPlanFormRow1").value =xmlhttp.responseText;
+          
           HideELDiBTable();
       }
     }
   
   xmlhttp.open("POST","SupportPlan.php?TakeOverBereich="+id,false);
   xmlhttp.send();
-    }
+}
 
 function TakeOverZiele(id){
     // alert("TakeOverZiele = "+ id);
@@ -136,7 +138,8 @@ function TakeOverZiele(id){
     if (xmlhttp.readyState==4 && xmlhttp.status==200)
       {
         console.log("TakeOverZiele response = " + xmlhttp.responseText );
-          document.getElementById("SupportPlanFormRow2").value =xmlhttp.responseText;
+          document.getElementById("SupportPlanFormRow2").innerText =xmlhttp.responseText;
+          //document.getElementById("SupportPlanFormRow2").value =xmlhttp.responseText;          
           TakeOverZieleBereich(id);
           HideELDiBTable();
       }
@@ -145,6 +148,7 @@ function TakeOverZiele(id){
   xmlhttp.open("POST","SupportPlan.php?TakeOverZiele="+id,false);
   xmlhttp.send();
 }
+
 function TakeOverZieleBereich(id){
     // alert("TakeOverZiele = "+ id);
     console.log("TakeOverZieleBereich = "+ id);
@@ -163,23 +167,25 @@ function TakeOverZieleBereich(id){
 }
 
 function TakeOverFormulierungen(id){
-// alert("TakeOverFormulierungen = "+ id);
-console.log("TakeOverFormulierungen = "+ id);
-if (window.XMLHttpRequest){ xmlhttp=new XMLHttpRequest(); } else { xmlhttp=new ActiveXObject("Microsoft.XMLHTTP"); }
-xmlhttp.onreadystatechange=function()
-{
-if (xmlhttp.readyState==4 && xmlhttp.status==200)
+  // alert("TakeOverFormulierungen = "+ id);
+  console.log("TakeOverFormulierungen = "+ id);
+  if (window.XMLHttpRequest){ xmlhttp=new XMLHttpRequest(); } else { xmlhttp=new ActiveXObject("Microsoft.XMLHTTP"); }
+  xmlhttp.onreadystatechange=function()
   {
-    console.log("TakeOverZiele response = " + xmlhttp.responseText );
-      document.getElementById("SupportPlanFormRow3").value =xmlhttp.responseText;
-      TakeOverFormulierungenZiele(id);
-      HideELDiBTable();
+  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    {
+      console.log("TakeOverZiele response = " + xmlhttp.responseText );
+        document.getElementById("SupportPlanFormRow3").innerText =xmlhttp.responseText;
+        document.getElementById("SupportPlanFormRow3").value =xmlhttp.responseText;
+        TakeOverFormulierungenZiele(id);
+        HideELDiBTable();
+    }
   }
+
+  xmlhttp.open("POST","SupportPlan.php?TakeOverFormulierungen="+id,false);
+  xmlhttp.send();
 }
 
-xmlhttp.open("POST","SupportPlan.php?TakeOverFormulierungen="+id,false);
-xmlhttp.send();
-}
 function TakeOverFormulierungenZiele(id){
   console.log("TakeOverFormulierungenZiele = "+ id);
   if (window.XMLHttpRequest){ xmlhttp=new XMLHttpRequest(); } else { xmlhttp=new ActiveXObject("Microsoft.XMLHTTP"); }
@@ -192,28 +198,30 @@ function TakeOverFormulierungenZiele(id){
     }
   }
 
-xmlhttp.open("POST","SupportPlan.php?TakeOverFormulierungenZiele="+id,false);
-xmlhttp.send();
+  xmlhttp.open("POST","SupportPlan.php?TakeOverFormulierungenZiele="+id,false);
+  xmlhttp.send();
 }
 //
 
 function TakeOverMassnahmen(id){
-// alert("TakeOverMassnahmen = "+ id);
-console.log("TakeOverMassnahmen = "+ id);
-if (window.XMLHttpRequest){ xmlhttp=new XMLHttpRequest(); } else { xmlhttp=new ActiveXObject("Microsoft.XMLHTTP"); }
-xmlhttp.onreadystatechange=function()
-{
-if (xmlhttp.readyState==4 && xmlhttp.status==200)
+  // alert("TakeOverMassnahmen = "+ id);
+  console.log("TakeOverMassnahmen = "+ id);
+  if (window.XMLHttpRequest){ xmlhttp=new XMLHttpRequest(); } else { xmlhttp=new ActiveXObject("Microsoft.XMLHTTP"); }
+  xmlhttp.onreadystatechange=function()
   {
-    console.log("TakeOverZiele response = " + xmlhttp.responseText );
-      document.getElementById("SupportPlanFormRow4").value =xmlhttp.responseText;
-      TakeOverMassnahmenFormulierungen(id);
-      HideELDiBTable();
+  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    {
+      console.log("TakeOverZiele response = " + xmlhttp.responseText );
+        document.getElementById("SupportPlanFormRow4").innerText =xmlhttp.responseText;
+        document.getElementById("SupportPlanFormRow4").value =xmlhttp.responseText;
+        TakeOverMassnahmenFormulierungen(id);
+        HideELDiBTable();
+    }
   }
+  xmlhttp.open("POST","SupportPlan.php?TakeOverMassnahmen="+id,false);
+  xmlhttp.send();
 }
-xmlhttp.open("POST","SupportPlan.php?TakeOverMassnahmen="+id,false);
-xmlhttp.send();
-}
+
 function TakeOverMassnahmenFormulierungen(id){
   console.log("TakeOverFormulierungenZiele = "+ id);
   if (window.XMLHttpRequest){ xmlhttp=new XMLHttpRequest(); } else { xmlhttp=new ActiveXObject("Microsoft.XMLHTTP"); }
@@ -226,29 +234,36 @@ function TakeOverMassnahmenFormulierungen(id){
     }
   }
 
-xmlhttp.open("POST","SupportPlan.php?TakeOverMassnahmenFormulierungen="+id,false);
-xmlhttp.send();
+  xmlhttp.open("POST","SupportPlan.php?TakeOverMassnahmenFormulierungen="+id,false);
+  xmlhttp.send();
 }
+
 function SupportTextSave(){
   alert("SupportTextSave");
 }
+
 function NewLineSupportPlan(id){
-  columnSupport1 =   document.getElementById("columnSupport1").value
-  columnSupport2 =   document.getElementById("columnSupport2").value
-  columnSupport3 =   document.getElementById("columnSupport3").value
-  columnSupport4 =   document.getElementById("columnSupport4").value
+  // columnSupport1 =   document.getElementById("columnSupport1").value
+  // columnSupport2 =   document.getElementById("columnSupport2").value
+  // columnSupport3 =   document.getElementById("columnSupport3").value
+  // columnSupport4 =   document.getElementById("columnSupport4").value
+
+  columnSupport1 =   document.getElementById("SupportPlanFormRow1").innerText
+  columnSupport2 =   document.getElementById("SupportPlanFormRow2").innerText
+  columnSupport3 =   document.getElementById("SupportPlanFormRow3").innerText
+  columnSupport4 =   document.getElementById("SupportPlanFormRow4").innerText
   console.log("NewLineSupportPlan = "+ id);
   if (window.XMLHttpRequest){ xmlhttp=new XMLHttpRequest(); } else { xmlhttp=new ActiveXObject("Microsoft.XMLHTTP"); }
-  xmlhttp.onreadystatechange=function()
-  {
+    xmlhttp.onreadystatechange=function()
+    {
   if (xmlhttp.readyState==4 && xmlhttp.status==200)
     {
-      // TakeOverFormulierungen(xmlhttp.responseText);
+       TakeOverFormulierungen(xmlhttp.responseText);
     }
   }
 
-xmlhttp.open("POST","SupportPlan.php?NewLineSupportPlan="+id+"&columnSupport1 ="+columnSupport1+"&columnSupport2 ="+columnSupport2+"&columnSupport3 ="+columnSupport3+"&columnSupport4 ="+columnSupport4 ,false);
-xmlhttp.send();
+  xmlhttp.open("POST","SupportPlan.php?NewLineSupportPlan="+id+"&columnSupport1 ="+columnSupport1+"&columnSupport2 ="+columnSupport2+"&columnSupport3 ="+columnSupport3+"&columnSupport4 ="+columnSupport4 ,false);
+  xmlhttp.send();
 }
 
 function NewSupportPlan(id){
@@ -265,8 +280,8 @@ function NewSupportPlan(id){
     }
   }
 
-xmlhttp.open("POST","SupportPlan.php?NewSupportPlan="+id,false);
-xmlhttp.send();
+  xmlhttp.open("POST","SupportPlan.php?NewSupportPlan="+id,false);
+  xmlhttp.send();
 }
 
 function CreateSupportPlan(id){
@@ -283,8 +298,8 @@ function CreateSupportPlan(id){
     }
   }
 
-xmlhttp.open("POST","SupportPlan.php?CreateSupportPlan="+id,false);
-xmlhttp.send();
+  xmlhttp.open("POST","SupportPlan.php?CreateSupportPlan="+id,false);
+  xmlhttp.send();
 }
 //Save Supportplan
 function SaveSupportPlan(id){
@@ -299,8 +314,8 @@ function SaveSupportPlan(id){
     }
   }
 
-xmlhttp.open("POST","SupportPlan.php?SaveSupportPlan="+id,false);
-xmlhttp.send();
+  xmlhttp.open("POST","SupportPlan.php?SaveSupportPlan="+id,false);
+  xmlhttp.send();
 }
 //Cancel Supportplan
 function CancelSupportPlan(id){
@@ -315,8 +330,8 @@ function CancelSupportPlan(id){
     }
   }
 
-xmlhttp.open("POST","SupportPlan.php?CancelSupportPlan="+id,false);
-xmlhttp.send();
+  xmlhttp.open("POST","SupportPlan.php?CancelSupportPlan="+id,false);
+  xmlhttp.send();
 }
 
 
@@ -339,11 +354,11 @@ function CheckSupportPlan(){
 
   
 
-xmlhttp.open("POST","SupportPlan.php?CheckSupportPlan=1",false);
-xmlhttp.send();
+  xmlhttp.open("POST","SupportPlan.php?CheckSupportPlan=1",false);
+  xmlhttp.send();
 }
-function ShowSupportPlanForm(){
-  document.getElementById("SupportPlanForm").style.display = "block"; 
+function OldShowSupportPlanForm(){
+  //document.getElementById("SupportPlanForm").style.display = "block"; 
   console.log("ShowSupportPlanForm = ");
   if (window.XMLHttpRequest){ xmlhttp=new XMLHttpRequest(); } else { xmlhttp=new ActiveXObject("Microsoft.XMLHTTP"); }
   xmlhttp.onreadystatechange=function()
@@ -353,19 +368,24 @@ function ShowSupportPlanForm(){
         document.getElementById("SupportPlanForm").innerHTML = xmlhttp.responseText;   
     }
   }
-xmlhttp.open("POST","SupportPlanForm.php?ShowSupportPlanForm=1",false);
-xmlhttp.send();
+  xmlhttp.open("POST","SupportPlanForm.php?ShowSupportPlanForm=1",false);
+  xmlhttp.send();
 }
 function HideSupportPlanForm(){
   document.getElementById("SupportPlanForm").style.display = "none"; 
   document.getElementById("SupportPlanForm").innerHTML ="";
 }
+
 //SaveSupportPlanFromData
 function SaveSupportPlanFromData(){
-  var Row1 = document.getElementById("SupportPlanFormRow1").value; 
-  var Row2 = document.getElementById("SupportPlanFormRow2").value; 
-  var Row3 = document.getElementById("SupportPlanFormRow3").value; 
-  var Row4 = document.getElementById("SupportPlanFormRow4").value; 
+  // var Row1 = document.getElementById("SupportPlanFormRow1").value; 
+  // var Row2 = document.getElementById("SupportPlanFormRow2").value; 
+  // var Row3 = document.getElementById("SupportPlanFormRow3").value; 
+  // var Row4 = document.getElementById("SupportPlanFormRow4").value; 
+  var Row1 = document.getElementById("SupportPlanFormRow1").innerText; 
+  var Row2 = document.getElementById("SupportPlanFormRow2").innerText; 
+  var Row3 = document.getElementById("SupportPlanFormRow3").innerText; 
+  var Row4 = document.getElementById("SupportPlanFormRow4").innerText; 
   console.log("SaveSupportPlanFromData = ");
   if (window.XMLHttpRequest){ xmlhttp=new XMLHttpRequest(); } else { xmlhttp=new ActiveXObject("Microsoft.XMLHTTP"); }
   xmlhttp.onreadystatechange=function()
@@ -376,12 +396,14 @@ function SaveSupportPlanFromData(){
         console.log("SaveSupportPlanFromData is ok "); 
         HideSupportPlanForm();
         SetSupportPlan();
+        //ShowSupportPlanForm();
     }
   }
   console.log("SaveSupportPlanFromData >>"+Row1);
-xmlhttp.open("POST","SupportPlanForm.php?SaveSupportPlanFromData=1"+"&Row1="+Row1+"&Row2="+Row2+"&Row3="+Row3+"&Row4="+Row4,false);
-xmlhttp.send();
+  xmlhttp.open("POST","SupportPlanForm.php?SaveSupportPlanFromData=1"+"&Row1="+Row1+"&Row2="+Row2+"&Row3="+Row3+"&Row4="+Row4,false);
+  xmlhttp.send();
 }
+
 function DeleteSupportTextArea(id){
   console.log("DeleteSupportTextArea = "+ id);
   if (window.XMLHttpRequest){ xmlhttp=new XMLHttpRequest(); } else { xmlhttp=new ActiveXObject("Microsoft.XMLHTTP"); }
@@ -395,6 +417,6 @@ function DeleteSupportTextArea(id){
         SetSupportPlan();
     }
   }
-xmlhttp.open("POST","SupportPlan.php?DeleteSupportTextArea="+id,false);
-xmlhttp.send();
+  xmlhttp.open("POST","SupportPlan.php?DeleteSupportTextArea="+id,false);
+  xmlhttp.send();
 }

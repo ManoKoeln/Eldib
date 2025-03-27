@@ -52,7 +52,8 @@ function CallChatFormulierungen (FormulierungenID){
     FormulierungenID2 = FormulierungenID;
         document.getElementById("MyChatFormulierungen").style.display = "block";
         document.getElementById("MainNavigation").style.display = "none";
-        document.getElementById("click").checked = false;
+        document.getElementById("EContent").style.display = "none";
+        // document.getElementById("click").checked = false;
       if (window.XMLHttpRequest)  { xmlhttp=new XMLHttpRequest();} else { xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");}
       xmlhttp.onreadystatechange=function()
         {

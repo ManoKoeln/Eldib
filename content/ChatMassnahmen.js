@@ -49,7 +49,8 @@ function CallChatMassnahmen (MassnahmenID){
     MassnahmenID2 = MassnahmenID;
         document.getElementById("MyChatMassnahmen").style.display = "block";
         document.getElementById("MainNavigation").style.display = "none";
-        document.getElementById("click").checked = false;
+        // document.getElementById("click").checked = false;
+        document.getElementById("EContent").style.display = "none";
       if (window.XMLHttpRequest)  { xmlhttp=new XMLHttpRequest();} else { xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");}
       xmlhttp.onreadystatechange=function()
         {

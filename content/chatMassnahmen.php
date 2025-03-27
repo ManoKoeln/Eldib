@@ -15,6 +15,9 @@
     </div>
 </body>
 <?php
+if (session_status() == PHP_SESSION_NONE) {
+    session_start(); // Starten der Session nur, wenn keine Session aktiv ist
+}
 
 // session_start();
 $last_id;

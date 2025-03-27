@@ -3,7 +3,7 @@
 // }
 function HideELDiBEltern(){
   console.log("Start HideELDiBEltern");
-    document.getElementById("ELDiBElterncontent").style.display = "none"; 
+    document.getElementById("").style.display = "none"; 
     document.getElementById("MainNavigation").style.display = "inline-table";
 }
 function ShowELDiBEltern(){

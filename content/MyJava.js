@@ -336,6 +336,8 @@ function NoDisplayChatFormulierungen() {
   document.getElementById("ChatFormulierungenDiv2").innerHTML="Warte 2";
    document.getElementById("MyChatFormulierungen").style.display = 'none';
    document.getElementById("MainNavigation").style.display = "inline-table";
+   document.getElementById("EContent").style.display = "block";
+
    clearInterval(ChatFormulierungen2Interval);
    clearInterval(ChatMassnahmen2Interval);
    FormulierungenLenOld =0;
@@ -350,6 +352,7 @@ function NoDisplayChatFormulierungen() {
     document.getElementById("ChatMassnahmenDiv2").innerHTML="Warte 2";
     document.getElementById("MyChatMassnahmen").style.display = 'none';
    document.getElementById("MainNavigation").style.display = "inline-table";
+   document.getElementById("EContent").style.display = "block";
     clearInterval(ChatMassnahmen2Interval);
     clearInterval(copyFormulierungenInterval);
     MassnahmenLenOld =0;

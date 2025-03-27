@@ -12,8 +12,8 @@ if (session_status() == PHP_SESSION_NONE) {
   session_start(); // Starten der Session nur, wenn keine Session aktiv ist
 }
 $Stichwort = " stichwort";
-include("content/db.php");
-include_once("content/helpers.php");
+include"content/db.php";
+include_once "content/helpers.php";
 //Seitenansicht
 if ( isset($_GET['SetELDiBEltern']) ){
     echo '<script>console.log("SetELDiBEltern");</script>';
@@ -39,7 +39,8 @@ if ( isset($_GET['SetELDiBEltern']) ){
         $TableStatus = $zeile['Status'];
       
     }
-    $Inhalt.= '  <h1>ELDiB Bewertungsbogen Eltern</h1><button type="button" onclick="HideELDiBEltern();" class="btn btn-primary btn-sm">zurück</button>';
+    $Inhalt.= '  <h1>ELDiB Bewertungsbogen Eltern</h1>';
+    $Inhalt.= '<button type="button" onclick="HideELDiBEltern();" class="btn btn-primary btn-sm">zurück</button>';
     $Inhalt.= '<div class="Schuelerdaten">';  
     $Inhalt.= '<div>';
     $Inhalt.= 'Name : '.$_SESSION["Name"].', '.$_SESSION["Vorname"].' ';
@@ -55,6 +56,7 @@ if ( isset($_GET['SetELDiBEltern']) ){
     $Inhalt.=  '</div>';
     // $Inhalt.= '<div>_____________________________________________</div>';
     $Inhalt.=  '</div>';
+    $Inhalt.=  '<div>';
     if($TableStatus == 0){
       $Inhalt.='<button type="button" class="btn btn-primary btn-sm" onclick="CreateNewTableELDiBEltern();">neuen Bogen erstellen</button>';
     }
@@ -126,7 +128,7 @@ if ( isset($_GET['SetELDiBEltern']) ){
       $Inhalt.= '</svg>';
     }
     $Inhalt.='</div>';
-    $Inhalt.='<div id="ELDiBElterncontainer class="tableFixHead"">';
+    $Inhalt.='<div id="ELDiBElterncontainer" class="tableFixHead">';
     $Inhalt.='<table class="table table-bordered table-striped table-hover table-sm">';
     $Inhalt.='<thead>';
     $Inhalt.='<tr class="BeschreibungHead">';
@@ -151,7 +153,7 @@ if ( isset($_GET['SetELDiBEltern']) ){
     
     while ($zeileHistory = mysqli_fetch_assoc( $db_ergHistory))
       {       
-        $Inhalt.='<th>'.date("d.m.Y",strtotime($zeileHistory['SaveTime'])).'</th>';
+        $Inhalt.='<th class="KELZielBeschreibungHead">'.date("d.m.Y",strtotime($zeileHistory['SaveTime'])).'</th>';
     }
     $Inhalt.='</tr>';
   //alle 4 Bereiche durchgehen

@@ -152,7 +152,7 @@ if ( isset($_GET['SetELDiBKind']) ){
     
     while ($zeileHistory = mysqli_fetch_assoc( $db_ergHistory))
       {       
-        $Inhalt.='<th>'.date("d.m.Y",strtotime($zeileHistory['SaveTime'])).'</th>';
+        $Inhalt.='<th class="KELZielBeschreibungHead">'.date("d.m.Y",strtotime($zeileHistory['SaveTime'])).'</th>';
     }
     $Inhalt.='</tr>';
   //alle 4 Bereiche durchgehen
