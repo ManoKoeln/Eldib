@@ -23,6 +23,7 @@ function ShowELDiBLehrer_New(){
 xmlhttp.open("POST","ELDiBLehrer_New.php?SetELDiBLehrerNew="+MyVal,false);
 xmlhttp.send();
 }
+
 function CreateNewTableELDiBLehrer(){
   console.log("Start CreateNewTableELDiBLehrer");
   let MyVal = document.getElementById("SelectClient").value;

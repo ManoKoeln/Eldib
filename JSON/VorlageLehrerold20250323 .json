@@ -1,0 +1,1839 @@
+{
+  "title": "Einschätzungsbogen Lehrer",
+  "content": "Inhalt des Dokuments.",
+  "Vorname": "Vorname",
+  "Nachname": "Name",
+  "Klasse": "Klasse",
+  "Lehrer": "Lehrer",
+  "Head": [
+    {
+      "BereichID": "",
+      "ZieleBeschreibung": "",
+      "Datum": [
+        "2025-02-23"
+      ]
+    }
+  ],
+  "details": [
+    {
+      "Stufe": "1",
+      "BereichID": "1",
+      "ZieleNummer": "",
+      "ZieleStichwort": "Stufe :1 Mit Freude auf die Umwelt reagieren.Gebraucht Wörter, um Bedürfnisse zu befriedigen.",
+      "ZieleBeschreibung": "",
+      "Notizen": ""
+    },
+    {
+      "Stufe": "1",
+      "BereichID": "1",
+      "ZieleNummer": "K 1",
+      "ZieleStichwort": "Geräusche",
+      "ZieleBeschreibung": "Produziert Laute. (Das Kind wiederholt eigene Lautmuster, um sich sozial oder imitierend zu äußern. Mehrere verschiedene Lautmuster sind wünschenswert. Jede Kombination von Konsonanten oder Vokalen kann bei der Einschätzung berücksichtigt werden.)",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+      
+    },
+    {
+      "Stufe": "1",
+      "BereichID": "1",
+      "ZieleNummer": "K 2",
+      "ZieleStichwort": "Sprecher",
+      "ZieleBeschreibung": "Richtet die Aufmerksamkeit auf eine sprechende Person. (Das Kind bewegt sich zum Erwachsenen hin oder sieht in die Richtung, aus der der verbale Impuls kommt. Blickkontakt ist nicht notwendig.)",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+      
+    },
+    {
+      "Stufe": "1",
+      "BereichID": "1",
+      "ZieleNummer": "K 3",
+      "ZieleStichwort": "verbaler Stimulus",
+      "ZieleBeschreibung": "Reagiert auf einen verbalen Impuls mit einer Bewegung oder Handlung. (Das betreffende Objekt ist für das Kind sichtbar. Der Erwachsene setzt keine unterstützenden Gesten ein.)",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "1",
+      "BereichID": "1",
+      "ZieleNummer": "K 4",
+      "ZieleStichwort": "Wort- Annäherung",
+      "ZieleBeschreibung": "Reagiert verbal auf Fragen oder Aufforderungen von Erwachsenen mit erkennbaren Wort-Annäherungen. (Der Erwachsene kann das Wort vorsprechen.)\n[Identisch mit Kognition KOG-8.]\n",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "1",
+      "BereichID": "1",
+      "ZieleNummer": "K 5",
+      "ZieleStichwort": "Wörter spontan",
+      "ZieleBeschreibung": "Verwendet von sich aus erkennbare, relevante Wort-Annäherungen (oder Wörter) bei verschiedenen Aktivitäten, um ein Ereignis oder Objekt zu beschreiben, zu benennen, oder danach zu fragen. [Identisch mit Kognition KOG-9.]",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+
+    },
+    {
+      "Stufe": "1",
+      "BereichID": "1",
+      "ZieleNummer": "K 6",
+      "ZieleStichwort": "Wörter Erwachsener",
+      "ZieleBeschreibung": "Produziert einzelne erkennbare Wörter während verschiedener Aktivitäten, um eine gewünschte Reaktion des Erwachsenen zu erhalten oder ein Objekt für ihn zu bezeichnen. (Verbale Hilfen sind zulässig.)\n[Identisch mit Sozialisation SOZ-8.]\n",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "1",
+      "BereichID": "1",
+      "ZieleNummer": "K 7",
+      "ZieleStichwort": "Wörter Peer",
+      "ZieleBeschreibung": "Produziert einzelne erkennbare Wörter während verschiedener Aktivitäten, um eine erwünschte Reaktion von einem gleichaltrigen Kind zu erhalten (evtl. mit verbaler Unterstützung oder Vorbild des Erwachsenen).\n[Identisch mit Sozialisation SOZ-11.]\n",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "1",
+      "BereichID": "1",
+      "ZieleNummer": "K 8",
+      "ZieleStichwort": "Wortreihungen",
+      "ZieleBeschreibung": "Produziert eine sinnvolle Wortsequenz ohne Vorbild durch Erwachsene, um von Anderen eine Reaktion zu erhalten oder um etwas zu bezeichnen. (Verbale Hilfen des Erwachsenen sind zulässig.)",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "2",
+      "BereichID": "1",
+      "ZieleNummer": "",
+      "ZieleStichwort": "Stufe :2 Erfolgreich auf die Umwelt reagieren.Gebraucht Wörter, um andere in konstruktiver Weise zu beeinflussen.",
+      "ZieleBeschreibung": "",
+      "Notizen": "",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "2",
+      "BereichID": "1",
+      "ZieleNummer": "K 9",
+      "ZieleStichwort": "beantworten",
+      "ZieleBeschreibung": "Beantwortet Fragen, Bitten oder Aufforderungen eines anderen Kindes oder eines Erwachsenen mit einem oder mehreren erkennbaren, sinnvollen, relevanten Wörtern (Die Antwort braucht nicht präzise oder konstruktiv zu sein.)",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "2",
+      "BereichID": "1",
+      "ZieleNummer": "K 10",
+      "ZieleStichwort": "Vokabular",
+      "ZieleBeschreibung": "Zeigt ein rezeptives Vokabular, das nicht mehr als zwei Jahre hinter normalen Erwartungen in Bezug zum Lebensalter zurückliegt. (Einschätzung anhand von Sprachentwicklungstests.)",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "2",
+      "BereichID": "1",
+      "ZieleNummer": "K 11",
+      "ZieleStichwort": "Wortsequenzen",
+      "ZieleBeschreibung": "Verwendet von sich aus einfache, der Aktivität angemessene Wortsequenzen, um von einem anderen Kind oder einem Erwachsenen etwas zu fordern, zu erfragen oder zu erbitten. (Irreale Sprachinhalte oder sozial unangemessene Wortsequenzen gelten als nicht akzeptabel.)",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "2",
+      "BereichID": "1",
+      "ZieleNummer": "K 12",
+      "ZieleStichwort": "Austausch- Erwachsen",
+      "ZieleBeschreibung": "Verwendet von sich aus Wörter, um mit einem Erwachsenen minimale Informationen auszutauschen. (Kind initiiert das Gespräch. Bitten/Forderungen oder Fragen werden nicht berücksichtigt.)",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "2",
+      "BereichID": "1",
+      "ZieleNummer": "K 13",
+      "ZieleStichwort": "Merkmale",
+      "ZieleBeschreibung": "Beschreibt einfache, konkrete Merkmale sowohl von sich als auch von anderen. (Kind muss die Fähigkeit zeigen, sowohl die eigenen Merkmale als auch die Merkmale anderer beschreiben zu können, evtl. mit Nachfragen durch den Erwachsenen.)",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "2",
+      "BereichID": "1",
+      "ZieleNummer": "K 14",
+      "ZieleStichwort": "Austausch- Kind",
+      "ZieleBeschreibung": "Verwendet von sich aus Wörter, um mit einem anderen Kind minimale Informationen auszutauschen. (Spontane verbale Äußerungen mit minimalem Informationsgehalt erforderlich. Bitten/Forderungen oder Fragen gelten nicht als Merkmale für die Bewältigung des Items.)",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "3",
+      "BereichID": "1",
+      "ZieleNummer": "",
+      "ZieleStichwort": "Stufe :3 Erwerben von Fähigkeiten zur erfolgreichen Teilnahme in Gruppen.Gebraucht Wörter, um sich auf konstruktive Weise innerhalb einer Gruppe zu äußern.",
+      "ZieleBeschreibung": "",
+      "Notizen": "",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "3",
+      "BereichID": "1",
+      "ZieleNummer": "K 15",
+      "ZieleStichwort": "Persöhnliches",
+      "ZieleBeschreibung": "Verwendet von sich aus Wörter (oder evtl. Sprachersatz wie z.B. Gebärden), um eigene Erfahrungen, Vorstellungen oder Arbeit zu beschreiben.",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "3",
+      "BereichID": "1",
+      "ZieleNummer": "K 16",
+      "ZieleStichwort": "Gefühlsreaktionen",
+      "ZieleBeschreibung": "Verwendet Wörter oder Gesten (oder evtl. z.B. Gebärden), um angemessene und situationsgerechte positive oder negative Gefühlsreaktionen auf die Umgebung und auf Dinge, Personen oder Tiere zu zeigen. (Der Erwachsene nutzt Situationen bzw. Aktivitäten als Anlass, um das Kind zu Äußerungen zu bewegen.)",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "3",
+      "BereichID": "1",
+      "ZieleNummer": "K 17",
+      "ZieleStichwort": "Gespräche ",
+      "ZieleBeschreibung": "Beteiligt sich an Gruppengesprächen in einer Weise, die sich nicht störend auf die Gruppe auswirkt. (Das Item gilt auch dann als bewältigt, wenn der Erwachsene das Gruppengespräch leitet.)",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "3",
+      "BereichID": "1",
+      "ZieleNummer": "K 18",
+      "ZieleStichwort": "Stolz- ich",
+      "ZieleBeschreibung": "Verwendet von sich aus Wörter oder Gesten (oder evtl. Sprachersatz wie z.B. Gebärden), um Stolz auf eigene Arbeit oder Aktivitäten zu zeigen oder positive Aussagen über sich selbst zu machen.",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "3",
+      "BereichID": "1",
+      "ZieleNummer": "K 19",
+      "ZieleStichwort": "Eigenschaften – ich ",
+      "ZieleBeschreibung": "Beschreibt charakteristische Eigenschaften, Stärken und Schwächen bei sich selbst. (Der Erwachsene nutzt Situationen bzw. Aktivitäten als Anlass, um das Kind zu Äußerungen zu bewegen.)",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "3",
+      "BereichID": "1",
+      "ZieleNummer": "K 20",
+      "ZieleStichwort": "Attribute – du",
+      "ZieleBeschreibung": "Beschreibt charakteristische Eigenschaften bei anderen. (Der Erwachsene nutzt Situationen bzw. Aktivitäten als Anlass, um das Kind zu Äußerungen zu bewegen.)",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "3",
+      "BereichID": "1",
+      "ZieleNummer": "K 21",
+      "ZieleStichwort": "Gefühle – du",
+      "ZieleBeschreibung": "Erkennt Gefühle anderer. (Der Schüler äußert sich von sich aus oder als Antwort auf Fragen.)",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "3",
+      "BereichID": "1",
+      "ZieleNummer": "K 22",
+      "ZieleStichwort": "Stolz – wir",
+      "ZieleBeschreibung": "Verwendet von sich aus Wörter (oder evtl. Sprachersatz wie z.B. Gebärden), um Stolz auf Gruppenleistungen auszudrücken. (Der Schüler lässt Identifikation mit Gruppenerfolg erkennen, die sich im Gebrauch des Plurals und von besitzanzeigenden Fürwörtern zeigen kann: „wir“, „unser“ ...)",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "4",
+      "BereichID": "1",
+      "ZieleNummer": "",
+      "ZieleStichwort": "Stufe :4 Sich einbringen in Gruppenprozesse.Verwendet Wörter, um Verständnis von Gefühlen und Verhaltensweisen vonsich und anderen zu zeigen.",
+      "ZieleBeschreibung": "",
+      "Notizen": "",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "4",
+      "BereichID": "1",
+      "ZieleNummer": "K 23",
+      "ZieleStichwort": "Kreativität",
+      "ZieleBeschreibung": "Kanalisiert Gefühle oder Erfahrungen durch kreative Ausdrucksmittel wie Kunst, Musik, Tanz oder szenisches Spiel. (Der Schüler braucht keine Erklärungen für seine kreativen Produkte abzugeben.)",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "4",
+      "BereichID": "1",
+      "ZieleNummer": "K 24",
+      "ZieleStichwort": "Fortschritt",
+      "ZieleBeschreibung": "Zeigt beginnendes Bewusstsein für eigenen Verhaltens-fortschritt. (Der Schüler zeigt dieses Bewusstsein entweder von sich aus oder mit Unterstützung durch den Erwachsenen.) [Identisch mit Verhalten V-22.]",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "4",
+      "BereichID": "1",
+      "ZieleNummer": "K 25",
+      "ZieleStichwort": "Beeinflussung",
+      "ZieleBeschreibung": "Erklärt, wie eigenes Verhalten das Verhalten anderer beeinflusst. (Wenn der Erwachsene dem Schüler dies-bezügliche Fragen stellt, lässt der Schüler durch seine Antworten erkennen, dass er Ursache und Wirkung mit-einander assoziiert.)",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "4",
+      "BereichID": "1",
+      "ZieleNummer": "K 26",
+      "ZieleStichwort": "Gefühle – ich",
+      "ZieleBeschreibung": "Verwendet Wörter (oder evtl. Sprachersatz wie z.B. Gebärden), um in der Gruppe von sich aus eigene Gefühle auf angemessene Weise auszudrücken.",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "4",
+      "BereichID": "1",
+      "ZieleNummer": "K 27",
+      "ZieleStichwort": "Beziehung",
+      "ZieleBeschreibung": "Verwendet Wörter (oder evtl. Sprachersatz wie z.B. Gebärden), um positive Beziehungen sowohl mit Gleichaltrigen als auch mit Erwachsenen anzuknüpfen. (Für die Bewältigung des Items muss der Schüler erste Schritte unternehmen, sowohl zu Gleichaltrigen als auch zu Erwachsenen in Beziehung zu treten.)",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "4",
+      "BereichID": "1",
+      "ZieleNummer": "K 28",
+      "ZieleStichwort": "unterstützen",
+      "ZieleBeschreibung": "Verwendet Wörter (oder evtl. Sprachersatz wie z.B. Gebärden), um von sich aus eine andere Person zu loben oder persönlich zu unterstützen.",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "4",
+      "BereichID": "1",
+      "ZieleNummer": "K 29",
+      "ZieleStichwort": "Relationen",
+      "ZieleBeschreibung": "Beschreibt von sich aus den Ursache-Wirkungs-Zusammenhang von Gefühlen und Verhalten bei sich selbst und anderen.",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "5",
+      "BereichID": "1",
+      "ZieleNummer": "",
+      "ZieleStichwort": "Stufe :5 Anwenden von individuellen und gruppenbezogenen Fähigkeiten in neuenSituationen.Verwendet Wörter, um Beziehungen auszubauen und zu pflegen.",
+      "ZieleBeschreibung": "",
+      "Notizen": "",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "5",
+      "BereichID": "1",
+      "ZieleNummer": "K 30",
+      "ZieleStichwort": "komplexe Aussagen",
+      "ZieleBeschreibung": "Formuliert Aussagen, die weitgehend komplex strukturiert sind und inhaltlich bildhaft oder abstrakt sind.",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "5",
+      "BereichID": "1",
+      "ZieleNummer": "K 31",
+      "ZieleStichwort": "Ausgleich",
+      "ZieleBeschreibung": "Wählt bei Provokationen in der Gruppe von sich aus einen Sprachgebrauch, der auf versöhnliche oder schlichtende Absichten hindeutet.",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "5",
+      "BereichID": "1",
+      "ZieleNummer": "K 32",
+      "ZieleStichwort": "Anerkennung",
+      "ZieleBeschreibung": "Unterstützt andere durch Anerkennung ihrer Beiträge und bezieht von sich aus ihre Kommentare oder Ideen in eigene Äußerungen mit ein.",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "5",
+      "BereichID": "1",
+      "ZieleNummer": "K 33",
+      "ZieleStichwort": "Motive",
+      "ZieleBeschreibung": "Beschreibt verschiedene Motive und Wertvorstellungen in sozialen Situationen. (Der Schüler beschreibt mehrere Sichtweisen für einen bestimmten Sachverhalt.)",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "5",
+      "BereichID": "1",
+      "ZieleNummer": "K 34",
+      "ZieleStichwort": "Ideale",
+      "ZieleBeschreibung": "Beschreibt von sich aus eigene Wertvorstellungen, Ideale, persönliche Bindungen und Überzeugungen ohne Hilfe des Erwachsenen.",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "5",
+      "BereichID": "1",
+      "ZieleNummer": "K 35",
+      "ZieleStichwort": "Erhalt/ Pflege",
+      "ZieleBeschreibung": "Verwendet kommunikative Fähigkeiten, um positive zwischenmenschliche Beziehungen, auch innerhalb der Gruppe, mitzutragen und zu erhalten.",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "1",
+      "BereichID": "2",
+      "ZieleNummer": "",
+      "ZieleStichwort": "Stufe :1 Mit Freude auf die Umwelt reagieren.Den eigenen körperlichen Fähigkeiten vertrauen.",
+      "ZieleBeschreibung": "",
+      "Notizen": "",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "1",
+      "BereichID": "2",
+      "ZieleNummer": "V 1",
+      "ZieleStichwort": "Bewusstheit",
+      "ZieleBeschreibung": "Lässt Wahrnehmung eines sensorischen Reizes erkennen durch beliebige Bewegungsreaktionen von der Reizquelle weg oder zu ihr hin. (Wenigstens zwei der sechs Modalitäten müssen vorhanden sein.)\no taktil\no auditiv\no motorisch\no Geschmack\no visuell\no Geruch",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "1",
+      "BereichID": "2",
+      "ZieleNummer": "V 2",
+      "ZieleStichwort": "Orientierung",
+      "ZieleBeschreibung": "Reagiert physisch oder mit Blick auf einen sensorischen Stimulus durch Hinwendung zur Quelle oder zum Stimulus. (Wenigstens zwei der sechs Modalitäten Müssen vorhanden sein.) [ldentisch mit(Vor-)Schulleistung SCH-1.]",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "1",
+      "BereichID": "2",
+      "ZieleNummer": "V 3",
+      "ZieleStichwort": "Aufmerksamkeit",
+      "ZieleBeschreibung": "Reagiert auf einen Stimulus mit kurzzeitig anhaltender Aufmerksamkeit. (Behält die gerichtete Aufmerksam- keit zum Stimulus noch kurze Zeit weiter bei, nachdem die anfängliche Reaktion vorbei ist.) [ ldentisch mit (Vor-)Schulleistung SCH-2-]",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "1",
+      "BereichID": "2",
+      "ZieleNummer": "V 4",
+      "ZieleStichwort": "motorische Reaktion",
+      "ZieleBeschreibung": "Reagiert spontan auf einen einfachen Umweltreize Motorisch .(Um die Fähigkeit als bewältigt einzuschätzen, muss das Kind sowohl auf Objekte und Personen als auch auf Geräusche reagieren.)",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "1",
+      "BereichID": "2",
+      "ZieleNummer": "V 5",
+      "ZieleStichwort": "komplexe Reaktion",
+      "ZieleBeschreibung": "Reagiert physisch aufkomplexe Umgebungsreize oder verbale Reize. (Reagieren durch imitation, Ausfuhrung der verbalen Anweisung und minimalem Einbringen in den Routine-Ablauf! evtl. mit physischer intervention oder verbaler Hilfe.) Identisch mit(Vor-)Schullcistung SCH-4.",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "1",
+      "BereichID": "2",
+      "ZieleNummer": "V 6",
+      "ZieleStichwort": "Selbsthilfe",
+      "ZieleBeschreibung": "Unterstützt aktiv das Erlernen von Selbsthilfe. Fähigkeiten. (Hände waschen, essen: die Toilette benutzen, anziehen etc.; der Schwerpunkt liegt auf Beteiligung an diesen Aktivitäten: nicht an der unabhängigen Durchführung der Selbsthilfe-Tätigkeit.)",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "1",
+      "BereichID": "2",
+      "ZieleNummer": "V 7",
+      "ZieleStichwort": "Spielmaterial ",
+      "ZieleBeschreibung": "Reagiert unabhängig auf verschiedene Spielmaterialien (Der Erwachsene kann durch verbale Hinweise dabei unterstützen. Altersadäquates Spiel ist nicht notwendig. Perseverationen oder selbststimulierendes Verhalten werden nicht als Bewältigung angesehen.)",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "1",
+      "BereichID": "2",
+      "ZieleNummer": "V 8",
+      "ZieleStichwort": "Routineabläufe",
+      "ZieleBeschreibung": "Lässt Erinnerung an Routineabtäufe erkennen. indem es fur die nächste Aktivität spontan den Raumbereich .wechselt ohne physischen Stimulus. {Selbst- Organisation über Erinnerung, indem das Kind sich in den dafür vorgesehenen Bereich begibt: wenn die nächste Aktivität angekündigt wird)",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "2",
+      "BereichID": "2",
+      "ZieleNummer": "",
+      "ZieleStichwort": "Stufe :2 Erfolgreich auf die Umwelt reagieren.Erfolgreich an Routineabläufen und Aktivitäten teilnehmen.",
+      "ZieleBeschreibung": "",
+      "Notizen": "",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "2",
+      "BereichID": "2",
+      "ZieleNummer": "V 9",
+      "ZieleStichwort": "Spielerfahrung",
+      "ZieleBeschreibung": "Verwendet Spielmaterial angemessen und simuliert damit normale Spielerfahrungen (Bewusstheit der Funktion im realen Leben und in vorgeblichen Bezügen)",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "2",
+      "BereichID": "2",
+      "ZieleNummer": "V 10",
+      "ZieleStichwort": "warten",
+      "ZieleBeschreibung": "Wartet ohne physische Intervention durch Erwachsene (evtl. mit verbaler Unterstützung oder Berührung). [[dentisch mit Sozialisation SOZ-14.]",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "2",
+      "BereichID": "2",
+      "ZieleNummer": "V 11",
+      "ZieleStichwort": "sitzen",
+      "ZieleBeschreibung": "Nimmt verbal und physisch an Aktivitäten im Sitzen teil, wie z. B. Arbeitsphase und Imbissphase, ohne physische Intervention durch Erwachsene (evtl. mit verbaler Unterstützung oder Berührung).",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "2",
+      "BereichID": "2",
+      "ZieleNummer": "V 12",
+      "ZieleStichwort": "Bewegung",
+      "ZieleBeschreibung": "Nimmt verbal und physisch an Bewegungsaktivitäten teil, wie z B. Spielphase, Übungen auf der Matte: musische Aktivitäten, ohne physische Intervention durch Erwachsene (evtl. mit verbaler Unterstützung oder Berührung)",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "2",
+      "BereichID": "2",
+      "ZieleNummer": "V 13",
+      "ZieleStichwort": "Aktivitäten",
+      "ZieleBeschreibung": "Nimmt spontan verbal und physisch an Aktivitäten teil ohne physische Intervention durch Erwachsene (evtl. mit verbaler Unterstützung oder Berührung).",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "2",
+      "BereichID": "2",
+      "ZieleNummer": "V 14",
+      "ZieleStichwort": "Lob/ Erfolg",
+      "ZieleBeschreibung": "Reagiert auf Lob / Erfolg ohne inadäquates Verhalten und ohne Verlust der Selbstkontrolle.",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "3",
+      "BereichID": "2",
+      "ZieleNummer": "",
+      "ZieleStichwort": "Stufe :3 Erwerben von Fähigkeiten zur erfolgreichen Teilnahme in Gruppen.Erworbene Fähigkeiten anwenden, um innerhalb einer Gruppe das eigene Verhalten erfolgreich zu steuern.",
+      "ZieleBeschreibung": "",
+      "Notizen": "",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "3",
+      "BereichID": "2",
+      "ZieleNummer": "V 15",
+      "ZieleStichwort": "beenden",
+      "ZieleBeschreibung": "Beendet kurze: individuelle Aufgaben mit vertrauten Material ohne jede Intervention Erwachsener.",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "3",
+      "BereichID": "2",
+      "ZieleNummer": "V 16",
+      "ZieleStichwort": "Erwartungen",
+      "ZieleBeschreibung": "Drückt Bewusstsein grundlegender Verhaltenserwartungen von Eltemhaus: Schule und Gemeinschaft aus (ohne sie unbedingt zu erfüllen)",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "3",
+      "BereichID": "2",
+      "ZieleNummer": "V 17",
+      "ZieleStichwort": "Begründung",
+      "ZieleBeschreibung": "Gibt Begründungen an für Verhaltenserwartungen von Elternhaus, Schule und Gemeinschaft.",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "3",
+      "BereichID": "2",
+      "ZieleNummer": "V 18",
+      "ZieleStichwort": "Alternativen",
+      "ZieleBeschreibung": "\"Benennt alternative. angemessenere Verhaltensweisen",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "3",
+      "BereichID": "2",
+      "ZieleNummer": "V 19",
+      "ZieleStichwort": "Gruppenwahl",
+      "ZieleBeschreibung": "\"Reagiert angemessen auf Gruppenwahl als Anführer",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "3",
+      "BereichID": "2",
+      "ZieleNummer": "V 20",
+      "ZieleStichwort": "zurückhalten",
+      "ZieleBeschreibung": "Hält sich von unangemessenem Verhalten zurück. wenn andere aus der Gruppe die Selbstkontrolle verlieren (evtl. mit verbaler Unterstützung durch den Erwachsenen)",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "3",
+      "BereichID": "2",
+      "ZieleNummer": "V 21",
+      "ZieleStichwort": "Kontrolle",
+      "ZieleBeschreibung": "Behält akzeptable physische und verbale Kontrolle über sich bei Gruppenaktivitäten einschließlich Übergängen zwischen den Aktivitäten und Spiel (evtl. mit Strukturierung und Unterstützung durch Erwachsenen)",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "4",
+      "BereichID": "2",
+      "ZieleNummer": "",
+      "ZieleStichwort": "Stufe :4 Sich einbringen in GruppenprozessePersönliche Fähigkeiten einsetzen, um zum Gruppenerfolg beizutragen",
+      "ZieleBeschreibung": "",
+      "Notizen": "",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "4",
+      "BereichID": "2",
+      "ZieleNummer": "V 22",
+      "ZieleStichwort": "Fortschritt",
+      "ZieleBeschreibung": "Lässt beginnende Bewusstheit des eigenen Verhaltens, Fortschritts erkennen (spontan oder mithilfe eines, Erwachsenen)., [identisch mit Kommunikation K-24.],",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "4",
+      "BereichID": "2",
+      "ZieleNummer": "V 23",
+      "ZieleStichwort": "Flexibilität",
+      "ZieleBeschreibung": "Lasst Flexibilität bei der Modifizierung von Verfahren erkennen, um sie an sich verändernde Bedürfnisse der Gruppe anzupassen.,",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "4",
+      "BereichID": "2",
+      "ZieleNummer": "V 24",
+      "ZieleStichwort": "neue Erfahrungen",
+      "ZieleBeschreibung": "Nimmt an neuen Erfahrungen verbal und physisch, kontrolliert teil (mit oder ohne verbale Unterstützung, durch Erwachsene).",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "4",
+      "BereichID": "2",
+      "ZieleNummer": "V 25",
+      "ZieleStichwort": "anwenden",
+      "ZieleBeschreibung": "Wendet angemessene alternative Verhaltensweisen,",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "4",
+      "BereichID": "2",
+      "ZieleNummer": "V 26",
+      "ZieleStichwort": "Provokation",
+      "ZieleBeschreibung": "Reagiert verbal und physisch kontrolliert auf, Provokation (mit oder ohne verbale Unterstützung, durch Erwachsene).,",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "4",
+      "BereichID": "2",
+      "ZieleNummer": "V 27",
+      "ZieleStichwort": "Verantwortung",
+      "ZieleBeschreibung": "Akzeptiert Verantwortung für die Folgen der eigenen Handlungen und Einstellungen.,",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "4",
+      "BereichID": "2",
+      "ZieleNummer": "V 28",
+      "ZieleStichwort": "Lösungsvorschlag",
+      "ZieleBeschreibung": "Reagiert auf kritische interpersonale und Gruppenprobleme mit konstruktiven Lösungsvorschlägen (mit, oder ohne verbale Unterstützung durch Erwachsene)., [Identisch mit Sozialisation SOZ-34.],",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "5",
+      "BereichID": "2",
+      "ZieleNummer": "",
+      "ZieleStichwort": "Stufe :5 Anwenden von individuellen und gruppenbezogenen Fähigkeiten in neuen Situationen.Realen Lebenserfahrungen mit konstruktivem Verhalten begegnen.",
+      "ZieleBeschreibung": "",
+      "Notizen": "",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "5",
+      "BereichID": "2",
+      "ZieleNummer": "V 29",
+      "ZieleStichwort": "Gewohnheiten",
+      "ZieleBeschreibung": "\"Sucht neue persönliche Gewohnheiten oder",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "5",
+      "BereichID": "2",
+      "ZieleNummer": "V 30",
+      "ZieleStichwort": "positive Rolle",
+      "ZieleBeschreibung": "\"Sucht und entwickelt eine erwünschte positive Rolle in",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "5",
+      "BereichID": "2",
+      "ZieleNummer": "V 31",
+      "ZieleStichwort": "Recht/ Ordnung",
+      "ZieleBeschreibung": "\"Zeigt Verständnis für Konzepte und Akzeptanz von",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "5",
+      "BereichID": "2",
+      "ZieleNummer": "V 32",
+      "ZieleStichwort": "Selbstbestimmung",
+      "ZieleBeschreibung": "\"Billigt Gruppenselbstbestimmung und bringt sich darin",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "5",
+      "BereichID": "2",
+      "ZieleNummer": "V 33",
+      "ZieleStichwort": "Einsicht",
+      "ZieleBeschreibung": "Löst persönliche Probleme durch Einsicht. Analyse,und Generalisierung. [ldentisch mit Schulleistung SCH-72.]",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "1",
+      "BereichID": "3",
+      "ZieleNummer": "",
+      "ZieleStichwort": "Stufe :1 Mit Freude auf die Umwelt reagieren.Einem Erwachsenen genügend vertrauen, um auf ihn zu reagieren.",
+      "ZieleBeschreibung": "",
+      "Notizen": "",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "1",
+      "BereichID": "3",
+      "ZieleNummer": "SOZ 1",
+      "ZieleStichwort": "Gegenwart",
+      "ZieleBeschreibung": "Ist sich der Gegenwart anderer bewusst. (Das Kind reagiert auf verbalen oder körperlichen Kontakt durch einen Erwachsenen oder durch ein anderes Kind.)",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "1",
+      "BereichID": "3",
+      "ZieleNummer": "SOZ 2",
+      "ZieleStichwort": "Gerichtetheit",
+      "ZieleBeschreibung": "Richtet Aufmerksamkeit auf Handlungen anderer. (Schaut einen Erwachsenen und/oder ein Kind an, Wenn es selbst nicht im Zentrum der Aufmerksamkeit steht.)",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "1",
+      "BereichID": "3",
+      "ZieleNummer": "SOZ 3",
+      "ZieleStichwort": "Eigenname",
+      "ZieleBeschreibung": "Reagiert, wenn ein Erwachsener den Namen des Kindes nennt. (Schaut den Erwachsenen an oder von ihm weg. Jede Reaktion..ob angemessen oder nicht, Ist akzeptabel.)",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "1",
+      "BereichID": "3",
+      "ZieleNummer": "SOZ 4",
+      "ZieleStichwort": "Spiel- allein",
+      "ZieleBeschreibung": "Beschäftigt sich mit organisiertem Spiel und spielt dabei für sich allein. (Falls nötig, kann der Erwachsene Anleitungen geben. Altersadäquates Spiel ist nicht notwendig, um die Fähigkeit als bewältigt einzuschätzen.)",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "1",
+      "BereichID": "3",
+      "ZieleNummer": "SOZ 5",
+      "ZieleStichwort": "Nonverbale Interakti",
+      "ZieleBeschreibung": "Interagiert nonverbal mit Erwachsenen, um Bedürfnisse auszudrücken. (Um die Fähigkeit als bewältigt einzuschätzen, ist sowohl angemessener als auch unangemessener Ausdruck der Bedürfnisse akzeptabel.)",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "1",
+      "BereichID": "3",
+      "ZieleNummer": "SOZ 6",
+      "ZieleStichwort": "Kommen",
+      "ZieleBeschreibung": "Reagiert auf die verbale und nonverbale Aufforderung des Erwachsenen. zu ihm zu kommen. (Setzt oder stellt sich neben den Erwachsenen und akzeptiert dessen Berührung.)",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "1",
+      "BereichID": "3",
+      "ZieleNummer": "SOZ 7",
+      "ZieleStichwort": "Aufforderungen",
+      "ZieleBeschreibung": "Das Kind zeigt, dass es einzelne. verbale Aufforderungen oder Anweisungen des Erwachsenen versteht, wenn Am: sie direkt an das Kind gerichtet werden. (Folgt den Aufforderungen. Der Erwachsene unterlässt Gesten als Hilfe.)",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "1",
+      "BereichID": "3",
+      "ZieleNummer": "SOZ 8",
+      "ZieleStichwort": "Wörter – Erwachsener",
+      "ZieleBeschreibung": "Produziert einzelne erkennbare Wörter während verschiedener Aktivitäten, um eine gewünschte Reaktion des Erwachsenen zu erhalten oder ein Objekt für ihn zu bezeichnen. (Verbale Hilfen sind zulässig.)[identisch mit Kommunikation K-6.]",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "1",
+      "BereichID": "3",
+      "ZieleNummer": "SOZ 9",
+      "ZieleStichwort": "Selbst - Bewusstheit",
+      "ZieleBeschreibung": "Zeigt deutliche Anzeichen für eine beginnende Herausbildung des Selbst. (Bewältigung des Ziels zeigt sich durch Unterscheidung der eigenen Person von anderen. z.B.: Sich im Spiegel betrachten Pronomen wie „ich. mein, mir“ verwenden, Besitz demonstrieren.)",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "1",
+      "BereichID": "3",
+      "ZieleNummer": "SOZ 10",
+      "ZieleStichwort": "Spiel – parallel",
+      "ZieleBeschreibung": "Nimmt von sich aus an parallelem Spiel teil. Lässt dabei erkennen, dass es sich der Gegenwart anderer Kinder bewusst ist. Spielt mit ähnlichem Spielzeug, interagieren jedoch nicht. (Der Schwerpunkt liegt nicht auf der Qualität des Spiels.)",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "1",
+      "BereichID": "3",
+      "ZieleNummer": "SOZ 11",
+      "ZieleStichwort": "Wörter – Peer",
+      "ZieleBeschreibung": "Produziert einzelne erkennbare Wörter während verschiedener Aktivitäten um eine erwünschte Reaktion von einem gleichaltrigen Kind zu erhalten (evtl. mit verbaler Unterstützung oder Vorbild des Erwachsenen). [Identisch mit Kommunikation K-7.]",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "1",
+      "BereichID": "3",
+      "ZieleNummer": "SOZ 12",
+      "ZieleStichwort": "Kontaktsuche",
+      "ZieleBeschreibung": "Sucht in unterschiedlichen Umgebungen/Situationen Kontakt mit einem vertrauten Erwachsenen. (Geht von Sich aus zum Erwachsenen hin oder berührt ihn.)",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "2",
+      "BereichID": "3",
+      "ZieleNummer": "",
+      "ZieleStichwort": "Stufe :2 Erfolgreich auf die Umwelt reagieren.Sich erfolgreich an Aktivitäten beteiligen.",
+      "ZieleBeschreibung": "",
+      "Notizen": "",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "2",
+      "BereichID": "3",
+      "ZieleNummer": "SOZ 13",
+      "ZieleStichwort": "Fantasie",
+      "ZieleBeschreibung": "Beschäftigt sich von sich aus in verschiedenen Situationen mit Fantasie- und .‚So-tun-als-ob“-Spielen. (Initiiert „So-tun—also-ob“-Spiel. Kind braucht nicht mit einem anderen Kind zu interagieren. Hat das Kind Probleme, Realität von Fantasie zu trennen. Sollte Fantasiespiel nicht unterstützt werden.",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "2",
+      "BereichID": "3",
+      "ZieleNummer": "SOZ14",
+      "ZieleStichwort": "Warten",
+      "ZieleBeschreibung": "Wartet ohne körperliche Steuerungshilfe durch den Erwachsenen (verbale Unterstützung oder leichte Berührung können vom Erwachsenen eingesetzt werden). [Identisch mit Verhalten V-10.]",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "2",
+      "BereichID": "3",
+      "ZieleNummer": "SOZ 15",
+      "ZieleStichwort": "Kontakt",
+      "ZieleBeschreibung": "Zeigt Ansätze, einen angemessenen sozialen Kontakt zu einem anderen Kind aufzunehmen. (Beginnt mittels Gesten und Handlungen minimale angemessene Interaktion mit einem anderen Kind.)",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "2",
+      "BereichID": "3",
+      "ZieleNummer": "SOZ 16",
+      "ZieleStichwort": "Teilen",
+      "ZieleBeschreibung": "Beteiligt sich an einer verbal gesteuerten Aktivität, die Teilen erfordert. (Gibt Materialien oder Spielzeug an andere weiter. Eventuell mit verbaler Unterstützung durch Erwachsenen)",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "2",
+      "BereichID": "3",
+      "ZieleNummer": "SOZ 17",
+      "ZieleStichwort": "Spiel interaktiv",
+      "ZieleBeschreibung": "Beteiligt; sich erfolgreich an interaktivem Spiel mit einem anderen Kind. (Bewältigung der Fähigkeit erfordert auch. dass das Kind das eigene Spiel organisiert - Evtl. mit verbaler Unterstützung oder Berührung durch Erwachsenen. Freies Spiel oder „So—tun-als—ob“ können [S.OZ- t 7} bei der Einschätzu",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "2",
+      "BereichID": "3",
+      "ZieleNummer": "SOZ18",
+      "ZieleStichwort": "Kooperation",
+      "ZieleBeschreibung": "Kooperiert selbstständig mit einem anderen Kind in strukturierten Aktivitäten und Spiel. („Nimmt aktiv teil, evtl. mit verbaler Unterstützung durch Erwachsene)",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "3",
+      "BereichID": "3",
+      "ZieleNummer": "",
+      "ZieleStichwort": "Stufe :3 Erwerben von Fähigkeiten zur erfolgreichen Teilnahme in Gruppen.Gruppenaktivitäten als befriedigend erleben.",
+      "ZieleBeschreibung": "",
+      "Notizen": "",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "3",
+      "BereichID": "3",
+      "ZieleNummer": "SOZ 19",
+      "ZieleStichwort": "Abwechseln",
+      "ZieleBeschreibung": "Teilt von sich aus Materialien und wechselt sich mit anderen ab ohne verbalen Hinweis durch Erwachsene.",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "3",
+      "BereichID": "3",
+      "ZieleNummer": "SOZ 20",
+      "ZieleStichwort": "Nachahmen",
+      "ZieleBeschreibung": "Ahmt von sich aus angemessenes Verhalten eines anderen Kindes nach.",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "3",
+      "BereichID": "3",
+      "ZieleNummer": "SOZ 21",
+      "ZieleStichwort": "Werten",
+      "ZieleBeschreibung": "Bezeichnet einfache soziale Situationen mit wertenden Aussagen (richtig 1\" falsch: gut f schlecht.\" fair / unfair; Begründungen nicht notwendig. Aussagen können als Reaktion auf Erwachsenenhilfe oder von sich aus geäußert werden).",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "3",
+      "BereichID": "3",
+      "ZieleNummer": "SOZ 22",
+      "ZieleStichwort": "Leiten",
+      "ZieleBeschreibung": "Leitet eine Gruppenaktivität oder demonstriert eine Aktivität für die Gruppe. (Eventuell mit Unterstützung eines Erwachsenen.)",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "3",
+      "BereichID": "3",
+      "ZieleNummer": "SOZ 23",
+      "ZieleStichwort": "Vorschlag – andere",
+      "ZieleBeschreibung": "Nimmt an einer Aktivität teil, die ein gleichaltriges Kind vorgeschlagen hat, ohne unangemessene Reaktion. (Eventuell mit Lernunterstützung eines Erwachsenen.)",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "3",
+      "BereichID": "3",
+      "ZieleNummer": "SOZ 24",
+      "ZieleStichwort": "Erfahrungen",
+      "ZieleBeschreibung": "Beschreibt eigene Erfahrungen in der Reihenfolge, in der sie sich ereignet haben. (Eventuell mit Unterstützung eines Erwachsenen.)",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "3",
+      "BereichID": "3",
+      "ZieleNummer": "SOZ 25",
+      "ZieleStichwort": "Vorliebe",
+      "ZieleBeschreibung": "Lässt beginnende Freundschaft erkennen durch Vorliebe für ein bestimmtes Kind / bestimmte Kinder.",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "3",
+      "BereichID": "3",
+      "ZieleNummer": "SOZ 26",
+      "ZieleStichwort": "Unterstützung",
+      "ZieleBeschreibung": "Sucht von sich aus Hilfe oder Lob durch ein anderes Kind.",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "3",
+      "BereichID": "3",
+      "ZieleNummer": "SOZ 27",
+      "ZieleStichwort": "Gruppen regeln",
+      "ZieleBeschreibung": "Hilft anderen von sich aus bei der Einhaltung von Gruppenregeln.",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "4",
+      "BereichID": "3",
+      "ZieleNummer": "",
+      "ZieleStichwort": "Stufe :4 Sich einbringen in Gruppenprozesse.Nimmt von sich aus und erfolgreich als Gruppenmitglied an Aktivitäten teil.",
+      "ZieleBeschreibung": "",
+      "Notizen": "",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "4",
+      "BereichID": "3",
+      "ZieleNummer": "SOZ 28",
+      "ZieleStichwort": "Identifizieren",
+      "ZieleBeschreibung": "identifiziert sich mit erwachsenen Führungspersonen, Vorbildern oder anderen Persönlichkeiten des öffentlichen Lebens. (Bewältigung: Das Kind übernimmt Eigenheiten und/oder Vorstellungen eines Vorbildes ahmt dessen Verhalten nach: — Zeichnungen, Kleidungsgewohnheiten oder Handlungsweisen.)",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "4",
+      "BereichID": "3",
+      "ZieleNummer": "SOZ 29",
+      "ZieleStichwort": "Gruppenerfahrung",
+      "ZieleBeschreibung": "Beschreibt soziale Gruppenerfahrungen in der Reihenfolge, in der sie sich ereignet haben.",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "4",
+      "BereichID": "3",
+      "ZieleNummer": "SOZ 30",
+      "ZieleStichwort": "Gruppenaktivität",
+      "ZieleBeschreibung": "Schlägt von sich aus eine geeignete Gruppenaktivität vor und richtet den Vorschlag direkt an die Gruppe.",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "4",
+      "BereichID": "3",
+      "ZieleNummer": "SOZ 31",
+      "ZieleStichwort": "Verschiedenheit",
+      "ZieleBeschreibung": "Das Kind lässt durch verbale Äußerungen erkennen, dass es sich bewusst ist\", wie sich die eigenen sozialen Handlungen von denen anderer Kinder in der gleichen Situation unterscheiden.",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "4",
+      "BereichID": "3",
+      "ZieleNummer": "SOZ 32",
+      "ZieleStichwort": "Respekt",
+      "ZieleBeschreibung": "Hört und respektiert die Vorstellungen, Gedanken und Meinungen anderer.",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "4",
+      "BereichID": "3",
+      "ZieleNummer": "SOZ 33",
+      "ZieleStichwort": "Interesse",
+      "ZieleBeschreibung": "Bekundet offen sein Interesse an der Meinung Gleichaltriger über die eigene Person.",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "4",
+      "BereichID": "3",
+      "ZieleNummer": "SOZ 34",
+      "ZieleStichwort": "Lösungsvorschlag",
+      "ZieleBeschreibung": "Reagiert in kritischen Situationen auf Probleme zwischen einzelnen Personen oder innerhalb der Gruppe mit konstruktiven Lösungsvorschla\"gen. (Der Schüler reagiert mit oder ohne verbale Unterstützung durch Erwachsene.) [Identisch mit Verhalten V—28.]",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "4",
+      "BereichID": "3",
+      "ZieleNummer": "SOZ 35",
+      "ZieleStichwort": "Wertvorstellung",
+      "ZieleBeschreibung": "Erkennt und unterscheidet gegensätzliche Weite in sozialen Situationen. (Beispiele für wertebezogene Gegensatzpaare: legal-illegal; freundlich-unfreundlich; unschuldig-schuldig) [Identisch mit Kognition KOG-SS.}",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "4",
+      "BereichID": "3",
+      "ZieleNummer": "SOZ 36",
+      "ZieleStichwort": "Schlussfolgerungen",
+      "ZieleBeschreibung": "Zieht Schlussfolgerungen aus sozialen Situationen.",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "5",
+      "BereichID": "3",
+      "ZieleNummer": "",
+      "ZieleStichwort": "Stufe :5 Anwenden von individuellen und gruppenbezogenen Fähigkeiten in neuen Situationen.Beginnt und pflegt selbständig dauerhafte und tragfähige Beziehungen mit anderen.",
+      "ZieleBeschreibung": "",
+      "Notizen": "",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "5",
+      "BereichID": "3",
+      "ZieleNummer": "SOZ 37",
+      "ZieleStichwort": "Empathie",
+      "ZieleBeschreibung": "Schüler lässt erkennen dass er persönliche Situationen Gefühle und Sichtweisen anderer versteht und achtet (Empathiefähigkeit).",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "5",
+      "BereichID": "3",
+      "ZieleNummer": "SOZ 38",
+      "ZieleStichwort": "Verschiedene Rollen",
+      "ZieleBeschreibung": "Interagiert erfolgreich mit anderen in unterschiedlichen sozialen Rollen- (Um die Fähigkeit als bewältigt einzuschätzen, muss der Jugendliche in mindestens drei verschiedenen Rollen erfolgreich agieren.)",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "5",
+      "BereichID": "3",
+      "ZieleNummer": "SOZ 39",
+      "ZieleStichwort": "Prinzipien",
+      "ZieleBeschreibung": "Trifft in sozialen Situationen persönliche Entscheidungen aufgrund eigener Wertvorstellungen und Prinzipien.",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "5",
+      "BereichID": "3",
+      "ZieleNummer": "SOZ 40",
+      "ZieleStichwort": "Selbstverständnis",
+      "ZieleBeschreibung": "Schüler lässt realistisches Verständnis und Einschätzung des eigenen Selbst erkennen, indem er eigene Ziele, Stärken und Schwächen beschreibt, und er benennt, wie sich sein reales Selbst vom angestrebten Selbst unterscheidet.",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "5",
+      "BereichID": "3",
+      "ZieleNummer": "SOZ 41",
+      "ZieleStichwort": "Interpersonalität",
+      "ZieleBeschreibung": "Zeigt die Fähigkeit, dauerhafte und tragfähige Beziehungen mit Einzelnen und in der Gruppe aufzubauen und zu erhalten.",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "1",
+      "BereichID": "4",
+      "ZieleNummer": "",
+      "ZieleStichwort": "Stufe :1 Mit Freude auf die Umwelt reagieren.Auf die Umgebung reagieren mit gezielten Körperbewegungen und elementaren mentalen Verarbeitungsprozessen in den Bereichen Gedächtnis, Zuordnung und rezeptivem Vokabular.",
+      "ZieleBeschreibung": "",
+      "Notizen": "",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "1",
+      "BereichID": "4",
+      "ZieleNummer": "SCH 1",
+      "ZieleStichwort": "Orientierung",
+      "ZieleBeschreibung": "Reagiert auf sensorischen Reiz mit Zuwendung zur Reizquelle, entweder durch körperliche Reaktion oder durch Hinsehen. (Wenigstens zwei der sechs Modalitäten müssen vorhanden sein.) [identisch mit V-2.] o taktil o auditiv 0 motorisch o Geschmack o visuell o olfaktorisch",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "1",
+      "BereichID": "4",
+      "ZieleNummer": "SCH 2",
+      "ZieleStichwort": "Aufmerksamkeit",
+      "ZieleBeschreibung": "Reagiert auf einen Reiz mit kurzzeitig anhaltender Aufmerksamkeit. (Behält die gerichtete Aufmerksamkeit zum Reiz noch kurze Zeit weiter bei. nachdem die anfängliche Reaktion vorbei ist.) [Identisch mit Verhalten V—3.]",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "1",
+      "BereichID": "4",
+      "ZieleNummer": "SCH 3",
+      "ZieleStichwort": "Kurzzeitgedächtnis",
+      "ZieleBeschreibung": "Zeigt Kurzzeitgedächtnis durch Körperbewegung und Lautäußerung bei spontanem Wiedererkennen von Personen oder Objekten.",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "1",
+      "BereichID": "4",
+      "ZieleNummer": "SCH 4",
+      "ZieleStichwort": "Komplexe Reaktionen",
+      "ZieleBeschreibung": "Reagiert auf komplexe Umgebungsreize und verbale Impulse mit motorischer Handlung. (Reagieren durch Imitation. Ausführung der verbalen Anweisung und minimales Einbringen in den Routine- Ablauf; evtl. mit körperlicher Intervention oder verbaler Hilfe.) [Identisch mit Verhalten V-5]",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "1",
+      "BereichID": "4",
+      "ZieleNummer": "SCH 5",
+      "ZieleStichwort": "Einfache Imitation",
+      "ZieleBeschreibung": "Imitiert von sich aus einfache, vertraute Handlungen des Erwachsenen.",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "1",
+      "BereichID": "4",
+      "ZieleNummer": "SCH 6",
+      "ZieleStichwort": "Motorik 18 Monate",
+      "ZieleBeschreibung": "Zeigt rudimentäre fein- und grobmotorische Fähigkeiten auf dem Niveau eines Kindes von 18 Monaten. (Damit die Fähigkeit als bewältigt gilt, müssen mindestens zwei feinmotorische und zwei grobmotorische Fähigkeiten gezeigt werden.)",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "1",
+      "BereichID": "4",
+      "ZieleNummer": "SCH 7",
+      "ZieleStichwort": "Bezeichnung",
+      "ZieleBeschreibung": "Lässt Verständnis von Bezeichnungen für vertraute Objekte erkennen. (Der Erwachsene kann Hilfestellung geben, indem er zunächst beide Objekte benennt, bevor er die Aufforderung ausspricht, das eine gewünschte Objekt zu zeigen oder zu nehmen.)",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "1",
+      "BereichID": "4",
+      "ZieleNummer": "SCH 8",
+      "ZieleStichwort": "Wort- Annäherung",
+      "ZieleBeschreibung": "Reagiert verbal auf Fragen oder Aufforderungen von Erwachsenen mit erkennbaren Wort—Annäherungen. (Der Erwachsene kann das Wort vorsprechen.) [Identisch mit Kommunikation K-49]",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "1",
+      "BereichID": "4",
+      "ZieleNummer": "SCH 9",
+      "ZieleStichwort": "Wörter spontan",
+      "ZieleBeschreibung": "Verwendet von sich aus erkennbare. relevante Wort- Annäherungen (oder Wörter) bei verschiedenen Aktivitäten, um ein Ereignis oder Objekt zu beschreiben. Zu benennen, oder danach zu fragen (ohne Hilfe Erw.) [Identisch mit Kommunikation K—5.]",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "1",
+      "BereichID": "4",
+      "ZieleNummer": "SCH 10",
+      "ZieleStichwort": "Form",
+      "ZieleBeschreibung": "Passt ein Objekt in eine dafür passende Lücke ein. (Beliebiges Spielmaterial kann dafür verwendet werden, um deutlich werden zu lassen, dass das Kind die Form erkennt. trotz Veränderungen in Größe und Farbe.)",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "1",
+      "BereichID": "4",
+      "ZieleNummer": "SCH 11",
+      "ZieleStichwort": "Körperteile",
+      "ZieleBeschreibung": "Identifiziert eigene Körperteile. (Reagiert richtig mit der Bezeichnung von vier Körperteilen durch Zeigen, Wort—Annäherungen oder Wörter.)",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "1",
+      "BereichID": "4",
+      "ZieleNummer": "SCH 12",
+      "ZieleStichwort": "Details",
+      "ZieleBeschreibung": "Erkennt einfache Details in Bildern durch Gesten oder Wörter.",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "1",
+      "BereichID": "4",
+      "ZieleNummer": "SCH 13",
+      "ZieleStichwort": "Sortieren",
+      "ZieleBeschreibung": "Ordner zwei Sorten von Objekten mit minimal unterschiedlichen Merkmalen einander zu. (Der Erwachsene gibt verbale Anweisung und demonstriert die Anforderung, 2.8. durch: „Leg alle Lastwagen hierhin und alle Autos dahin“)",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "1",
+      "BereichID": "4",
+      "ZieleNummer": "SCH 14",
+      "ZieleStichwort": "Bilder benennen",
+      "ZieleBeschreibung": "Äußert einzelne, erkennbare Wörter, um auf einfachen Abbildungen vertraute Dinge. Tiere oder Menschen zu bezeichnen. („Die Antwort kann von Sich aus oder mit Hilfe von Nachfragen erfolgen; in jedem Falle sollte das Kind mindestens drei verschiedene Bilder bezeichnen können.)",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "2",
+      "BereichID": "4",
+      "ZieleNummer": "",
+      "ZieleStichwort": "Stufe :2 Erfolgreich auf die Umwelt reagieren.Beteiligung an Aktivitäten, die Fähigkeiten der Selbsthilfe, motorischen Koordination, Sprache sowie mentale Prozesse von Unterscheidung, Bildung von Reihenfolgen und Aufzählung erfordern.",
+      "ZieleBeschreibung": "",
+      "Notizen": "",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "2",
+      "BereichID": "4",
+      "ZieleNummer": "SCH 15",
+      "ZieleStichwort": "Gebrauchswert",
+      "ZieleBeschreibung": "Erkennt Gebrauchswert vertrauter Gegenstände in entsprechenden „So—tun-als-ob“-Spielen oder durch Zeigen auf eine Abbildung bzw. ein Objekt. wenn eine Auswahl von mehreren Bildern/Objekten vorgegeben wird und/oder wenn der Erwachsene den Gebrauch des Gegenstandes erklärt.",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "2",
+      "BereichID": "4",
+      "ZieleNummer": "SCH 16",
+      "ZieleStichwort": "Körper – 3",
+      "ZieleBeschreibung": "Führt zwei einfache motorische Aktivitäten aus, die Körperkoordination auf dem Niveau eines dreijährigen Kindes erfordern.",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "2",
+      "BereichID": "4",
+      "ZieleNummer": "SCH 17",
+      "ZieleStichwort": "Serie – identisch",
+      "ZieleBeschreibung": "Ordnet zwei identische Bilder einander zu, wenn zwei gleiche und ein unterschiedliches Bild gezeigt. werden.",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "2",
+      "BereichID": "4",
+      "ZieleNummer": "SCH 18",
+      "ZieleStichwort": "Feinmotorik - 3",
+      "ZieleBeschreibung": "Führt mindestens zwei feinmotorische Aktivitäten aus, die dem Entwicklungsniveau eine dreijährigen Kindes entsprechen.",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "2",
+      "BereichID": "4",
+      "ZieleNummer": "SCH 19",
+      "ZieleStichwort": "Serie – anders",
+      "ZieleBeschreibung": "Erkennt dasjenige Objekt, das sich von den anderen unterscheidet, wenn zwei gleiche Objekte und ein unterschiedliches Objekt gezeigt werden",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "2",
+      "BereichID": "4",
+      "ZieleNummer": "SCH 20",
+      "ZieleStichwort": "Gegenteile",
+      "ZieleBeschreibung": "Versteht mindestens drei einfache Gegenteile: hoch / runter; unter/ über; erster / letzter; groß / klein; lang / kurz; stopp / los.",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "2",
+      "BereichID": "4",
+      "ZieleNummer": "SCH 21",
+      "ZieleStichwort": "Kategorisieren",
+      "ZieleBeschreibung": "Gebraucht Kategorien beim Zuordnen einfacher Bilder, die zwar unterschiedlich sind, aber generell ähnliche Charakteristika oder Assoziationen aufweisen. (Jeglicher Reaktionsmodus kann akzeptiert werden. um die Fähigkeit als bewältigt einzuschätzen.)",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "2",
+      "BereichID": "4",
+      "ZieleNummer": "SCH 22",
+      "ZieleStichwort": "zählen — 4",
+      "ZieleBeschreibung": "Zählt bis 4 und wendet dabei 1 zu 1 Zuordnung an. (z.B. Kind nennt die Zahlen 1 bis 4 in richtiger Reihenfolge, wenn es aufgefordert wird zu zählen. Oder: Kind zeigt beim Zählen auf das jeweilige Objekt.)",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "2",
+      "BereichID": "4",
+      "ZieleNummer": "SCH 23",
+      "ZieleStichwort": "Farben",
+      "ZieleBeschreibung": "Identifiziert vier Farben und drei Formen durch Benennen oder Zeigen von Farben und Formen. (Das Kind kann von sich aus Antworten geben oder die Antworten können vom Erwachsenen erfragt werden.)",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "2",
+      "BereichID": "4",
+      "ZieleNummer": "SCH 24",
+      "ZieleStichwort": "Alternation",
+      "ZieleBeschreibung": "Das Kind gibt korrekte Antworten, wenn es aufgefordert wird, zuerst gleiche Bilder einander zuzuordnen und dann das Bild zu erkennen, das sich von den anderen unterscheidet. (Der Erwachsene gibt alternierende Anweisung.)",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "2",
+      "BereichID": "4",
+      "ZieleNummer": "SCH 25",
+      "ZieleStichwort": "zählen – 10",
+      "ZieleBeschreibung": "Zählt mit 1 zu 1 Zuordnung bis 10. (Beide Beispiele müssen für diese Fähigkeit beherrscht werden: Als Reaktion auf. die Anweisung des Erwachsenen wählt das Kind 10 Bauklötze um eine Straße für ein Auto zubauen. Und: Das Kind zählt beim Imbiss 10 Pappbecher für Mitschüler ab.)",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "2",
+      "BereichID": "4",
+      "ZieleNummer": "SCH 26",
+      "ZieleStichwort": "Auge-Hand—5",
+      "ZieleBeschreibung": "Führt mindestens zwei Aktivitäten aus, die eine Auge- Hand-Koordination au f dem Niveau eines fünfjährigen Kindes erfordern.",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "2",
+      "BereichID": "4",
+      "ZieleNummer": "SCH 27",
+      "ZieleStichwort": "Unterscheiden",
+      "ZieleBeschreibung": "Unterscheidet zwischen Ziffern, Zeichen und Großbuchstaben. (Name der Ziffer oder des Buchstabens ist für die Bewältigung des Items nicht erforderlich).",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "2",
+      "BereichID": "4",
+      "ZieleNummer": "SCH 28",
+      "ZieleStichwort": "Körper – 5",
+      "ZieleBeschreibung": "Führt zwei motorische Aktivitäten aus, die Körperkoordination auf dem Niveau eines fünfjährigen Kindes erfordern.",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "2",
+      "BereichID": "4",
+      "ZieleNummer": "SCH 29",
+      "ZieleStichwort": "Objekte – 5",
+      "ZieleBeschreibung": "Erkennt die Anzahl von Objekten in einer Menge bis zu 5, ohne zu zählen.",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "2",
+      "BereichID": "4",
+      "ZieleNummer": "SCH 30",
+      "ZieleStichwort": "Gedächtnis",
+      "ZieleBeschreibung": "Gibt Auswendig gelerntes wieder — auf dem Niveau eines fünfjährigen Kindes (Singt Lied oder Kinderreim von ca. 30 Wörtern Länge. Sagt Zahlen in richtiger Reihenfolge auf} wenn es aufgefordert wird bis 20 zu zählen.)",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "2",
+      "BereichID": "4",
+      "ZieleNummer": "SCH 31",
+      "ZieleStichwort": "Bilderserie",
+      "ZieleBeschreibung": "Das Kind ordnet in richtiger Reihenfolge drei einfache Bilder an. die eine Geschichte oder einen Handlungsablauf wiedergeben. (Der Erwachsene kann verbale Hinweise geben. z.B. „Was passiert zuerst?\"„Was passiert dann?“ oder „Und was passiert jetzt?\"",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "3",
+      "BereichID": "4",
+      "ZieleNummer": "",
+      "ZieleStichwort": "Stufe :3 Erwerben von Fähigkeiten zur erfolgreichen Teilnahme in Gruppen.Beteiligt sich erfolgreich in einer Lerngruppe und setzt dabei grundlegende Lernkompetenzen, sprachliche Konzepte und symbolische Darstellung von Erfahrungen ein.",
+      "ZieleBeschreibung": "",
+      "Notizen": "",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "3",
+      "BereichID": "4",
+      "ZieleNummer": "SCH 32",
+      "ZieleStichwort": "Auge- Hand- 6",
+      "ZieleBeschreibung": "Führt mindestens zwei Aktivitäten aus, die Auge-Hand-Koordination auf dem Niveau eines sechsjährigen Kindes erfordern.",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "3",
+      "BereichID": "4",
+      "ZieleNummer": "SCH 33",
+      "ZieleStichwort": "Körper – 6",
+      "ZieleBeschreibung": "Führt mindestens zwei motorisch-e Aktivitäten aus. Die Körperkoordination auf dem Niveau eines sechsjährigen Kindes erfordern.",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "3",
+      "BereichID": "4",
+      "ZieleNummer": "SCH 34",
+      "ZieleStichwort": "lesen – 50",
+      "ZieleBeschreibung": "Liest 50 Wörter des Grundwortschatzes.",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "3",
+      "BereichID": "4",
+      "ZieleNummer": "SCH 35",
+      "ZieleStichwort": "Zahlen -10",
+      "ZieleBeschreibung": "Erkennt und schreibt Zahlen, die Mengen bis 10 repräsentieren. (Folgenden Fähigkeiten erforderlich: Schreibt auswendig die Zahlen von 1-10: Gibt korrekte Antwort, wenn der Erw. eine Zahl schreibt und Fragt; „Welche Zahl ist das?\"‘; Schreibt die korrekte Zahl, wenn eine Anzahl von Objekten oder ein B",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "3",
+      "BereichID": "4",
+      "ZieleNummer": "SCH 36",
+      "ZieleStichwort": "schreiben – 50",
+      "ZieleBeschreibung": "Schreibt 50 Wörter des Grundwortschatzes nach Diktat oder aus dem Gedächtnis.",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "3",
+      "BereichID": "4",
+      "ZieleNummer": "SCH 37",
+      "ZieleStichwort": "Verständnis",
+      "ZieleBeschreibung": "Hört einer Geschichte auf Grundschulniveau zu und lässt Verständnis der Fakten und des Handlungsablaufes erkennen. (Der Erwachsene kann Fragen als Anreiz für Antworten anbieten, oder der Schüler kann von sich aus Antworten geben, die zeigen, dass er den Ablauf der Geschichte versteht.)",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "3",
+      "BereichID": "4",
+      "ZieleNummer": "SCH 38",
+      "ZieleStichwort": "Erklären",
+      "ZieleBeschreibung": "Erklärt das Verhalten anderer.",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "3",
+      "BereichID": "4",
+      "ZieleNummer": "SCH 39",
+      "ZieleStichwort": "Sinnentnahme",
+      "ZieleBeschreibung": "Liest mit fache Sätze und lässt dabei Verständnis des Inhalts erkennen. (Zur Bewältigung dieses ltems liest der Schüler kurze, einfache Sätze mit Lernwörtern, die er bereits kenne und beantwortet Fragen zu Fakten oder Abläufen von Ereignissen.)",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "3",
+      "BereichID": "4",
+      "ZieleNummer": "SCH 40",
+      "ZieleStichwort": "Plus / Minus – 9",
+      "ZieleBeschreibung": "Beherrscht alle numerischen Operationen mit Addition und Subtraktion im Zahlenraum bis 9. (Beide Rechenoperationen müssen für die Bewältigung dieses Items beherrscht werden.)",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "3",
+      "BereichID": "4",
+      "ZieleNummer": "SCH 41",
+      "ZieleStichwort": "Unlogik",
+      "ZieleBeschreibung": "Erkennt Unstimmigkeiten in einfachen Situationen.",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "3",
+      "BereichID": "4",
+      "ZieleNummer": "SCH 42",
+      "ZieleStichwort": "Antwortsätze",
+      "ZieleBeschreibung": "Schreibt einfache Sätze als Antworten auf Fragen, die der Erwachsene zu einer Geschichte stellt.",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "3",
+      "BereichID": "4",
+      "ZieleNummer": "SCH 43",
+      "ZieleStichwort": "Sport – Spiele",
+      "ZieleBeschreibung": "Zeigt mindestens zwei motorische Kompetenzen oder motorische Spielaktivitäten, wie sie normalerweise von Kindern im Grundschulalter gespielt werden.",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "3",
+      "BereichID": "4",
+      "ZieleNummer": "SCH 44",
+      "ZieleStichwort": "Sätze frei",
+      "ZieleBeschreibung": "Formuliert und schreibt einfache Sätze.",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "3",
+      "BereichID": "4",
+      "ZieleNummer": "SCH 45",
+      "ZieleStichwort": "Numerische Konzepte",
+      "ZieleBeschreibung": "Wendet“ grundliegende numerische Konzepte an, die Addition, Subtraktion, Zeit und Geld beinhalten. (Alle vier numerischen Konzepte — vgl. Beispielkatalog - sind für die Bewältigung dieses Items erforderlich.)",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "3",
+      "BereichID": "4",
+      "ZieleNummer": "SCH 46",
+      "ZieleStichwort": "Quantitativa",
+      "ZieleBeschreibung": "Liest und erklärt quantitative Begriffe für Maßeinheiten von Zeit, Länge und Flüssigkeitsvolumen. (Der Schüler führt mit Erfolg einfach Übungen durch, bei denen er Begriffe für mindestens drei Maßeinheiten liest und deren Bedeutung erklärt.)",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "3",
+      "BereichID": "4",
+      "ZieleNummer": "SCH 47",
+      "ZieleStichwort": "Sachverhalte",
+      "ZieleBeschreibung": "Liest. kurze Geschichten oder erzählt anderen von den Personen und den Ereignissen, die im Text beschrieben werden. (Der Lesewortschatz sollte KOG 47 mindestens dem 3. Schuljahr entsprechen. Der Erwachsene kann etwas Hilfestellung geben.)",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "3",
+      "BereichID": "4",
+      "ZieleNummer": "SCH 48",
+      "ZieleStichwort": "Texte",
+      "ZieleBeschreibung": "Schreibt kleine zusammenhängende Texte zu Bildern, Reizwörtern oder einem vorgegebenen Thema.",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "4",
+      "BereichID": "4",
+      "ZieleNummer": "",
+      "ZieleStichwort": "Stufe :4 Sich einbringen in Gruppenprozesse.Gebraucht kognitive und schulische Fähigkeiten, um sich erfolgreich an sozialen Gruppenerfahrungen zu beteiligen.",
+      "ZieleBeschreibung": "",
+      "Notizen": "",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "4",
+      "BereichID": "4",
+      "ZieleNummer": "SCH 49",
+      "ZieleStichwort": "Mult./ Divis. – 100",
+      "ZieleBeschreibung": "Beherrscht einfache numerische Operationen der Multiplikation und Division im Zahlenraum bis 100.",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "4",
+      "BereichID": "4",
+      "ZieleNummer": "SCH 50",
+      "ZieleStichwort": "1 x 1 ",
+      "ZieleBeschreibung": "Beherrscht Einmaleinsreihen additiv / mechanisch reversibel.",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "4",
+      "BereichID": "4",
+      "ZieleNummer": "SCH 51",
+      "ZieleStichwort": "Bauplan",
+      "ZieleBeschreibung": "Ermittelt den ‚Bauplan eines Textes.",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "4",
+      "BereichID": "4",
+      "ZieleNummer": "SCH 52",
+      "ZieleStichwort": "Operationen",
+      "ZieleBeschreibung": "Führt grundlegende Rechenoperationen durch, die Stellenwert, Übertrag, Multiplikation und einfache Aufgaben zu Größenanordnung und Größenbeziehung beinhalten. (Die ersten beiden Beispiele — a und b — sowie EIN weiteres Beispiel sind für die Bewältigung dieses Items erforderlich - vgl. Beispielkatalo",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "4",
+      "BereichID": "4",
+      "ZieleNummer": "SCH 53",
+      "ZieleStichwort": "Umwelt",
+      "ZieleBeschreibung": "Ist an Sachverhalten / Phänomenen der Umwelt interessiert und eignet sich selbstständig Sachwissen an.",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "4",
+      "BereichID": "4",
+      "ZieleNummer": "SCH 54",
+      "ZieleStichwort": "Einbringen",
+      "ZieleBeschreibung": "Bringt Sachwissen (auch partielles) sachgerecht ein",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "4",
+      "BereichID": "4",
+      "ZieleNummer": "SCH 55",
+      "ZieleStichwort": "Grundtechniken",
+      "ZieleBeschreibung": "Wendet bildnerische / textile Grundtechniken an.",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "4",
+      "BereichID": "4",
+      "ZieleNummer": "SCH 56",
+      "ZieleStichwort": "Kommunikation",
+      "ZieleBeschreibung": "Schreibt, um Informationen, Ereignisse oder Gefühle mitzuteilen.",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "5",
+      "BereichID": "4",
+      "ZieleNummer": "",
+      "ZieleStichwort": "Stufe :5 Anwenden von individuellen und gruppenbezogenen Fähigkeiten in neuen Situationen.Setzt erfolgreich kognitive Fähigkeiten zur Bereicherung persönlicher Erfahrungen ein.",
+      "ZieleBeschreibung": "",
+      "Notizen": "",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "5",
+      "BereichID": "4",
+      "ZieleNummer": "SCH 57",
+      "ZieleStichwort": "Sachsituation",
+      "ZieleBeschreibung": "Erfasst einfache Sachsituationen als logisches Problem, analysiert und löst sie.",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "5",
+      "BereichID": "4",
+      "ZieleNummer": "SCH 58",
+      "ZieleStichwort": "Informationsgewinn",
+      "ZieleBeschreibung": "Liest aus Freude am Lesen und zur persönlichen Informationsgewinnung.",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "5",
+      "BereichID": "4",
+      "ZieleNummer": "SCH 59",
+      "ZieleStichwort": "Geldmenge - 10 €",
+      "ZieleBeschreibung": "Berechnet Wert für Geldmengen bis zu 10 Euro bzw. 1000 Cent. (Die Fähigkeiten in beiden Beispielen m vgl. Beispielkatalog - sind für die Bewältigung des Items- erforderlich.)",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "5",
+      "BereichID": "4",
+      "ZieleNummer": "SCH 60",
+      "ZieleStichwort": "Zahlvorstellung 1 Mi",
+      "ZieleBeschreibung": "Besitzt Zahlvorstellung bis 1.000.000(incl. Addition / Subtraktion von ‚Tausenderzahlen / schriftlicher Multiplikation und Division).",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "5",
+      "BereichID": "4",
+      "ZieleNummer": "SCH 61",
+      "ZieleStichwort": "Fiktion",
+      "ZieleBeschreibung": "Beschreibt fiktive Charaktere aus Büchern, Fernsehen oder_ Filmen..und erklärt deren Motive. (Mündliche oder schriftliche Äußerungen zulässig. Der Schwerpunkt liegt auf dem Verstehen menschlicher Verhaltensweisen und der Motive anderer.)",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "5",
+      "BereichID": "4",
+      "ZieleNummer": "SCH 62",
+      "ZieleStichwort": "Grammatik",
+      "ZieleBeschreibung": "Verwendet grammatische Regeln beim Schreiben von Sätzen, Abschnitten, kurzen Aufsätzen‚ fiktiven Geschichten und Gedichten.",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "5",
+      "BereichID": "4",
+      "ZieleNummer": "SCH 63",
+      "ZieleStichwort": "Beschreibungen",
+      "ZieleBeschreibung": "Erstellt Vorgangs— und Personenbeschreibungen‚ Reportagen, Interviews und Berichte.",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "5",
+      "BereichID": "4",
+      "ZieleNummer": "SCH 64",
+      "ZieleStichwort": "Wertvorstellungen",
+      "ZieleBeschreibung": "Erkennt und unterscheidet gegensätzliche Werte in sozialen Situationen- (Beispiele für wertebezogene Gegensatzpaare: legal-illegal; freundlich—unfreundlich; unschuldig—schuldig.) [Identisch mit Sozialisation SOZ35.]",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "5",
+      "BereichID": "4",
+      "ZieleNummer": "SCH 65",
+      "ZieleStichwort": "Sachzusammenhänge",
+      "ZieleBeschreibung": "Erkennt Sachzusammenhänge aus der Lebensumwelt anderer Menschen (anderer Kulturen, anderer gesellschaftlicher Gruppierungen ...) und kann sie mit der eigenen verknüpfen.",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "5",
+      "BereichID": "4",
+      "ZieleNummer": "SCH 66",
+      "ZieleStichwort": "Konzepte",
+      "ZieleBeschreibung": "Gebraucht Maßeinheiten (Zeit, Länge, Flüssigkeitsvolumen) und andere quantitative Begriffe um einfache logische Probleme zu lösen.",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "5",
+      "BereichID": "4",
+      "ZieleNummer": "SCH 67",
+      "ZieleStichwort": "Zeitgeschichte",
+      "ZieleBeschreibung": "Sucht die Meinung anderer zu aktuellen Problemen zu erfahren. (Aktuelle Themenstellungen können Zeitungen, TV-Sondersendungen und Zeitschriften entnommen werden. Typische Fragestellungen beziehen sich auf Gesundheit, Arbeitswelt, Verdienst. Gesetzgebung. Wissenschaft, Psychologie und Führerscheinerw",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "5",
+      "BereichID": "4",
+      "ZieleNummer": "SCH 68",
+      "ZieleStichwort": "Meinungen",
+      "ZieleBeschreibung": "Unterscheidet in Texten zwischen Fakten und Meinungen.",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "5",
+      "BereichID": "4",
+      "ZieleNummer": "SCH 69",
+      "ZieleStichwort": "Inkonsistenz",
+      "ZieleBeschreibung": "Erkennt unlogisches und unstimmiges Verhalten bei anderen in sozialen Situationen. {Schüler muss Unstimmigkeit oder Unlogisches erklären können.)",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "5",
+      "BereichID": "4",
+      "ZieleNummer": "SCH 70",
+      "ZieleStichwort": "Textaufgaben",
+      "ZieleBeschreibung": "Löst Textaufgaben, die Bruchrechnung, Dezimalrechnung und das Rechnen mit negativen Zahlen erfordern.",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "5",
+      "BereichID": "4",
+      "ZieleNummer": "SCH 71",
+      "ZieleStichwort": "Konsumverhalten",
+      "ZieleBeschreibung": "Wägt in seinem Konsumverhalten Bedürfnisse ab auf der Basis einer persönlichen Werteskala. die dem Konsumdruck durch Werbung, Peers etc. alternative Wertsetzungen gegenüberstellt.",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "5",
+      "BereichID": "4",
+      "ZieleNummer": "SCH 72",
+      "ZieleStichwort": "Einsicht",
+      "ZieleBeschreibung": "Löst persönliche Probleme anhand von Einsicht. Analyse und Generalisierung. [Identisch mit Verhalten V—33.]",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    },
+    {
+      "Stufe": "5",
+      "BereichID": "4",
+      "ZieleNummer": "SCH 73",
+      "ZieleStichwort": "Bürger/in",
+      "ZieleBeschreibung": "Gebraucht selbständig kognitive Verfahren in der Rolle als Bürgen\" in und Arbeitnehmer/in. (Die Bewältigung dieses Items erfordert die erfolgreiche Anwendung von grundlegenden Lesekompetenzen, schriftlicher Kommunikation und numerischen Konzepten. um Aufgaben des erwachsenen Alltagslebens zu. lösen.",
+      "Notizen": "Notizen",
+	  "newSelect0": "später"
+    }
+  ]
+}

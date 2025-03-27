@@ -157,7 +157,7 @@ if(isset($_SESSION['screen_width']) AND isset($_SESSION['screen_height'])){
       </select>
       <button type="button" onclick="NewClient();">Neu</button><br>
     </div>
-<div class="AktualClient" id="AktualClient">
+<div class="" id="AktualClient">
 <!-- wird von Functions.php gefüllt -->
   </div>
   <div class="rightSite" id="rightSite">

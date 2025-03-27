@@ -1,0 +1,28 @@
+[
+{"type":"header","version":"5.2.1","comment":"Export to JSON plugin for PHPMyAdmin"},
+{"type":"database","name":"dbs10487900"},
+{"type":"table","name":"stufenbeschreibungen","database":"dbs10487900","data":
+[
+{"id":"1","BereichID":"1","Stufe":"1","Beschreibung1":"Mit Freude auf die Umwelt reagieren.","Beschreibung2":"Gebraucht Wörter, um Bedürfnisse zu befriedigen."},
+{"id":"3","BereichID":"1","Stufe":"2","Beschreibung1":"Erfolgreich auf die Umwelt reagieren.","Beschreibung2":"Gebraucht Wörter, um andere in konstruktiver Weise zu beeinflussen."},
+{"id":"4","BereichID":"1","Stufe":"3","Beschreibung1":"Erwerben von Fähigkeiten zur erfolgreichen Teilnahme in Gruppen.","Beschreibung2":"Gebraucht Wörter, um sich auf konstruktive Weise innerhalb einer Gruppe zu äußern."},
+{"id":"7","BereichID":"1","Stufe":"4","Beschreibung1":"Sich einbringen in Gruppenprozesse.","Beschreibung2":"Verwendet Wörter, um Verständnis von Gefühlen und Verhaltensweisen von\r\nsich und anderen zu zeigen."},
+{"id":"8","BereichID":"1","Stufe":"5","Beschreibung1":"Anwenden von individuellen und gruppenbezogenen Fähigkeiten in neuen\r\nSituationen.","Beschreibung2":"Verwendet Wörter, um Beziehungen auszubauen und zu pflegen."},
+{"id":"9","BereichID":"3","Stufe":"1","Beschreibung1":"Mit Freude auf die Umwelt reagieren.","Beschreibung2":"Einem Erwachsenen genügend vertrauen, um auf ihn zu reagieren."},
+{"id":"10","BereichID":"3","Stufe":"2","Beschreibung1":"Erfolgreich auf die Umwelt reagieren.","Beschreibung2":"Sich erfolgreich an Aktivitäten beteiligen."},
+{"id":"11","BereichID":"3","Stufe":"3","Beschreibung1":"Erwerben von Fähigkeiten zur erfolgreichen Teilnahme in Gruppen.","Beschreibung2":"Gruppenaktivitäten als befriedigend erleben."},
+{"id":"12","BereichID":"3","Stufe":"4","Beschreibung1":"Sich einbringen in Gruppenprozesse.","Beschreibung2":"Nimmt von sich aus und erfolgreich als Gruppenmitglied an Aktivitäten teil."},
+{"id":"13","BereichID":"3","Stufe":"5","Beschreibung1":"Anwenden von individuellen und gruppenbezogenen Fähigkeiten in neuen Situationen.","Beschreibung2":"Beginnt und pflegt selbständig dauerhafte und tragfähige Beziehungen mit anderen."},
+{"id":"14","BereichID":"4","Stufe":"1","Beschreibung1":"Mit Freude auf die Umwelt reagieren.","Beschreibung2":"Auf die Umgebung reagieren mit gezielten Körperbewegungen und elementaren mentalen Verarbeitungsprozessen in den Bereichen Gedächtnis, Zuordnung und rezeptivem Vokabular."},
+{"id":"15","BereichID":"4","Stufe":"2","Beschreibung1":"Erfolgreich auf die Umwelt reagieren.","Beschreibung2":"Beteiligung an Aktivitäten, die Fähigkeiten der Selbsthilfe, motorischen Koordination, Sprache sowie mentale Prozesse von Unterscheidung, Bildung von Reihenfolgen und Aufzählung erfordern."},
+{"id":"16","BereichID":"4","Stufe":"3","Beschreibung1":"Erwerben von Fähigkeiten zur erfolgreichen Teilnahme in Gruppen.","Beschreibung2":"Beteiligt sich erfolgreich in einer Lerngruppe und setzt dabei grundlegende Lernkompetenzen, sprachliche Konzepte und symbolische Darstellung von Erfahrungen ein."},
+{"id":"17","BereichID":"4","Stufe":"4","Beschreibung1":"Sich einbringen in Gruppenprozesse.","Beschreibung2":"Gebraucht kognitive und schulische Fähigkeiten, um sich erfolgreich an sozialen Gruppenerfahrungen zu beteiligen."},
+{"id":"18","BereichID":"4","Stufe":"5","Beschreibung1":"Anwenden von individuellen und gruppenbezogenen Fähigkeiten in neuen Situationen.","Beschreibung2":"Setzt erfolgreich kognitive Fähigkeiten zur Bereicherung persönlicher Erfahrungen ein."},
+{"id":"19","BereichID":"2","Stufe":"1","Beschreibung1":"Mit Freude auf die Umwelt reagieren.","Beschreibung2":"Den eigenen körperlichen Fähigkeiten vertrauen."},
+{"id":"20","BereichID":"2","Stufe":"2","Beschreibung1":"Erfolgreich auf die Umwelt reagieren.","Beschreibung2":"Erfolgreich an Routineabläufen und Aktivitäten teilnehmen."},
+{"id":"21","BereichID":"2","Stufe":"3","Beschreibung1":"Erwerben von Fähigkeiten zur erfolgreichen Teilnahme in Gruppen.","Beschreibung2":"Erworbene Fähigkeiten anwenden, um innerhalb einer Gruppe das eigene Verhalten erfolgreich zu steuern."},
+{"id":"22","BereichID":"2","Stufe":"4","Beschreibung1":"Sich einbringen in Gruppenprozesse","Beschreibung2":"Persönliche Fähigkeiten einsetzen, um zum Gruppenerfolg beizutragen"},
+{"id":"23","BereichID":"2","Stufe":"5","Beschreibung1":"Anwenden von individuellen und gruppenbezogenen Fähigkeiten in neuen Situationen.","Beschreibung2":"Realen Lebenserfahrungen mit konstruktivem Verhalten begegnen."}
+]
+}
+]
